@@ -1,0 +1,92 @@
+<template>
+    <lwr-router-container
+        router={router}>
+        <div class="viewport">
+            <section class="layoutContent stage panelSlide">
+                <setup-global-header></setup-global-header>
+                <span class="main-content-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
+                <span class="navigation-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
+                <div class="workspace-manager">
+                    <!-- Starting the top tabs -->
+                    <div class="tabset">
+                        <div class="tabset-header slds-context-bar slds-context-bar--tabs">
+                            <span class="focus__navigation"></span>
+                            <!-- App launcher -->
+                            <div class="slds-context-bar__primary">
+                                <div class="setup-launcher">
+                                    <div class="slds-context-bar__item slds-no-hover">
+                                        <div class="slds-context-bar__icon-action" role="navigation" aria-label="App">
+                                            <button class="slds-button slds-icon-waffle_container slds-context-bar__button">
+                                                <div class="tooltip-trigger">
+                                                    <div class="slds-icon-waffle">
+                                                        <div class="slds-r1"></div>
+                                                        <div class="slds-r2"></div>
+                                                        <div class="slds-r3"></div>
+                                                        <div class="slds-r4"></div>
+                                                        <div class="slds-r5"></div>
+                                                        <div class="slds-r6"></div>
+                                                        <div class="slds-r7"></div>
+                                                        <div class="slds-r8"></div>
+                                                        <div class="slds-r9"></div>
+                                                    </div>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <div class="slds-context-bar__label-action slds-context-bar__app-name">
+                                            <span class="slds-truncate" title="Setup">Setup</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /App launcher -->
+                            <!-- Tab bar -->
+                            <div class="slds-context-bar__secondary tab-container">
+                                <div class="slds-grid tab-bar">
+                                    <ul class="slds-grid tab-bar-items">
+                                        <li class="slds-context-bar__item slds-is-active tab-item border-right">
+                                            <a href="/"
+                                                class="slds-context-bar__label-action tab-header"
+                                                title="Home">
+                                                <span class="slds-truncate">Home</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Tab bar -->
+                            <!-- Tab bar overflow -->
+                            <div class="slds-context-bar__tertiary slds-col--bump-left"></div>
+                            <!-- /Tab bar overflow -->
+                        </div>
+                        <div class="tabset-body slds-is-absolute slds-scrollable main-content">
+                            <div class="slds-is-fixed split-left">
+                                <!-- Left navigation -->
+                                    <setup-navigation items={navItems}></setup-navigation>
+                                    <!--setup-navigation items={mainNavItems}></setup-navigation-->
+                                <!-- /Left navigation -->
+                            </div>
+                            <div class="split-right" role="main">
+                                <!-- main body content/right side -->
+                                <div class="tab-content">
+                                    <div class="slds-brand-band slds-brand-band_cover slds-brand-band_medium slds-template_default">
+                                        <div class="slds-template__container">
+
+                                            <lwr-outlet
+                                                onviewchange={onViewChange}
+                                                onviewerror={onViewError}>
+                                                <div slot="error">If the component experiences a runtime error, the contents of this slot will replace the component template for the current route</div>
+                                            </lwr-outlet>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /END main body content/right side -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /END top tabs -->
+                </div>
+            </section>
+        </div>
+    </lwr-router-container>
+</template>

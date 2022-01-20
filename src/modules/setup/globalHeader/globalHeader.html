@@ -1,0 +1,106 @@
+<template>
+    <header class="slds-global-header_container branding-header oneHeader slds-no-print">
+        <div class="slds-color__background_gray-1 slds-text-align_center slds-size_full slds-text-body_regular slds-hide system-message"></div>
+        <div class="slds-global-header slds-grid slds-grid--align-spread">
+            <div class="slds-global-header__item">
+                <div class="slds-global-header__logo">
+                    <span class="slds-assistive-text">Setup</span>
+                </div>
+            </div>
+
+            <!-- Global search -->
+            <div class="slds-global-header__item slds-global-header__item--search">
+                <div class="slds-grid slds-nowrap slds-text-body_regular slds-text-color_weak slds-is-relative setup-search">
+                    <div class="slds-size_1-of-1 slds-nowrap slds-border_top slds-border_left slds-border_right slds-border_bottom slds-grid slds-grid_vertical-align-center slds-scrollable_none">
+                        <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon--left">
+                            <lightning-icon
+                                class="slds-text-color_weak slds-input__icon slds-p-left_x-small slds-button_icon inputIcon forceIcon"
+                                size="xx-small"
+                                icon-name="utility:search">
+                            </lightning-icon>
+                        </div>
+                        <div class="slds-grid_align-center slds-grid_vertical-align-center slds-size_1-of-1 slds-p-left_xx-large">
+                            <div class="slds-grid slds-no-flex slds-m-right_xx-small">
+                                <div class="slds-col"></div>
+                            </div>
+                            <div class="autocompleteWrapper slds-grow slds-form-element__control">
+                                <lightning-input
+                                    type="text"
+                                    label="Search Setup"
+                                    placeholder="Search Setup"
+                                    variant="label-hidden">
+                                </lightning-input>
+                            </div>
+                            <div class="slds-is-absolute slds-hide">
+                                <span class="slds-assistive-text">Loading...</span>
+                                <div class="slds-spinner--brand slds-spinner slds-spinner--small"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Global actions -->
+            <span class="button-container-a11y">
+                <div class="slds-global-header__item">
+                    <ul class="slds-global-actions">
+                        <li class="slds-global-actions__item slds-dropdown-trigger slds-dropdown-trigger--click">
+                            <a href="javascript:void(0)"
+                                class="globalCreateTrigger slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__task slds-global-actions__item-action">
+                                <lightning-icon
+                                    icon-name="utility:add"
+                                    size="x-small"
+                                    variant="inverse"
+                                    class="slds-button slds-button_icon slds-button--icon-small slds-button--icon-container slds-button--icon-x-small slds-global-header__button--icon-actions globalCreateButton slds-icon_container">
+                                </lightning-icon>
+                            </a>
+                        </li>
+                        <li class="slds-global-actions__item slds-dropdown-trigger slds-dropdown-trigger--click trailheadTrigger">
+                            <lightning-button-icon-stateful
+                                class="ga-button"
+                                size="small"
+                                icon-name="utility:trailhead_alt"
+                                alternative-text="Trailhead">
+                            </lightning-button-icon-stateful>
+                        </li>
+                        <li class="slds-global-actions__item slds-dropdown-trigger slds-dropdown-trigger--click">
+                            <button class="slds-button slds-button slds-button_icon slds-button_icon slds-button_icon-container slds-button_icon-small slds-global-actions__help slds-global-actions__item-action forceHeaderButton oneHelpAndTrainingExperience"
+                                type="button">
+                                <lightning-icon
+                                    class="slds-global-header__icon ga-icon"
+                                    icon-name="utility:question"
+                                    size="small"
+                                    alternative-text="Salesforce Help">
+                                </lightning-icon>
+                            </button>
+                        </li>
+                        <li class="slds-global-actions__item slds-dropdwon-trigger slds-dropdown-trigger--click">
+                            <lightning-icon
+                                class="slds-global-header__icon ga-icon"
+                                icon-name="utility:setup"
+                                size="small"
+                                alternative-text="Setup">
+                            </lightning-icon>
+                        </li>
+                        <li class="slds-global-actions__item slds-dropdwon-trigger slds-dropdown-trigger--click">
+                            <lightning-icon
+                                class="slds-global-header__icon ga-icon"
+                                icon-name="utility:notification"
+                                size="small"
+                                alternative-text="Setup">
+                            </lightning-icon>
+                        </li>
+                        <li class="slds-global-actions__item slds-dropdwon-trigger slds-dropdown-trigger--click">
+                            <lightning-avatar
+                                class="slds-global-actions__avatar slds-global-actions__item-action"
+                                variant="circle"
+                                src="/assets/images/avatar3.jpg"
+                                alternative-text="View profile">
+                            </lightning-avatar>
+                        </li>
+                    </ul>
+                </div>
+            </span>
+        </div>
+    </header>
+</template>

@@ -1,0 +1,8 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slds-global-header__logo {
+    background-position: right center;
+}

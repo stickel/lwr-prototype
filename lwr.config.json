@@ -1,0 +1,76 @@
+{
+    "port": 3333,
+    "serverMode": "dev",
+    "rootDir": "/Users/mstickel/core-prototype",
+    "lwc": {
+        "modules": [
+            {
+                "dir": "$rootDir/src/modules"
+            },
+            {
+                "npm": "lightning-base-components"
+            }
+        ]
+    },
+    "bundleConfig": {
+        "exclude": [ "lwc", "@lwc-synthetic-shadow", "lwr/navigation" ]
+    },
+    "assets": [
+        {
+            "alias": "assetsDir",
+            "dir": "$rootDir/src/assets",
+            "urlPath": "/assets"
+        }
+    ],
+    "moduleProviders": [
+        [
+            "@lwrjs/label-module-provider",
+            {
+                "provideDefault": true,
+                "labelDirs": [
+                    {
+                        "dir": "$rootDir/src/labels",
+                        "package": "@my/label"
+                    }
+                ]
+            }
+        ],
+        "@lwrjs/app-service/moduleProvider",
+        "@lwrjs/lwc-module-provider",
+        "@lwrjs/npm-module-provider"
+    ],
+    "routes": [
+        {
+            "id": "start",
+            "path": "/",
+            "rootComponent": "prototype/app",
+            "layoutTemplate": "$layoutsDir/main.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "cx",
+            "path": "/cx",
+            "rootComponent": "cx/app",
+            "layoutTemplate": "$layoutsDir/cx.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "setup",
+            "path": "/setup",
+            "rootComponent": "setup/app",
+            "layoutTemplate": "$layoutsDir/setup.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "setup-named-page",
+            "path": "/setup/:namedPage",
+            "rootComponent": "setup/app"
+        }
+    ]
+}

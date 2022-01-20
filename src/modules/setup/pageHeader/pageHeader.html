@@ -1,0 +1,34 @@
+<template>
+    <!-- page header -->
+    <div class="slds-page-header branding-setup">
+        <div class="slds-media slds-media_large">
+            <div class="slds-media__figure">
+                <lightning-icon class="setup-header-icon"
+                    icon-name={headerIcon}
+                    size="medium">
+                </lightning-icon>
+                <div class="setup-header-element">
+                    <template if:true={breadcrumbIsLink}>
+                        <div class="setup-breadcrumbs">
+                            <span class="breadcrumb__no-link">Setup</span>
+                        </div>
+                        <h1>
+                            <span class="breadcrumb-detail">{pageTitle}</span>
+                        </h1>
+                    </template>
+                    <template if:false={breadcrumbIsLink}>
+                        <div class="setup-breadcrumbs">
+                            <a href="" class="breadcrumb">Setup</a>
+                        </div>
+                        <h1>
+                            <span class="breadcrumb-detail">{pageTitle}</span>
+                        </h1>
+                    </template>
+                </div>
+            </div>
+            <div class="slds-media__body"></div>
+            <slot></slot>
+        </div>
+    </div>
+    <!-- /END page header -->
+</template>

@@ -1,0 +1,122 @@
+{
+    "navItems": [
+        {
+            "name": "setup-home",
+            "label": "Setup Home",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "home",
+                "attributes": {},
+                "state": {}
+            }
+        },
+        {
+            "name": "service-setup-assistant",
+            "label": "Service Setup Assistant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "serviceSetupAssistant"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "mfa-assistant",
+            "label": "Mutli-Factor Authentication Assitant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "mfaAssistant"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "release-updates",
+            "label": "Release Updates",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "releaseUpdates"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "lex-transition-assistant",
+            "label": "Lightning Experience Transition Assistant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "lexTransitionAssistant"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "mobile-quickstart",
+            "label": "New Salesforce Mobile App Quickstart",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "mobileQuickstart"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "lightning-usage",
+            "label": "Lightning Usage",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "lightningUsage"
+                },
+                "state": {}
+            }
+        },
+        {
+            "name": "optimizer",
+            "label": "Optimizer",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [],
+            "pageReference": {
+                "type": "namedPage",
+                "attributes": {
+                    "pageName": "optimizer"
+                },
+                "state": {}
+            }
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "items": [
+        {
+            "name": "setup-home",
+            "label": "Setup Home",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "service-setup-assistant",
+            "label": "Service Setup Assistant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "mfa-assistant",
+            "label": "Mutli-Factor Authentication Assitant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "release-updates",
+            "label": "Release Updates",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "lex-transition-assistant",
+            "label": "Lightning Experience Transition Assistant",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "mobile-quickstart",
+            "label": "New Salesforce Mobile App Quickstart",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "lightning-usage",
+            "label": "Lightning Usage",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        },
+        {
+            "name": "optimizer",
+            "label": "Optimizer",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": []
+        }
+    ]
+}

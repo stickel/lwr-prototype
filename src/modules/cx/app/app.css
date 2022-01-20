@@ -1,0 +1,9 @@
+.viewport {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.viewport p {
+    padding-bottom: var(--slds-spacingMedium);
+}

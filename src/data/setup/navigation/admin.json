@@ -1,0 +1,59 @@
+{
+    "items": [
+        {
+            "name": "users",
+            "label": "Users",
+            "href": "/setup",
+            "disabled": false,
+            "expanded": false,
+            "items": [
+                {
+                    "name": "perm-set-groups",
+                    "label": "Permission Set Groups",
+                    "href": "/setup/users/perm-set-groups",
+                    "disabled": false,
+                    "expanded": false,
+                    "items": []
+                },
+                {
+                    "name": "perm-sets",
+                    "label": "Permission Sets",
+                    "href": "/setup/users/perm-sets",
+                    "disabled": false,
+                    "expanded": false,
+                    "items": []
+                }
+            ]
+        },
+        {
+            "name": "data",
+            "label": "Data",
+            "disabled": false,
+            "expanded": false,
+            "items": [
+                {
+                    "name": "big-objects",
+                    "label": "Big Objects",
+                    "disabled": false,
+                    "expanded": false,
+                    "items": []
+                },
+                {
+                    "name": "duplicate-management",
+                    "label": "Duplicate Management",
+                    "disabled": false,
+                    "expanded": false,
+                    "items": [
+                        {
+                            "name": "duplicate-error-logs",
+                            "label": "Duplicate Error Logs",
+                            "disabled": false,
+                            "expanded": false,
+                            "items": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

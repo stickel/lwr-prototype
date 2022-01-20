@@ -1,0 +1,8 @@
+[aria-expanded=true] > .slds-tree__item .slds-button__icon {
+    transition: 0.2s transform ease-in-out;
+    transform: rotate(90deg);
+}
+
+.headerless > .slds-tree__item > .slds-is-disabled {
+    display: none;
+}

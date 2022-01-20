@@ -1,0 +1,65 @@
+<template>
+    <li role="treeitem"
+        class={liClassList}
+        aria-selected={selected}
+        aria-expanded={expanded}>
+        <div class="slds-tree__item">
+            <template if:true={hasChildren}>
+                <lightning-button-icon
+                    class="slds-m-right_x-small"
+                    icon-name="utility:chevronright"
+                    alternative-text="Expand"
+                    variant="bare"
+                    onclick={handleExpandCollapse}>
+                </lightning-button-icon>
+            </template>
+            <template if:false={hasChildren}>
+                <lightning-button-icon
+                    class="slds-m-right_x-small slds-is-disabled"
+                    icon-name="utility:chevronright"
+                    alternative-text="Expand"
+                    variant="bare">
+                </lightning-button-icon>
+            </template>
+            <a onclick={handleClick} href={path}>
+                <span class="slds-tree__item-label slds-p-right_x-small" title={label}>{label}</span>
+            </a>
+        </div>
+
+        <!--template if:true={expanded}-->
+            <ul role="group" if:true={expanded}>
+                <template for:each={children} for:item="child">
+                    <li key={child.name}
+                        role="treeitem"
+                        aria-level="2">
+                        <div class="slds-tree__item">
+
+                            <!-- FIXME: Recurssion happening here. -->
+                            <template if:true={child.items}>
+                                <lightning-button-icon
+                                    class="slds-m-right_x-small"
+                                    icon-name="utility:chevronright"
+                                    alternative-text="Expand"
+                                    variant="bare"
+                                    onclick={handleExpandCollapse}>
+                                </lightning-button-icon>
+                            </template>
+                            <template if:false={child.items}>
+                                <lightning-button-icon
+                                    class="slds-m-right_x-small slds-is-disabled"
+                                    icon-name="utility:chevronright"
+                                    alternative-text="Expand"
+                                    variant="bare">
+                                </lightning-button-icon>
+                            </template>
+
+                            <a onclick={handleClick} href={path} class="slds-tree__item-label">
+                                {child.label}
+                            </a>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        <!--/template-->
+    </li>
+</template>

@@ -1,0 +1,62 @@
+<template>
+    <div class="setup-nav">
+        <div class="setup-nav-filter"
+            onkeyup={handleFilter}>
+            <lightning-input
+                name="navigation-search"
+                label="Quick Find"
+                placeholder="Quick Find"
+                variant="label-hidden"
+                type="search">
+            </lightning-input>
+        </div>
+        <div class="slds-tree_container">
+            <ul class="slds-tree">
+                <template for:each={navItems} for:item="item">
+                    <setup-nav-item
+                        key={item.name}
+                        label={item.label}
+                        page-reference={item.pageReference}
+                        selected={item.selected}>
+                    </setup-nav-item>
+                </template>
+
+                <h4 class="slds-text-title_caps section-header">Administration</h4>
+                <template for:each={adminNavItems} for:item="item">
+                    <setup-nav-item
+                        key={item.name}
+                        label={item.label}
+                        page-reference={item.pageReference}
+                        selected={item.selected}
+                        has-children={item.hasChildren}
+                        children={item.items}>
+                    </setup-nav-item>
+                </template>
+
+                <h4 class="slds-text-title_caps section-header">Platform Tools</h4>
+                <template for:each={platformNavItems} for:item="item">
+                    <setup-nav-item
+                        key={item.name}
+                        label={item.label}
+                        page-reference={item.pageReference}
+                        selected={item.selected}
+                        has-children={item.hasChildren}
+                        children={item.items}>
+                    </setup-nav-item>
+                </template>
+
+                <h4 class="slds-text-title_caps section-header">Settings</h4>
+                <template for:each={settingsNavItems} for:item="item">
+                    <setup-nav-item
+                        key={item.name}
+                        label={item.label}
+                        page-reference={item.pageReference}
+                        selected={item.selected}
+                        has-children={item.hasChildren}
+                        children={item.items}>
+                    </setup-nav-item>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>

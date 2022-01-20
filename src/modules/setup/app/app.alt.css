@@ -1,0 +1,556 @@
+/* Copying CSS tokens from SLDS */
+@import '../../../assets/styles/slds-color-palettes.css';
+@import '../../../assets/styles/slds-colors.css';
+
+:host {
+    /* Brand */
+    --lwc-brandAccessible: var(--brand_accessible);
+    --lwc-brandAccessibleActive: var(--brand_accessible_active);
+    --lwc-brandBackgroundDark: var(--brand_background_dark);
+    --lwc-brandBackgroundDarkTransparent: rgba(var(--brand_background_dark), 0);
+    --lwc-brandBackgroundPrimary: var(--brand_background_primary);
+    --lwc-brandBackgroundPrimaryTransparent: rgba(var(--brand_background_primary), 0);
+    --lwc-brandContrast: var(--brand_contrast);
+    --lwc-brandContrastActive: var(--brand_contrast_active);
+    --lwc-brandDark: var(--brand_dark);
+    --lwc-brandDarkActive: var(--brand_dark_active);
+    --lwc-brandDisabled: var(--brand_disabled);
+    --lwc-brandHeader: var(--palette_gray_1);
+    --lwc-brandHeaderContrast: rgb(94, 94, 94);
+    --lwc-brandHeaderContractActive: rgb(80, 80, 80);
+    --lwc-brandHeaderContractCool: var(--palette_blue_30);
+    --lwc-brandHeaderContrastCoolActive: var(--palette_blue_30);
+    --lwc-brandHeaderContrastInverse: var(--palette_gray_1);
+    --lwc-brandHeaderContrastInverseActive: rgb(238, 238, 238);
+    --lwc-brandHeaderContrastWarm: var(--palette_red_40);
+    --lwc-brandHeaderContrastWarmActive: var(--palette_red_40);
+    --lwc-brandHeaderContrastWeak: rgb(145, 145, 145);
+    --lwc-brandHeaderContrastWeakActive: rgb(219, 129, 129);
+    --lwc-brandHeader_contrastWeakDisabled: rgba(166, 166, 166, 0.25);
+    --lwc-brandHeaderIcon: rgb(145, 145, 145);
+    --lwc-brandHeaderIconActive: rgb(129, 129, 129);
+    --lwc-brandHeaderIconDisabled: rgba(145, 145, 145, 0.25);
+    --lwc-brandLight: var(--brand_light);
+    --lwc-brandLightActive: var(--brand_light_active);
+    --lwc-brandPrimary: var(--brand_primary);
+    --lwc-brandPrimaryActive: var(--brand_primary_active);
+    --lwc-brandPrimaryTransparent: rgba(21, 137, 238, 0.1);
+    --lwc-brandPrimaryTransparent10: rgba(21, 137, 238, 0.1);
+    --lwc-brandPrimaryTransparent40: rgba(21, 137, 238, 0.4);
+    --lwc-brandTextLink: var(--brand_text_link);
+    --lwc-brandTextLinkActive: var(--brand_text_link_active);
+
+    /* Colors: Gray */
+    --lwc-colorGray1: var(--palette_gray_1);
+    --lwc-colorGray2: var(--palette_gray_2);
+    --lwc-colorGray3: var(--palette_gray_3);
+    --lwc-colorGray4: var(--palette_gray_4);
+    --lwc-colorGray5: var(--palette_gray_5);
+    --lwc-colorGray6: var(--palette_gray_6);
+    --lwc-colorGray7: var(--palette_gray_7);
+    --lwc-colorGray8: var(--palette_gray_8);
+    --lwc-colorGray9: var(--palette_gray_9);
+    --lwc-colorGray10: var(--palette_gray_10);
+    --lwc-colorGray11: var(--palette_gray_11);
+    --lwc-colorGray12: var(--palette_gray_12);
+    --lwc-colorGray13: var(--palette_gray_13);
+
+    /* Colors: Blue */
+    --lwc-paletteBlue10: var(--palette_blue_10);
+    --lwc-paletteBlue15: var(--palette_blue_15);
+    --lwc-paletteBlue20: var(--palette_blue_20);
+    --lwc-paletteBlue30: var(--palette_blue_30);
+    --lwc-paletteBlue40: var(--palette_blue_40);
+    --lwc-paletteBlue50: var(--palette_blue_50);
+    --lwc-paletteBlue60: var(--palette_blue_60);
+    --lwc-paletteBlue65: var(--palette_blue_65);
+    --lwc-paletteBlue70: var(--palette_blue_70);
+    --lwc-paletteBlue80: var(--palette_blue_80);
+    --lwc-paletteBlue90: var(--palette_blue_90);
+    --lwc-paletteBlue95: var(--palette_blue_95);
+    
+    /* Colors: Cloud Blue */
+    --lwc-paletteCloudBlue10: var(--palette_cloud_blue_10);
+    --lwc-paletteCloudBlue15: var(--palette_cloud_blue_15);
+    --lwc-paletteCloudBlue20: var(--palette_cloud_blue_20);
+    --lwc-paletteCloudBlue30: var(--palette_cloud_blue_30);
+    --lwc-paletteCloudBlue40: var(--palette_cloud_blue_40);
+    --lwc-paletteCloudBlue50: var(--palette_cloud_blue_50);
+    --lwc-paletteCloudBlue60: var(--palette_cloud_blue_60);
+    --lwc-paletteCloudBlue65: var(--palette_cloud_blue_65);
+    --lwc-paletteCloudBlue70: var(--palette_cloud_blue_70);
+    --lwc-paletteCloudBlue80: var(--palette_cloud_blue_80);
+    --lwc-paletteCloudBlue90: var(--palette_cloud_blue_90);
+    --lwc-paletteCloudBlue95: var(--palette_cloud_blue_95);
+
+    /* Colors: Green */
+    --lwc-paletteGreen10: var(--palette_green_10);
+    --lwc-paletteGreen15: var(--palette_green_15);
+    --lwc-paletteGreen20: var(--palette_green_20);
+    --lwc-paletteGreen30: var(--palette_green_30);
+    --lwc-paletteGreen40: var(--palette_green_40);
+    --lwc-paletteGreen50: var(--palette_green_50);
+    --lwc-paletteGreen60: var(--palette_green_60);
+    --lwc-paletteGreen65: var(--palette_green_65);
+    --lwc-paletteGreen70: var(--palette_green_70);
+    --lwc-paletteGreen80: var(--palette_green_80);
+    --lwc-paletteGreen90: var(--palette_green_90);
+    --lwc-paletteGreen95: var(--palette_green_95);
+
+    /* Colors: Hot Orange */
+    --lwc-paletteHotOrange10: var(--palette_hot_orange_10);
+    --lwc-paletteHotOrange15: var(--palette_hot_orange_15);
+    --lwc-paletteHotOrange20: var(--palette_hot_orange_20);
+    --lwc-paletteHotOrange30: var(--palette_hot_orange_30);
+    --lwc-paletteHotOrange40: var(--palette_hot_orange_40);
+    --lwc-paletteHotOrange50: var(--palette_hot_orange_50);
+    --lwc-paletteHotOrange60: var(--palette_hot_orange_60);
+    --lwc-paletteHotOrange65: var(--palette_hot_orange_65);
+    --lwc-paletteHotOrange70: var(--palette_hot_orange_70);
+    --lwc-paletteHotOrange80: var(--palette_hot_orange_80);
+    --lwc-paletteHotOrange90: var(--palette_hot_orange_90);
+    --lwc-paletteHotOrange95: var(--palette_hot_orange_95);
+
+    /* Colors: Indigo */
+    --lwc-paletteIndigo10: var(--palette_indigo_10);
+    --lwc-paletteIndigo15: var(--palette_indigo_15);
+    --lwc-paletteIndigo20: var(--palette_indigo_20);
+    --lwc-paletteIndigo30: var(--palette_indigo_30);
+    --lwc-paletteIndigo40: var(--palette_indigo_40);
+    --lwc-paletteIndigo50: var(--palette_indigo_50);
+    --lwc-paletteIndigo60: var(--palette_indigo_60);
+    --lwc-paletteIndigo65: var(--palette_indigo_65);
+    --lwc-paletteIndigo70: var(--palette_indigo_70);
+    --lwc-paletteIndigo80: var(--palette_indigo_80);
+    --lwc-paletteIndigo90: var(--palette_indigo_90);
+    --lwc-paletteIndigo95: var(--palette_indigo_95);
+
+    /* Colors: Neutral */
+    --lwc-paletteNeutral00: var(--palette_neutral_00);
+    --lwc-paletteNeutral10: var(--palette_neutral_10);
+    --lwc-paletteNeutral15: var(--palette_neutral_15);
+    --lwc-paletteNeutral20: var(--palette_neutral_20);
+    --lwc-paletteNeutral30: var(--palette_neutral_30);
+    --lwc-paletteNeutral40: var(--palette_neutral_40);
+    --lwc-paletteNeutral50: var(--palette_neutral_50);
+    --lwc-paletteNeutral60: var(--palette_neutral_60);
+    --lwc-paletteNeutral65: var(--palette_neutral_65);
+    --lwc-paletteNeutral70: var(--palette_neutral_70);
+    --lwc-paletteNeutral80: var(--palette_neutral_80);
+    --lwc-paletteNeutral90: var(--palette_neutral_90);
+    --lwc-paletteNeutral95: var(--palette_neutral_95);
+    --lwc-paletteNeutral100: var(--palette_neutral_100);
+
+    /* Colors: Orange */
+    --lwc-paletteOrange10: var(--palette_orange_10);
+    --lwc-paletteOrange15: var(--palette_orange_15);
+    --lwc-paletteOrange20: var(--palette_orange_20);
+    --lwc-paletteOrange30: var(--palette_orange_30);
+    --lwc-paletteOrange40: var(--palette_orange_40);
+    --lwc-paletteOrange50: var(--palette_orange_50);
+    --lwc-paletteOrange60: var(--palette_orange_60);
+    --lwc-paletteOrange65: var(--palette_orange_65);
+    --lwc-paletteOrange70: var(--palette_orange_70);
+    --lwc-paletteOrange80: var(--palette_orange_80);
+    --lwc-paletteOrange90: var(--palette_orange_90);
+    --lwc-paletteOrange95: var(--palette_orange_95);
+
+    /* Colors: Pink */
+    --lwc-palettePink10: var(--palette_pink_10);
+    --lwc-palettePink15: var(--palette_pink_15);
+    --lwc-palettePink20: var(--palette_pink_20);
+    --lwc-palettePink30: var(--palette_pink_30);
+    --lwc-palettePink40: var(--palette_pink_40);
+    --lwc-palettePink50: var(--palette_pink_50);
+    --lwc-palettePink60: var(--palette_pink_60);
+    --lwc-palettePink65: var(--palette_pink_65);
+    --lwc-palettePink70: var(--palette_pink_70);
+    --lwc-palettePink80: var(--palette_pink_80);
+    --lwc-palettePink90: var(--palette_pink_90);
+    --lwc-palettePink95: var(--palette_pink_95);
+
+    /* Colors: Purple */
+    --lwc-palettePurple10: var(--palette_purple_10);
+    --lwc-palettePurple15: var(--palette_purple_15);
+    --lwc-palettePurple20: var(--palette_purple_20);
+    --lwc-palettePurple30: var(--palette_purple_30);
+    --lwc-palettePurple40: var(--palette_purple_40);
+    --lwc-palettePurple50: var(--palette_purple_50);
+    --lwc-palettePurple60: var(--palette_purple_60);
+    --lwc-palettePurple65: var(--palette_purple_65);
+    --lwc-palettePurple70: var(--palette_purple_70);
+    --lwc-palettePurple80: var(--palette_purple_80);
+    --lwc-palettePurple90: var(--palette_purple_90);
+    --lwc-palettePurple95: var(--palette_purple_95);
+
+    /* Colors: Red */
+    --lwc-paletteRed10: var(--palette_red_10);
+    --lwc-paletteRed15: var(--palette_red_15);
+    --lwc-paletteRed20: var(--palette_red_20);
+    --lwc-paletteRed30: var(--palette_red_30);
+    --lwc-paletteRed40: var(--palette_red_40);
+    --lwc-paletteRed50: var(--palette_red_50);
+    --lwc-paletteRed60: var(--palette_red_60);
+    --lwc-paletteRed65: var(--palette_red_65);
+    --lwc-paletteRed70: var(--palette_red_70);
+    --lwc-paletteRed80: var(--palette_red_80);
+    --lwc-paletteRed90: var(--palette_red_90);
+    --lwc-paletteRed95: var(--palette_red_95);
+
+    /* Colors: Teal */
+    --lwc-paletteTeal10: var(--palette_teal_10);
+    --lwc-paletteTeal15: var(--palette_teal_15);
+    --lwc-paletteTeal20: var(--palette_teal_20);
+    --lwc-paletteTeal30: var(--palette_teal_30);
+    --lwc-paletteTeal40: var(--palette_teal_40);
+    --lwc-paletteTeal50: var(--palette_teal_50);
+    --lwc-paletteTeal60: var(--palette_teal_60);
+    --lwc-paletteTeal65: var(--palette_teal_65);
+    --lwc-paletteTeal70: var(--palette_teal_70);
+    --lwc-paletteTeal80: var(--palette_teal_80);
+    --lwc-paletteTeal90: var(--palette_teal_90);
+    --lwc-paletteTeal95: var(--palette_teal_95);
+
+    /* Colors: Violet */
+    --lwc-paletteViolet10: var(--palette_violet_10);
+    --lwc-paletteViolet15: var(--palette_violet_15);
+    --lwc-paletteViolet20: var(--palette_violet_20);
+    --lwc-paletteViolet30: var(--palette_violet_30);
+    --lwc-paletteViolet40: var(--palette_violet_40);
+    --lwc-paletteViolet50: var(--palette_violet_50);
+    --lwc-paletteViolet60: var(--palette_violet_60);
+    --lwc-paletteViolet65: var(--palette_violet_65);
+    --lwc-paletteViolet70: var(--palette_violet_70);
+    --lwc-paletteViolet80: var(--palette_violet_80);
+    --lwc-paletteViolet90: var(--palette_violet_90);
+    --lwc-paletteViolet95: var(--palette_violet_95);
+
+    /* Colors: Yellow */
+    --lwc-paletteYellow10: var(--palette_yellow_10);
+    --lwc-paletteYellow15: var(--palette_yellow_15);
+    --lwc-paletteYellow20: var(--palette_yellow_20);
+    --lwc-paletteYellow30: var(--palette_yellow_30);
+    --lwc-paletteYellow40: var(--palette_yellow_40);
+    --lwc-paletteYellow50: var(--palette_yellow_50);
+    --lwc-paletteYellow60: var(--palette_yellow_60);
+    --lwc-paletteYellow65: var(--palette_yellow_65);
+    --lwc-paletteYellow70: var(--palette_yellow_70);
+    --lwc-paletteYellow80: var(--palette_yellow_80);
+    --lwc-paletteYellow90: var(--palette_yellow_90);
+    --lwc-paletteYellow95: var(--palette_yellow_95);
+
+    /* Background Color */
+    --lwc-colorBackground: var(--palette_gray_3);
+    --lwc-colorBackgroundAlt: var(--white);
+    --lwc-colorBackgroundAltInverse: var(--palette_blue_20);
+    --lwc-colorBackgroundBackdrop: var(--white_transparent_75);
+    --lwc-colorBackgroundBackdropTint: var(--palette_gray_2);
+    --lwc-colorBackgroundCustomer: var(--palette_orange_70);
+    --lwc-colorBackgroundDark: var(--palette_gray_4);
+    --lwc-colorBackgroundDestructive: var(--palette_red_40);
+    --lwc-colorBackgroundDestructiveActive: var(--palette_red_30);
+    --lwc-colorBackgroundDestructiveHover: var(--palette_red_40);
+    --lwc-colorBackgroundError: var(--palette_red_60);
+    --lwc-colorBackgroundErrorDark: var(--palette_red_40);
+    --lwc-colorBackgroundHighlight: var(--lemon_chiffon);
+    --lwc-colorBackgroundHighlightSearch: var(--gorse);
+    --lwc-colorBackgroundImageOverlay: var(--black_transparent_60);
+    --lwc-colorBackgroundInfo: var(--palette_gray_9);
+    --lwc-colorBackgroundInputCheckboxDisabled: var(--palette_gray_5);
+    --lwc-colorBackgroundInputDisabled: var(--palette_gray_4);
+    --lwc-colorBackgroundInverse: var(--palette_blue_10);
+    --lwc-colorBackgroundInverseLight: var(--palette_blue_20);
+    --lwc-colorBackgroundLight: var(--palette_gray_1);
+    --lwc-colorBackgroundNotificationNew: var(--palette_gray_3);
+    --lwc-colorBackgroundOffline: var(--palette_gray_11);
+    --lwc-colorBackgroundPost: var(--palette_gray_3);
+    --lwc-colorBackgroundRowActive: var(--palette_gray_4);
+    --lwc-colorBackgroundRowHover: var(--palette_gray_3);
+    --lwc-colorBackgroundRowNew: var(--palette_green_90);
+    --lwc-colorBackgroundScrollbar: var(--palette_gray_4);
+    --lwc-colorBackgroundScrollbarTrack: var(--palette_gray_6);
+    --lwc-colorBackgroundSelection: var(--palette_blue_90);
+    --lwc-colorBackgroundSpinnerDot: var(--palette_gray_7);
+    --lwc-colorBackgroundStencil: var(--palette_gray_3);
+    --lwc-colorBackgroundStencilAlt: var(--palette_gray_4);
+    --lwc-colorBackgroundSuccess: var(--palette_green_70);
+    --lwc-colorBackgroundSucessDark: var(--palette_green_50);
+    --lwc-colorBackgroundSucessDarker: var(--palette_green_30);
+    --lwc-colorBackgroundToast: var(--palette_gray_9);
+    --lwc-colorBackgroundToggle: var(--palette_gray_7);
+    --lwc-colorBackgroundToggleDisabled: var(--palette_gray_7);
+    --lwc-colorBackgroundToggleHover: var(--palette_gray_8);
+    --lwc-colorBackgroundWarning: var(--palette_orange_70);
+    --lwc-colorBackgroundWarningDark: var(--palette_orange_70);
+    --lwc-colorBrand: var(--palette_blue_60);
+    --lwc-colorBrandDark: var(--palette_blue_50);
+    --lwc-colorBrandDarker: var(--palette_blue_30);
+    --lwc-colorPickerSliderThumbColorBackground: var(--palette_gray_3);
+    --lwc-pageHeaderColorBackground: var(--palette_gray_3);
+    /* --lwc-popoverWalkthroughAltImage: var() */
+    --lwc-popoverWalkthroughAltNubbinColorBackground: var(--palette_blue_50);
+    --lwc-popoverWalkthroughColorBackground: var(--palette_blue_10);
+    --lwc-popoverWalkthroughColorBackgroundAlt: var(--palette_blue_50);
+    --lwc-popoverWalkthroughHeaderColorBackground: var(--palette_blue_20);
+    --lwc-progressColorBackgroundShade: var(--palette_gray_3);
+    --lwc-progressColorBorderShade: var(--palette_gray_3);
+    --lwc-tableColorBackgroundHeader: var(--palette_gray_2);
+    --lwc-tabelColorBackgroundHeaderHover: var(--palette_gray_1);
+
+    /* Text Color */
+    --lwc-colorTextActionLabel: var(--palette_gray_11);
+    --lwc-colorTextActionLabelActive: var(--palette_gray_13);
+    --lwc-colorTextBrand: var(--lwc-paletteBlue60);
+    --lwc-colorTextBrandPrimary: var(--white);
+    --lwc-colorTextButtonDefaultDisabled: var(--palette_gray_5);
+    --lwc-colorTextButtonDefaultHint: var(--palette_gray_7);
+    --lwc-colorTextButtonInverse: var(--palette_gray_4);
+    --lwc-colorTextCustomer: var(--lwc-paletteOrange70);
+    --lwc-colorTextDefault: var(--palette_gray_13);
+    --lwc-colorTextDestructive: var(--lwc-paletteRed50);
+    --lwc-colorTextDestructiveHover: var(--lwc-paletteRed40);
+    --lwc-colorTextError: var(--lwc-paletteRed50);
+    --lwc-colorTextIconDefault: var(--palette_gray_9);
+    --lwc-colorTextIconDefaultDisabled: var(--palette_gray_5);
+    --lwc-colorTextIconDefaultHint: var(--palette_gray_7);
+    --lwc-colorTextIconInverse: var(--palette_gray_1);
+    --lwc-colorTextIconInverseActive: var(--palette_gray_1);
+    --lwc-colorTextIconInverseHover: var(--palette_gray_1);
+    --lwc-colorTextInputDisabled: var(--palette_gray_11);
+    --lwc-colorTextInputIcon: var(--palette_gray_7);
+    --lwc-colorTextInverse: var(--white);
+    --lwc-colorTextInverseWeak: var(--palette_gray_7);
+    --lwc-colorTextLabel: var(--palette_gray_11);
+    --lwc-colorTextLink: var(--lwc-brandTextLink);
+    --lwc-colorTextLinkActive: var(--lwc-paletteBlue20);
+    --lwc-colorTextLinkDisabled: var(--lwc-paletteBlue20);
+    --lwc-colorTextLinkFocus: var(--lwc-paletteBlue30);
+    --lwc-colorTextLinkHover: var(--lwc-brandTextLinkActive);
+    --lwc-colorTextLinkInverse: var(--white);
+    --lwc-colorTextLinkInverseActive: var(--white_transparent_50);
+    --lwc-colorTextLinkInverseDisabled: var(--white_transparent_15);
+    --lwc-colorTextLinkInverseHover: var(--white_transparent_75);
+    --lwc-colorTextPlaceholder: var(--palette_gray_9);
+    --lwc-colorTextPlaceholderInverse: var(--palette_gray_4);
+    --lwc-colorTextRequired: var(--lwc-paletteRed50);
+    --lwc-colorTextSuccess: var(--lwc-paletteGreen50);
+    --lwc-colorTextSuccessInverse: var(--lwc-paletteGreen70);
+    --lwc-colorTextTabLabel: var(--palette_gray_12);
+    --lwc-colorTextTabLabelDisabled: var(--palette_gray_4);
+    --lwc-colorTextToggleDisabled: var(--palette_gray_5);
+    --lwc-colorTextWarning: var(--lwc-paletteOrange70);
+    --lwc-colorTextWarningAlt: var(--lwc-paletteYellow40);
+    --lwc-colorTextWeak: var(--palette_gray_11);
+
+    /* Border Color */
+    --lwc-buttonColorBorderPrimary: var(--palette_gray_5);
+    --lwc-cardColorBorder: var(--palette_gray_5);
+    --lwc-cardFooterColorBorder: var(--palette_gray_5);
+    --lwc-colorBorder: var(--palette_gray_5);
+    --lwc-colorBorderBrand: var(--lwc-paletteBlue60);
+    --lwc-colorBorderBrandDark: var(--lwc-paletteBlue30);
+    --lwc-colorBorderButtonDefault: var(--palette_gray_5);
+    --lwc-colorBorderButtonFocusInverse: var(--palette_gray_4);
+    --lwc-colorBorderCustomer: var(--lwc-paletteOrange70);
+    --lwc-colorBorderDestructive: var(--lwc-paletteRed50);
+    --lwc-colorBorderDestructiveActive: var(--lwc-paletteRed30);
+    --lwc-colorBorderDestructiveHover: var(--lwc-paletteRed40);
+    --lwc-colorBorderError: var(--lwc-paletteRed50);
+    --lwc-colorBorderErrorAlt: var(--lwc-paletteRed70);
+    --lwc-colorBorderErrorDark: var(--lwc-paletteRed70);
+    --lwc-colorBorderInfo: var(--palette_gray_9);
+    --lwc-colorBorderInput: var(--palette_gray_5);
+    --lwc-colorBorderInputDisabled: var(--palette_gray_6);
+    --lwc-colorBorderInverse: var(--lwc-paletteBlue10);
+    --lwc-colorBorderLinkFocusInverse: var(--palette_gray_4);
+    --lwc-colorBorderOffline: var(--palette_gray_11);
+    --lwc-colorBorderReminder: var(--palette_gray_4);
+    --lwc-colorBorderRowSelected: var(--lwc-paletteBlue50);
+    --lwc-colorBorderRowSelectedHover: var(--lwc-paletteBlue60);
+    --lwc-colorBorderSelection: var(--lwc-paletteBlue50);
+    --lwc-colorBorderSelectionActive: var(--palette_gray_2);
+    --lwc-colorBorderSelectionHover: var(--lwc-paletteBlue60);
+    --lwc-colorBorderSeparator: var(--palette_gray_2);
+    --lwc-colorBorderSeparatorAlt: var(--palette_gray_5);
+    --lwc-colorBorderSeparatorAlt2: var(--palette_gray_6);
+    --lwc-colorBorderSeparatorInverse: var(--lwc-paletteBlue20);
+    --lwc-colorBorderSuccess: var(--lwc-paletteGreen80);
+    --lwc-colorBorderSuccessDark: var(--lwc-paletteGreen50);
+    --lwc-colorBorderWarning: var(--lwc-paletteOrange70);
+    --lwc-pageHeaderColorBorder: var(--palette_gray_5);
+    --lwc-pageHeaderJoinedColorBorder: var(--palette_gray_5);
+
+    /* Font */
+    --lwc-cardFontWeight: var(--lwc-fontWeightBold);
+    --lwc-fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'";
+    --lwc-fontFamilyHeading: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'";
+    --lwc-fontFamilyMonospace: "Consolas, Menlo, Monaco, Courier, monospace";
+    --lwc-fontWeightBold: 700;
+    --lwc-fontWeightRegular: 400;
+    --lwc-formLabelFontSize: 0.75rem;
+    --lwc-inputStaticFontSize: 0.875rem;
+    --lwc-inpuStaticFontWeight: var(--lwc-fontWeightRegular);
+    --lwc-pageHeaderTitleFontWeight: var(--lwc-fontWeightBold);
+    --lwc-tabsFontWeight: var(--lwc-fontWeightBold);
+
+    /* Font Size */
+    --lwc-fontSize1: 0.625rem;
+    --lwc-fontSize2: 0.75rem;
+    --lwc-fontSize3: 0.8125rem;
+    --lwc-fontSize4: 0.875rem;
+    --lwc-fontSize5: 1rem;
+    --lwc-fontSize6: 1.125rem;
+    --lwc-fontSize7: 1.25rem;
+    --lwc-fontSize8: 1.5rem;
+    --lwc-fontSize9: 1.75rem;
+    --lwc-fontSize10: 2rem;
+    --lwc-fontSize11: 2.625rem;
+    --lwc-varFontSize1: 0.625rem;
+    --lwc-varFontSize2: 0.75rem;
+    --lwc-varFontSize3: 0.8125rem;
+    --lwc-varFontSize4: 0.875rem;
+    --lwc-varFontSize5: 1rem;
+    --lwc-varFontSize6: 1.125rem;
+    --lwc-varFontSize7: 1.25rem;
+    --lwc-varFontSize8: 1.5rem;
+    --lwc-varFontSize9: 1.75rem;
+    --lwc-varFontSize10: 2rem;
+    --lwc-varFontSize11: 2.625rem;
+
+    /* Opacity */
+    --lwc-opacity5: 0.5;
+    --lwc-opacity8: 0.8;
+
+    /* Line Height */
+    --lwc-lineHeightHeading: 1.25;
+    --lwc-lineHeightReset: 1;
+    --lwc-lineHeightText: 1.5;
+    --lwc-varLineHeightText: 1.5;
+
+    /* Spacing */
+    --lwc-spacingNone: 0;
+    --lwc-spacingLarge: 1.5rem;
+    --lwc-spacingMedium: 1rem;
+    --lwc-spacingSmall: 0.75rem;
+    --lwc-spacingXLarge: 2rem;
+    --lwc-spacingXSmall: 0.5rem;
+    --lwc-spacingXxLarge: 3rem;
+    --lwc-spacingXxSmall: 0.25rem;
+    --lwc-spacingXxxSmall: 0.125rem;
+    --lwc-tableCellSpacing: var(--lwc-spacingXxSmall) var(--lwc-spacingXSmall);
+    --lwc-templateGutters: var(--lwc-spacingSmall);
+    --lwc-templateProfileGutters: 8rem var(--lwc-spacingSmall) var(--lwc-spacingSmall);
+    --lwc-varSpacingHorizontalLarge: var(--lwc-spacingLarge);
+    --lwc-varSpacingHorizontalMedium: var(--lwc-spacingMedium);
+    --lwc-varSpacingHorizontalSmall: var(--lwc-spacingSmall);
+    --lwc-varSpacingHorizontalXLarge: var(--lwc-spacingXLarge);
+    --lwc-varSpacingHorizontalXSmall: var(--lwc-spacingXSmall);
+    --lwc-varSpacingHorizontalXxLarge: var(--lwc-spacingXxLarge);
+    --lwc-varSpacingHorizontalXxSmall: var(--lwc-spacingXxSmall);
+    --lwc-varSpacingHorizontalXxxSmall: var(--lwc-spacingXxxSmall);
+    --lwc-varSpacingLarge: var(--lwc-spacingLarge);
+    --lwc-varSpacingMedium: var(--lwc-spacingMedium);
+    --lwc-varSpacingSmall: var(--lwc-spacingSmall);
+    --lwc-varSpacingVerticalLarge: var(--lwc-spacingLarge);
+    --lwc-varSpacingVerticalMedium: var(--lwc-spacingMedium);
+    --lwc-varSpacingVerticalSmall: var(--lwc-spacingSmall);
+    --lwc-varSpacingVerticalXLarge: var(--lwc-spacingXLarge);
+    --lwc-varSpacingVerticalXSmall: var(--lwc-spacingXSmall);
+    --lwc-varSpacingVerticalXxLarge: var(--lwc-spacingXxLarge);
+    --lwc-varSpacingVerticalXxSmall: var(--lwc-spacingXxSmall);
+    --lwc-varSpacingVerticalXxxSmall: var(--lwc-spacingXxxSmall);
+    --lwc-varSpacingXLarge: var(--lwc-spacingXLarge);
+    --lwc-varSpacingXSmall: var(--lwc-spacingXSmall);
+    --lwc-varSpacingXxLarge: var(--lwc-spacingXxLarge);
+    --lwc-varSpacingXxSmall: var(--lwc-spacingXxSmall);
+    --lwc-varSpacingXxxSmall: var(--lwc-spacingXxxSmall);
+
+    /* Radius */
+    --lwc-borderRadiusCircle: 50%;
+    --lwc-borderRadiusLarge: 0.5rem;
+    --lwc-borderRadiusMedium: 0.25rem;
+    --lwc-borderRadiusSmall: 0.125rem;
+    --lwc-pageHeaderBorderRadius: var(--lwc-borderRadiusMedium);
+    --lwc-tableBorderRadius: 0 0 var(--lwc-borderRadiusMedium) var(--lwc-borderRadiusMedium);
+
+    /* Sizing */
+    --lwc-heightHeader: 3.125rem;
+    --lwc-sizeLarge: 25rem;
+    --lwc-sizeMedium: 20rem;
+    --lwc-sizeSmall: 15rem;
+    --lwc-sizeXLarge: 40rem;
+    --lwc-sizeXSmall: 12rem;
+    --lwc-sizeXxLarge: 60rem;
+    --lwc-sizeXxSmall: 6rem;
+    --lwc-sizeXxxSmall: 3rem;
+    --lwc-squareIconLargeBoundary: 3rem;
+    --lwc-squareIconLargeBoundaryAlt: 5rem;
+    --lwc-squareIconLargeContent: 2rem;
+    --lwc-squareIconMedium: 2rem;
+    --lwc-squareIconMediumBoundary: 2rem;
+    --lwc-squareIconMediumBoundaryAlt: 2.25rem;
+    --lwc-squareIconMediumContent: 1rem;
+    --lwc-squareIconMediumContentAlt: 0.875rem;
+    --lwc-squareIconSmallBoundary: 1.5rem;
+    --lwc-squareIconSmallContent: 0.75rem;
+    --lwc-squareIconUtilityLarge: 1.5rem;
+    --lwc-squareIconUtilityMedium: 1.25rem;
+    --lwc-squareIconUtilitySmall: 1rem;
+    --lwc-squareIconXSmallBoundary: 1.25rem;
+    --lwc-squareIconXSmallContent: 0.5rem;
+    --lwc-squareIconXxSmallBoundary: 1rem;
+    --lwc-squareIconMediumBoundary: 2rem;
+
+    /* Shadow */
+    --lwc-cardShadow: 0 2px 2px 0 var(--black_transparent_10);
+    --lwc-pageHeaderShadow: 0 2px 2px 0 var(--black_transparent_10);
+    --lwc-shadowActive: 0 0 2px var(--lwc-brandAccessible);
+    --lwc-shadowDrag: 0 2px 4px 0 var(--black_transparent_40);
+    --lwc-shadowDropDown: 0 2px 3px 0 var(--black_transparent_16);
+
+    /* Time */
+    --lwc-durationImmediately: 0.05s;
+    --lwc-durationInstantly: 0s;
+    --lwc-durationPaused: 3.2s;
+    --lwc-durationPromptly: 0.2s;
+    --lwc-durationQuickly: 0.1s;
+    --lwc-durationSlowly: 0.4s;
+
+    /* Touch */
+    --lwc-heightTappable: 2.75rem;
+    --lwc-heightTappableSmall: 2rem;
+    --lwc-squareTappable: 2.75rem;
+    --lwc-squareTappableSmall: 2rem;
+    --lwc-squareTappableXSmall: 1.5rem;
+    --lwc-squareTappableXxSmall: 1.25rem;
+
+    /* Media Query */
+    --lwc-mqLarge: only screen and (min-width: 64.0625em);
+    --lwc-mqMedium: only screen and (min-width: 48em);
+    --lwc-mqMediumLandscape: only screen and (min-width: 48em) and (min-aspect-ratio: 4/3);
+    --lwc-mqSmall: only screen and (max-width: 47.9375em);
+
+    /* Z-index */
+    --lwc-zIndexDeepdive: -99999;
+    --lwc-zIndexDefault: 1;
+    --lwc-zIndexDialog: 6000;
+    --lwc-zIndexDocked: 4;
+    --lwc-zIndexDropdown: 7000;
+    --lwc-zIndexModal: 9000;
+    --lwc-zIndexOverlay: 8000;
+    --lwc-zIndexPopup: 5000;
+    --lwc-zIndexReminder: 8500;
+    --lwc-zIndexSpinner: 9050;
+    --lwc-zIndexSticky: 100;
+    --lwc-zIndexToast: 10000;
+}
+
+.viewport {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+    z-index: 1;
+}

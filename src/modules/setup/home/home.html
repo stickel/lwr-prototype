@@ -1,0 +1,41 @@
+<template>
+    <setup-page-header
+        breadcrumb-is-link="false"
+        header-icon="standard:home"
+        page-title="Home">
+        <div class="slds-media__figure slds-media__figure_reverse slds-m-right_none">
+                <lightning-button-menu
+                    class="fix-me fix__slds-button_icon-border-filled"
+                    label="Create"
+                    menu-alignment="auto"
+                    variant="border-filled">
+                    <lightning-menu-item
+                        label="User">
+                    </lightning-menu-item>
+                    <lightning-menu-item
+                        label="Multiple Users">
+                    </lightning-menu-item>
+                    <lightning-menu-item
+                        label="Custom Object">
+                    </lightning-menu-item>
+                    <lightning-menu-item
+                        label="Custom Tab">
+                    </lightning-menu-item>
+                    <lightning-menu-item
+                        label="Email Template">
+                    </lightning-menu-item>
+                    <lightning-menu-item
+                        label="Workflow Process">
+                    </lightning-menu-item>
+                </lightning-button-menu>
+            </div>
+    </setup-page-header>
+
+    <!-- page content -->
+    <div class="setupcontent">
+        <div class="container">
+            This is the setup home page.
+        </div>
+    </div>
+    <!-- /END page content -->
+</template>

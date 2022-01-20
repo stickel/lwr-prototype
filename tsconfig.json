@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "declaration": true,
+        "sourceMap": true,
+        "declarationMap": true,
+        "esModuleInterop": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "composite": true,
+        "target": "ES2020",
+        "skipLibCheck": true,
+        "baseUrl": "src",
+        "rootDir": ".",
+        "outDir": "build",
+        "paths": {
+            "setup/router": ["modules/setup/router/router.ts"],
+            "setup/home": ["modules/setup/home/home.ts"],
+            "setup/homePageHandler": ["modules/setup/homePageHandler/homePageHandler.ts"],
+            "setup/namedPageHandler": ["modules/setup/namedPageHandler/namedPageHandler.ts"],
+            "setup/navigation": ["modules/setup/navigation/navigation.ts"],
+            "setup/navSection": ["modules/setup/navSection/navSection.ts"],
+            "setup/navItem": ["modules/setup/navItem/navItem.ts"],
+            "setup/pageHeader": ["modules/setup/pageHeader/pageHeader.ts"],
+            "lwr/router": ["../node_modules/@lwrjs/router/build/modules/lwr/router/router.d.ts"],
+            "lwr/routerUtils": ["../node_modules/@lwrjs/router/build/modules/lwr/routerUtils/routerUtils.d.ts"],
+            "lwr/navigation": ["../node_modules/@lwrjs/router/build/modules/lwr/navigation/navigation.d.ts"],
+            "lwr/navigationContext": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationContext/navigationContext.d.ts"],
+            "lwr/navigationService": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationService/navigationService.d.ts"],
+        }
+    },
+    "include": [
+        "./src/modules/**/*.json",
+        "./src/modules/**/**/*.json"
+    ],
+    "exclude": [
+        "node_modules/**",
+        "**/__tests__/**",
+        "**/build/**",
+        "**/cjs/**",
+        "build"
+    ]
+}
