@@ -1,4 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track } from "lwc";
 import { createSetupRouter } from "setup/router";
 import { NAV_ITEMS } from "./mainNavigationItems";
 import { ADMIN_NAV } from "./adminNavigationItems";
@@ -12,7 +12,7 @@ export default class SetupApp extends LightningElement {
     // platformNavItems = PLATFORM_NAV;
     // settingsNavItems = SETTINGS_NAV;
 
-    navItems = [];
+    @track navItems?: any;
 
     async connectedCallback(): Promise<void> {
         this.navItems = [
@@ -43,7 +43,7 @@ export default class SetupApp extends LightningElement {
     }
 
     onViewChange(viewChangeEvent: CustomEvent): void {
-        const view = viewChangeEvent.detail;
+        // const view = viewChangeEvent.detail;
         // console.log(`new view comp.: ${view}`);
     }
 

@@ -36,6 +36,13 @@
 	line-height: var(--slds-lineHeightHeading);
 }
 
+.setup-header-subhead {
+	padding-top: var(--slds-spacingXSmall);
+	font-size: var(--slds-fontSize2);
+	font-weight: var(--slds-fontWeightLight);
+}
+
+/* fixing the border buttons on the right side of the header */
 .fix-me.fix__slds-button_icon-border-filled {
     padding-left: var(--slds-spacingMedium);
     padding-right: var(--slds-spacingMedium);

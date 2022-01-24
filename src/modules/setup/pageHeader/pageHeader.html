@@ -15,6 +15,9 @@
                         <h1>
                             <span class="breadcrumb-detail">{pageTitle}</span>
                         </h1>
+                        <template if:true={hasDescription}>
+                            <p class="setup-header-subhead">{description}</p>
+                        </template>
                     </template>
                     <template if:false={breadcrumbIsLink}>
                         <div class="setup-breadcrumbs">
