@@ -70,7 +70,10 @@
         {
             "id": "setup-named-page",
             "path": "/setup/:namedPage",
-            "rootComponent": "setup/app"
+            "rootComponent": "setup/app",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
         }
     ]
 }

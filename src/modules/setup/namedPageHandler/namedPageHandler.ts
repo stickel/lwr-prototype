@@ -22,11 +22,8 @@ export default class RecordPageHandler {
             case 'home':
                 viewGetter = (): Promise<Module> => import('setup/home');
                 break;
-            case 'serviceSetupAssistant':
-                viewGetter = (): Promise<Module> => import('setup/serviceSetupAssistant');
-                break;
             default:
-                return;
+                viewGetter = (): Promise<Module> => import(`setup/${attributes.pageName}`);
         }
 
         this.callback({
