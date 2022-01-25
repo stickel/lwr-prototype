@@ -8,7 +8,56 @@
     <!-- page content -->
     <div class="setupcontent">
         <div class="container">
-            This is the MFA assistant page.
+            <lightning-tabset variant="scoped">
+                <lightning-tab label="Get Ready">
+                    <lightning-layout
+                        class="slds-p-vertical_x-large slds-p-horizontal_x-large slds-border_bottom"
+                        horizontal-align="spread">
+                        <lightning-layout-item
+                            class="phase-description"
+                            size="7">
+                            Multi-factor authentication is required starting February 1, 2022. Use this assistant as your rollout hub. MFA helps safeguard Salesforce accounts by requiring users to prove their identity with multiple factors: their username and password combination, plus a verification method like an authenticator app or security key.
+                        </lightning-layout-item>
+                        <lightning-layout-item
+                            class="phase-image-container"
+                            size="1">
+                            <img src="/assets/mfaAssistant-discoverBanner.png" alt="" />
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-tab>
+                <lightning-tab label="Roll Out">
+                    <lightning-layout
+                        class="slds-p-vertical_x-large slds-p-horizontal_x-large slds-border_bottom"
+                        horizontal-align="spread">
+                        <lightning-layout-item
+                            class="phase-description"
+                            size="7">
+                            Get ready to roll out MFA. Prepare your users and kick off your implementation and test plan. Then go live!
+                        </lightning-layout-item>
+                        <lightning-layout-item
+                            class="phase-image-container"
+                            size="1">
+                            <img src="/assets/mfaAssistant-rolloutBanner.png" alt="" />
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-tab>
+                <lightning-tab label="Manage">
+                    <lightning-layout
+                        class="slds-p-vertical_x-large slds-p-horizontal_x-large slds-border_bottom"
+                        horizontal-align="spread">
+                        <lightning-layout-item
+                            class="phase-description"
+                            size="7">
+                            Ensure that your users are adopting MFA and getting the support they need. Now is also a good time to optimize your MFA implementation and overall security for Salesforce.
+                        </lightning-layout-item>
+                        <lightning-layout-item
+                            class="phase-image-container"
+                            size="1">
+                            <img src="/assets/mfaAssistant-manageBanner.png" alt="" />
+                        </lightning-layout-item>
+                    </lightning-layout>
+                </lightning-tab>
+            </lightning-tabset>
         </div>
     </div>
     <!-- /END page content -->

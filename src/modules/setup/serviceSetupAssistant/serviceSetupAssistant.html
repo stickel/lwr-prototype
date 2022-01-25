@@ -8,7 +8,69 @@
     <!-- page content -->
     <div class="setupcontent">
         <div class="container">
-            This is the setup service assistant page.
+            <lightning-card>
+                <header slot="title">
+                    <div class="ssa-banner-background">
+                        <span class="slds-m-left_medium ssa-title_banner">Welcome to Service</span>
+                    </div>
+                </header>
+                <article class="slds-m-vertical_medium slds-p-horizontal_medium ssa-body">
+                    <h2 class="slds-text-heading_medium slds-m-bottom_medium">We'll Set Up Service Cloud for You</h2>
+                    <div class="slds-grid">
+                        <div class="slds-media__body">
+                            <div class="slds-grid slds-m-bottom_x-small">
+                                <h3 class="ssa-title">Turn on your Service app</h3>
+                                <lightning-badge class="slds-m-left_medium"
+                                    icon-name="utility:clock"
+                                    label="This process may take a few minutes">
+                                </lightning-badge>
+                            </div>
+                            <p>Start helping your customers today. The Service Setup Assistant creates a ready-to-use Service Cloud app that can be customized for your team.</p>
+                            <p>After you turn it on, the Assistant remains on and periodically provides more setup help. It doesn‘t overwrite any of your existing configurations.</p>
+                        </div>
+                    </div>
+                    <div class="slds-border_top slds-m-top_large slds-m-bottom_large"></div>
+                    <div class="slds-grid">
+                        <div class="slds-media__body">
+                            <div class="slds-grid slds-m-bottom_x-small slds-size_3-of-4">
+                                <h3 class="ssa-title">We're building a Service app for you</h3>
+                            </div>
+                            <p class="slds-size_3-of-5">
+                                Click Check Status to track its progress. When it’s ready, click Get Started to personalize your app.
+                            </p>
+                        </div>
+                        <div class="slds-media__figure slds-m-left_xx-large">
+                            <div class="slds-m-bottom_x-small slds-m-left_medium">
+                                Status: <b><span class="slds-text-color_success">Ready</span></b>
+                            </div>
+                            <lightning-button
+                                variant="brand"
+                                label="Get Started">
+                            </lightning-button>
+                        </div>
+                    </div>
+                    <ul class="slds-has-dividers_top-space slds-m-top_small slds-size_4-of-5">
+                        <li class="slds-m-top_small">
+                            <span class="slds-m-left_x-small">
+                                <b>Optimize Communication:</b>
+                                Automatically route customer questions to the right service agent for the job. Help agents share knowledge and customers find answers with a help center and simple Knowledge setup.
+                            </span>
+                        </li>
+                        <li class="slds-m-top_small">
+                            <span class="slds-m-left_x-small">
+                                <b>Grow Your Team:</b>
+                                Quickly add your agents to a personalized console that provides all the info and tools they need.
+                            </span>
+                        </li>
+                        <li class="slds-m-top_small">
+                            <span class="slds-m-left_x-small">
+                                <b>Increase Productivity:</b>
+                                Close cases quickly with macros and productivity tools. Automate your processes with pre-built flows and Lightning email templates, and give agents quick text responses to common questions.
+                            </span>
+                        </li>
+                    </ul>
+                </article>
+            </lightning-card>
         </div>
     </div>
     <!-- /END page content -->

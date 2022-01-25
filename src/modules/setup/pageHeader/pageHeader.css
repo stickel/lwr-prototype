@@ -9,6 +9,12 @@
     padding: 7px;
 }
 
+.setup-header-subhead {
+	padding-top: var(--slds-spacingXSmall);
+	font-size: var(--slds-fontSize2);
+	font-weight: var(--slds-fontWeightLight);
+}
+
 .branding-setup {
 	margin-bottom: 0.75rem;
 }
@@ -34,12 +40,6 @@
 	font-weight: var(--slds-fontWeightBold);
 	font-size: var(--slds-fontSize7);
 	line-height: var(--slds-lineHeightHeading);
-}
-
-.setup-header-subhead {
-	padding-top: var(--slds-spacingXSmall);
-	font-size: var(--slds-fontSize2);
-	font-weight: var(--slds-fontWeightLight);
 }
 
 /* fixing the border buttons on the right side of the header */
