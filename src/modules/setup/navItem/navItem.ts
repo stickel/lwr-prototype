@@ -6,11 +6,11 @@ import type { PageReference } from 'lwr/router';
 export interface NavData {
     name: string;
     label: string;
-    href?: string;
-    disabled?: boolean;
-    expanded?: boolean;
-    items?: [];
-    pageReference: PageReference;
+    href?: string | null;
+    disabled?: boolean | false;
+    expanded?: boolean | false;
+    items?: any;
+    pageReference?: PageReference;
 }
 
 export default class NavItem extends LightningElement {
@@ -24,7 +24,6 @@ export default class NavItem extends LightningElement {
     @api pageReference?: PageReference;
     @api label?: string;
     @api hasChildren?: boolean;
-    // @api children?: NavData[];
 
     @api
     get selected(): boolean {
@@ -66,6 +65,7 @@ export default class NavItem extends LightningElement {
     constructor() {
         super();
         this.label = '';
+        this._children = [];
     }
 
     async connectedCallback(): Promise<void> {

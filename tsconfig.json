@@ -14,17 +14,28 @@
         "target": "ES2020",
         "skipLibCheck": true,
         "baseUrl": "src",
-        "rootDir": ".",
+        "rootDir": "src",
         "outDir": "build",
         "paths": {
+            // TODO: would be great if this worked. :|
+            // "@setup/*": ["modules/setup/*"],
+            // In the meantime...
+            // Modules for the routes
             "setup/router": ["modules/setup/router/router.ts"],
             "setup/home": ["modules/setup/home/home.ts"],
             "setup/homePageHandler": ["modules/setup/homePageHandler/homePageHandler.ts"],
             "setup/namedPageHandler": ["modules/setup/namedPageHandler/namedPageHandler.ts"],
             "setup/navigation": ["modules/setup/navigation/navigation.ts"],
-            "setup/navSection": ["modules/setup/navSection/navSection.ts"],
             "setup/navItem": ["modules/setup/navItem/navItem.ts"],
             "setup/pageHeader": ["modules/setup/pageHeader/pageHeader.ts"],
+            "setup/mfaAssistant": ["modules/setup/mfaAssistant/mfaAssistant.ts"],
+            "setup/releastUpdates": ["modules/setup/releastUpdates/releastUpdates.ts"],
+            "setup/lexTransitionAssistant": ["modules/setup/lexTransitionAssistant/lexTransitionAssistant.ts"],
+            "setup/mobileQuickstart": ["modules/setup/mobileQuickstart/mobileQuickstart.ts"],
+            "setup/lightningUsage": ["modules/setup/lightningUsage/lightningUsage.ts"],
+            "setup/optimizer": ["modules/setup/optimizer/optimizer.ts"],
+            // "setup/": ["modules/setup//.ts"],
+            // Base LWR modules needed
             "lwr/router": ["../node_modules/@lwrjs/router/build/modules/lwr/router/router.d.ts"],
             "lwr/routerUtils": ["../node_modules/@lwrjs/router/build/modules/lwr/routerUtils/routerUtils.d.ts"],
             "lwr/navigation": ["../node_modules/@lwrjs/router/build/modules/lwr/navigation/navigation.d.ts"],
@@ -33,14 +44,13 @@
         }
     },
     "include": [
-        "./src/modules/**/*.json",
-        "./src/modules/**/**/*.json"
+        "src"
     ],
     "exclude": [
-        "node_modules/**",
-        "**/__tests__/**",
-        "**/build/**",
-        "**/cjs/**",
+        // "node_modules/**",
+        // "**/__tests__/**",
+        // "**/build/**",
+        // "**/cjs/**",
         "build"
     ]
 }

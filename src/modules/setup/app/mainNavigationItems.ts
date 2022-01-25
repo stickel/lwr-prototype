@@ -27,7 +27,7 @@ export const NAV_ITEMS: NavData[] = [
     },
     {
         "name": "mfa-assistant",
-        "label": "Mutli-Factor Authentication Assistant",
+        "label": "Multi-Factor Authentication Assistant",
         "disabled": false,
         "expanded": false,
         "pageReference": {

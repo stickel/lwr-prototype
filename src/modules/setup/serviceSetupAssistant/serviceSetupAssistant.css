@@ -1,0 +1,37 @@
+:host {
+    --slds-c-card-footer-spacing-block-end: var(--slds-spacingXLarge);
+    --slds-c-card-spacing-inline-start: var(--slds-spacingMedium);
+}
+
+.ssa-body {
+    margin-top: 120px;
+}
+
+.ssa-title {
+    font-size: var(--slds-fontSize5);
+    font-weight: var(--slds-fontWeightBold);
+}
+
+.ssa-title_banner {
+    font-size: var(--slds-fontSize11);
+    text-transform: uppercase;
+    color: #051940;
+    font-family: 'Neutraface Display','Salesforce Sans';
+    position: relative;
+    top: calc(50% - 24px);
+    height: fit-content;
+}
+
+.ssa-banner-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("/assets/serviceSetupAssistant-banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 center;
+    height: 120px;
+    border-top-left-radius: var(--slds-borderRadiusMedium);
+    border-top-right-radius: var(--slds-borderRadiusMedium);
+}
