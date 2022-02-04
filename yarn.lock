@@ -646,152 +646,68 @@
     methods "^1.1.2"
     path-to-regexp "^6.1.0"
 
-"@locker/compiler@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/compiler/-/compiler-0.14.4.tgz#d5498e8edee21c3287c43ff8526ea5c8f264026e"
-  integrity sha512-kN1JmTUIipgtVgU0KjahUWQHFEzmilGq6PbuoaIrDapnuG15rgbXXTctaMPKE7wZCE/SAWvNJosRrxV9Bl9hhg==
+"@locker/compiler@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/compiler/-/compiler-0.14.19.tgz#4a433f465bc5841fae5d6f1c530682cbb5f28f6f"
+  integrity sha512-3nIu3QPpzav4IbdsDhGANb5Lpjwci7bM7m23j9rjK/Uxxggzq0defT2vrr5hOqHLNq88X4Vy+LOzUaCpfUa/0A==
 
-"@locker/distortion@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/distortion/-/distortion-0.14.4.tgz#6e53cc477184b71c815bc512c76d8abe2a8df3e8"
-  integrity sha512-u3GYh0x/NywoRhH32MzuwlHgZVElgR3q1x+cUVuqJ8+RJXLzpTZ0QSu9S1SAh2Zh9zgahvQD4C5GgsuYDHeqrA==
+"@locker/distortion@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/distortion/-/distortion-0.14.19.tgz#34093748464fe7c1328f64cf5e22eaee14542eec"
+  integrity sha512-NRyiSdKGx+R88FxlQ7PtFqOTw/U+vPyCrauk8L3LDWqkZSxrSP+mCv+39kANjJkwOQG9ljW79/iCSqkVz9BS1Q==
   dependencies:
-    "@locker/html-sanitizer" "0.14.4"
-    "@locker/instrumentation" "0.14.4"
-    "@locker/shared" "0.14.4"
-    "@locker/shared-dom" "0.14.4"
-    "@locker/shared-url" "0.14.4"
+    "@locker/html-sanitizer" "0.14.19"
+    "@locker/instrumentation" "0.14.19"
+    "@locker/shared" "0.14.19"
+    "@locker/shared-dom" "0.14.19"
+    "@locker/shared-url" "0.14.19"
 
-"@locker/distortion@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/distortion/-/distortion-0.14.7.tgz#fd3e7d97b51ee6d42a82042613e3f0abbbb6ab6f"
-  integrity sha512-r3CJ8QmuKzwIGcxWgz+Ocxw5KSasYYsP7UeXRIDs0YkQLaj1XsFwk0C5xlJvnQBdqOxs3YRKkf7AsVwT8GCy4g==
+"@locker/html-sanitizer@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/html-sanitizer/-/html-sanitizer-0.14.19.tgz#8db6992b2fbe5d86f151f0991834a65f55427437"
+  integrity sha512-NSR1d1ne5a3KMORO7L1/uOArTq5x4PLoY/bftx9iO2qxKreEafuizc5PqKu/S5MlvIJo6Cyr9en5cVRBjeAijA==
   dependencies:
-    "@locker/html-sanitizer" "0.14.7"
-    "@locker/instrumentation" "0.14.7"
-    "@locker/shared" "0.14.7"
-    "@locker/shared-dom" "0.14.7"
-    "@locker/shared-url" "0.14.7"
-
-"@locker/html-sanitizer@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/html-sanitizer/-/html-sanitizer-0.14.4.tgz#85cde5eb34920c2d48c35290988317a83b58045b"
-  integrity sha512-f/w8KIUWFwTaBKWnvzeT1GE9Wk1OUv+CdKSpbmh5/1Megpn1tqSrWLKQdYxDV1Qwa7eWrRwmXKK4KaySlQNhQQ==
-  dependencies:
-    "@locker/shared" "0.14.4"
-    "@locker/shared-dom" "0.14.4"
+    "@locker/shared" "0.14.19"
+    "@locker/shared-dom" "0.14.19"
     "@types/dompurify" "2.2.2"
     dompurify "2.2.9"
 
-"@locker/html-sanitizer@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/html-sanitizer/-/html-sanitizer-0.14.7.tgz#a6d5ad1e3a41058f4dcb6c638e656cdf58ae3d05"
-  integrity sha512-IVAUsu3wOzx2rjzk8EvLVrCGCuIGjC7b7xxleAuqLDYg6JBV4WHZxGtiYEFVV9q8ny5p2sZN0XqSPX3GPXRDBw==
+"@locker/instrumentation@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/instrumentation/-/instrumentation-0.14.19.tgz#ae4430f56f22efe797f012de56343d8034a361a8"
+  integrity sha512-J/ZSBffViXnGJaK/ySoTWPsYDXaeGP65VtWp8oREBs1CqonTer7KwiYuRUfiAYOD/uaWBXOdyt+VaXced5IXEw==
   dependencies:
-    "@locker/shared" "0.14.7"
-    "@locker/shared-dom" "0.14.7"
-    "@types/dompurify" "2.2.2"
-    dompurify "2.2.9"
+    "@locker/shared" "0.14.19"
 
-"@locker/instrumentation@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/instrumentation/-/instrumentation-0.14.4.tgz#bab3364f1c4254c31705ba2f14b49041c842cced"
-  integrity sha512-hmwL03LwtW8imvVDz0p51KCgsnaYS+5iD7y4NW/lJZ9yCKk+y2Niu6JMutGRgYEIQhPDCrH1fao5/X7VHrzwdw==
+"@locker/sandbox@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/sandbox/-/sandbox-0.14.19.tgz#e2a78bf2d5f53c39c0835b378a56d9354aa77186"
+  integrity sha512-Sr+9tu+EZQ8Gq14eEV4VoRrcMmWfrP+LPDYQbcV4PF911R3f77YH9OIMMptic57bKi3t69jKF1hDf/5As4uqZg==
   dependencies:
-    "@locker/shared" "0.14.4"
+    "@locker/distortion" "0.14.19"
+    "@locker/instrumentation" "0.14.19"
+    "@locker/shared" "0.14.19"
+    "@locker/shared-dom" "0.14.19"
 
-"@locker/instrumentation@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/instrumentation/-/instrumentation-0.14.7.tgz#b5af105d4f8fbce608fbac36d207a8d2ab6a9f28"
-  integrity sha512-bpECSGbsZX2AIPnJIgNpSICdu9CtAiAwEDxy8CSFwCzNx5wXdZc987BKHmRk0F+XVsEUGhyAApLCc56eSM0iwg==
+"@locker/shared-dom@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-dom/-/shared-dom-0.14.19.tgz#e93756f16e8234bca02c7220cab7484e60315bff"
+  integrity sha512-kQnfNCRxA2IeU1CiQfBHuGYCeEoBTrlHj5MLyk2DFV7CxA91c4WM7gmcbYqvLuKCc4pCNxdB2Txll++FbCWbqA==
   dependencies:
-    "@locker/shared" "0.14.7"
+    "@locker/shared" "0.14.19"
 
-"@locker/near-membrane-base@0.6.1":
-  version "0.6.1"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/near-membrane-base/-/near-membrane-base-0.6.1.tgz#36ace171f8dc3879e508afb5f8a781e34173dec5"
-  integrity sha512-kwAbJKrbdXf+dgJ7W8ukbmpvu/Hhk3DkyJ5oWltw9+5jrZpygpe/aIIjYFqCksc3tNFkeQY/DFkhqfUgV1tyQw==
-
-"@locker/near-membrane-base@0.6.2":
-  version "0.6.2"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/near-membrane-base/-/near-membrane-base-0.6.2.tgz#dcce8c0fa298d4e05cc04167f3040b0dd42e15a5"
-  integrity sha512-cDo8qy0k06Fhczw2smEEuyRRU8SS1JC/u+1TSEKx6MZzKVDyO5vO5e9BVIQusuN8sr/3mDeupWK5jc61g86nng==
-
-"@locker/near-membrane-dom@0.6.1":
-  version "0.6.1"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/near-membrane-dom/-/near-membrane-dom-0.6.1.tgz#efca5ac0fb5a87347952aca155532cb6c1cb59ee"
-  integrity sha512-1SucO9guIRLVgmOG/AKaOP1SJfubVN4ef0brkAbZUpZKCwE0zcNIUIUpuAp+GokI0mEhgCwWFCUEsvwVGPJsgw==
+"@locker/shared-url@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-url/-/shared-url-0.14.19.tgz#d744867a8286ebe501998ef5d49fafdfc9b3b1e9"
+  integrity sha512-YTXhCn15kCZD6McTt9DlrZSadHBgOrKAab1h2yPFDE8+IzJxHNKyfjg0CI9n7guInN0ws1d/X6qZn0wp1CvK/Q==
   dependencies:
-    "@locker/near-membrane-base" "0.6.1"
+    "@locker/shared" "0.14.19"
+    "@locker/shared-dom" "0.14.19"
 
-"@locker/near-membrane-dom@0.6.2":
-  version "0.6.2"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/near-membrane-dom/-/near-membrane-dom-0.6.2.tgz#fe1a7b05e356eae3736890f0e39b504373f25030"
-  integrity sha512-sNxeGd69MoAqYZ/Z0yh0xwrm9jFdlyeOefGSOSYK4k7Nnq+sxEv3sdVUpoBiFCRoK4MBjZTc6BGDvHlhJcBZtg==
-  dependencies:
-    "@locker/near-membrane-base" "0.6.2"
-
-"@locker/sandbox@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/sandbox/-/sandbox-0.14.4.tgz#42ba06e9e1cedba63dda8c1a1821bb170df35f97"
-  integrity sha512-rqN57f4JoAW73rzn3iWXm8/AJ4xKYK4WY9K/fczHE7LAv3/xXmg6XMqCmE8CDfVbkWckYDPYhLsANWmi6QYkwA==
-  dependencies:
-    "@locker/distortion" "0.14.4"
-    "@locker/instrumentation" "0.14.4"
-    "@locker/near-membrane-dom" "0.6.1"
-    "@locker/shared" "0.14.4"
-    "@locker/shared-dom" "0.14.4"
-
-"@locker/sandbox@^0.14.4":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/sandbox/-/sandbox-0.14.7.tgz#bc5b953d3362e3f3d58a4d651916117bb4508fa9"
-  integrity sha512-CmRd4aCJ0AYEG20OSh+LTlnLB64fQhTyPCMCw940kcXLHVnEfcLFtRpgUCWxXrJeASXnQObymiDA3vtRXbhPaA==
-  dependencies:
-    "@locker/distortion" "0.14.7"
-    "@locker/instrumentation" "0.14.7"
-    "@locker/near-membrane-dom" "0.6.2"
-    "@locker/shared" "0.14.7"
-    "@locker/shared-dom" "0.14.7"
-
-"@locker/shared-dom@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-dom/-/shared-dom-0.14.4.tgz#2d2273818120c690748b3d31c151c23ec62324ed"
-  integrity sha512-henkOTttldJ8NUsolsYRMj4wWKc4ZDnxnh5kxlw6R7CONudSI0sWsrH1/XcpAMvtg+KDS0Rv3SxwGU22FaUBrg==
-  dependencies:
-    "@locker/shared" "0.14.4"
-
-"@locker/shared-dom@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-dom/-/shared-dom-0.14.7.tgz#5072f0fc8cf2a7bd9b81bdff90471903983d98d9"
-  integrity sha512-/PrdOsvCdS0ANYqosJyqIgTk8QzxWqG/6+esagkYtMH08POL3Fu4o/8E9OYvxDX9ldSZifUNKRhL6lbPdArZfw==
-  dependencies:
-    "@locker/shared" "0.14.7"
-
-"@locker/shared-url@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-url/-/shared-url-0.14.4.tgz#9dd03b14613e70e95c31318ded4e7dfd3888a350"
-  integrity sha512-55iRXJJ9tmF2lG3P9wMsWDGjWpbFotZlIsZPTbil9Oe1Apz/ZKnWUyNa9yztm5e4jN9oHOdxuUq7agimxD+vpg==
-  dependencies:
-    "@locker/shared" "0.14.4"
-    "@locker/shared-dom" "0.14.4"
-
-"@locker/shared-url@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared-url/-/shared-url-0.14.7.tgz#64419fe3dfad2e88d6de6028268bd37f97d7b23b"
-  integrity sha512-LWJpIR47Ckijz79WqMZdXeRt2kq/B3ekArYehpbGeAcPQT+CBU5eQfCcErtlbFjvLjs9qXwX8rIcbuks9Miyqg==
-  dependencies:
-    "@locker/shared" "0.14.7"
-    "@locker/shared-dom" "0.14.7"
-
-"@locker/shared@0.14.4":
-  version "0.14.4"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared/-/shared-0.14.4.tgz#41d1cbe7abfdb5ada25013071dd0bdd9035aead9"
-  integrity sha512-9wH0vYuqknx77jHCl0gAE8eTwuUUqQ8ln+F3JryhmrMCU/VIJ9RE3h6TFlSlIv2IU+zzOVy1ypW6WkdSZ9xKdw==
-
-"@locker/shared@0.14.7":
-  version "0.14.7"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared/-/shared-0.14.7.tgz#27a7cf18ed80889b0315afda3bd11080751bce8a"
-  integrity sha512-uJCvfoSrVuXKVC0J8hKiS4DQ2r414XXU/15h8jvnb3usFXfmozQQku9sQ0beskYGRhOxCw7ey2uzRJI1V5MB+g==
+"@locker/shared@0.14.19":
+  version "0.14.19"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@locker/shared/-/shared-0.14.19.tgz#0a3413431a8087840ef6bfc3387363114c463dad"
+  integrity sha512-CT6kl9sFwOLMalA9tCO8hLJTnHv/D8WB4ap0WzHpxyONiZf0Zdxh4GP1+LGuKF7u4qovjsVqDViAnf+KQrGlKg==
 
 "@lwc/babel-plugin-component@2.3.7":
   version "2.3.7"
@@ -884,82 +800,82 @@
   resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwc/wire-service/-/wire-service-2.3.7.tgz#f114b53bd01976ed1fbbe86f2c5512e597b87bb0"
   integrity sha512-fPdSsRShoiMVaX+CbuNO94qkVAwZZPYFR9KRTfl3fUDugfXx/D/zYf1ouXVi7IKWKptRLd1o2qwtd+NllJkSZg==
 
-"@lwrjs/app-service@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/app-service/-/app-service-0.5.5.tgz#025817e4a434b61eba5898a3bae9cc22d9608bc9"
-  integrity sha512-wrFhpTlJ35gNSdjRuX34F0Eg8btW16fjHO0aPtlxqDyuaIeOC9zNnUlEvXHEe2M2RCsNOcw13h4Fmr7ymWlwlA==
+"@lwrjs/app-service@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/app-service/-/app-service-0.5.11.tgz#fd635f841a947eb42d0be4a9d5cdf7fa0fe3c05c"
+  integrity sha512-hQsWt7ZxAl+zMWzDWvt/PrkHNWf4oMFPcABdi+UnrsP9QWGT0yzdcRvXMDvS1HJmwpHWb6JuCu47CE8Y2bbA2g==
   dependencies:
-    "@lwrjs/diagnostics" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/diagnostics" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/asset-registry@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/asset-registry/-/asset-registry-0.5.5.tgz#2c80a5cd92b264d3565bb919bc7e4608e59d99e8"
-  integrity sha512-UXrz9IueM5CdrncbzztZKKiY7EF0wJA/X4ebjBlOL5r+uZ7LzYcNL387TEWZjKmP+Av9eXd+ZMD+0NJJuw7shQ==
+"@lwrjs/asset-registry@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/asset-registry/-/asset-registry-0.5.11.tgz#51921ee145dda90839399f7f7e5497a312b821ac"
+  integrity sha512-F+A8AxENp2/e0xTkKOrp/IWYJ6YzVXPUb5i7D2OFc2agBFoRREgIMwyxxt5cXCNGKn8IYwryKvWjBg7ip7j2nQ==
   dependencies:
-    "@lwrjs/diagnostics" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/diagnostics" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/base-template-engine@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/base-template-engine/-/base-template-engine-0.5.5.tgz#4a4b84db4d572f00f108e97e1817f1b4cb13e80d"
-  integrity sha512-pnJ7EYg+WdDy8Sm9hBT49bZfUBBHJgvhYwbtCTKF8nUMlXi4YOkSggHdeEpLW4E2EP8F7b43Dla6UCwslQ1nkw==
+"@lwrjs/base-template-engine@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/base-template-engine/-/base-template-engine-0.5.11.tgz#17ad40144d09e0f61957d310db87beaab80dd065"
+  integrity sha512-UJlHjF0NPfuO+/6S/ok8jYZN47Xoqt+K2Fusu3C1cuiP8NanfdetcIkcOPBhXR6a+8YAnH0K8WRTV3gFMcDX3w==
   dependencies:
     escape-goat "^3.0.0"
 
-"@lwrjs/base-view-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/base-view-provider/-/base-view-provider-0.5.5.tgz#20f7d0b27db8b55b3ad3869f56d90588f8a864ce"
-  integrity sha512-IdwUgT+72t59w1aeBxjMe0k93l3r31IXHlwnedg6jHdkfP768n4mdHR9UvdfGganLc99c4mCYCEtZO87XQKHDQ==
+"@lwrjs/base-view-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/base-view-provider/-/base-view-provider-0.5.11.tgz#d20523a7af8688b1e2c88a60832c9ff2a6b76a64"
+  integrity sha512-M3wdd/xPxPIw/BiXK7l3RFTQPqR2LjaEkJv2KvSLoDEcd//v4u8UTZabsDqWSBV/3a1uUaiJIXGvXOIKDxTW7Q==
   dependencies:
-    "@lwrjs/base-template-engine" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/base-template-engine" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/client-modules@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/client-modules/-/client-modules-0.5.5.tgz#57d688a704097f986ed6e505c1d0217c596d0234"
-  integrity sha512-U3omJkiXpVc2LoFkjfJUQlJkNd/R46qQOzUgCPnMYRTQEtwF+yUKAY5JD17ZF41IGWgRaJdQhvBHREFwSuCTAw==
+"@lwrjs/client-modules@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/client-modules/-/client-modules-0.5.11.tgz#cfc527f4d1c51216c960e485b22b88a37417dbf3"
+  integrity sha512-vX6b6sbIVCeOF8iN/ENJlaLK7LKi7qanCaVl6e1SqzRETmCHAOF52UkJPCrrSOxOIMI5jWD8C6eAIxc/C0tiiQ==
   dependencies:
-    "@locker/sandbox" "^0.14.4"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@locker/sandbox" "0.14.19"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/compiler@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/compiler/-/compiler-0.5.5.tgz#ab72fa276f46fd88ff8d264f2af6b5506fb2f4ce"
-  integrity sha512-XL8PtQ0L0VjRbQtaoo2EEA3OSM/sYUHRjIcCuytRfSYZlFgN2ZGMLgGG/lS3zErhIoCY6fV50wK7JmzLa+5uDw==
+"@lwrjs/compiler@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/compiler/-/compiler-0.5.11.tgz#9b491e456539e82f8b5fbfb83b0b1a3fc8d90b8b"
+  integrity sha512-+lR6+tIdJ2yiEX5JSzjdfXqhrmgKShoPXooI5tmTwD+rinMscpvP+ehOiEW7H8bErXwCTRDGle6Cp3JhcPNVmQ==
   dependencies:
-    "@locker/compiler" "0.14.4"
-    "@locker/sandbox" "0.14.4"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@locker/compiler" "0.14.19"
+    "@locker/sandbox" "0.14.19"
+    "@lwrjs/shared-utils" "0.5.11"
     esbuild "^0.8.42"
     rollup "~2.45.2"
 
-"@lwrjs/core@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/core/-/core-0.5.5.tgz#ad056e567a6172eca8b2e3f13323551a71b481e4"
-  integrity sha512-gEQuddr4EdLupv5CU/258qLmqWiuanki+r7JuIA1YPKlTbkS6jm8FzUsNDjeTXOyk7rdJ61Bw1aOgop8yvhVBw==
+"@lwrjs/core@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/core/-/core-0.5.11.tgz#bdff93bcef72d8415d85ce5db587bbdbb0d373e6"
+  integrity sha512-4ySMkrTKar3SA6aJmgKPbprcX45KYpQuhXNGvV7NMpCSfREJKLtDKQbliVQ6JjabjTJRww1A6Hnh5IJq4tlePA==
   dependencies:
-    "@lwrjs/app-service" "0.5.5"
-    "@lwrjs/asset-registry" "0.5.5"
-    "@lwrjs/base-template-engine" "0.5.5"
-    "@lwrjs/base-view-provider" "0.5.5"
-    "@lwrjs/client-modules" "0.5.5"
-    "@lwrjs/compiler" "0.5.5"
-    "@lwrjs/diagnostics" "0.5.5"
-    "@lwrjs/fs-asset-provider" "0.5.5"
-    "@lwrjs/html-view-provider" "0.5.5"
-    "@lwrjs/loader" "0.5.5"
-    "@lwrjs/lwc-module-provider" "0.5.5"
-    "@lwrjs/markdown-view-provider" "0.5.5"
-    "@lwrjs/module-bundler" "0.5.5"
-    "@lwrjs/module-registry" "0.5.5"
-    "@lwrjs/npm-module-provider" "0.5.5"
-    "@lwrjs/nunjucks-view-provider" "0.5.5"
-    "@lwrjs/resource-registry" "0.5.5"
-    "@lwrjs/router" "0.5.5"
-    "@lwrjs/server" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
-    "@lwrjs/view-registry" "0.5.5"
+    "@lwrjs/app-service" "0.5.11"
+    "@lwrjs/asset-registry" "0.5.11"
+    "@lwrjs/base-template-engine" "0.5.11"
+    "@lwrjs/base-view-provider" "0.5.11"
+    "@lwrjs/client-modules" "0.5.11"
+    "@lwrjs/compiler" "0.5.11"
+    "@lwrjs/diagnostics" "0.5.11"
+    "@lwrjs/fs-asset-provider" "0.5.11"
+    "@lwrjs/html-view-provider" "0.5.11"
+    "@lwrjs/loader" "0.5.11"
+    "@lwrjs/lwc-module-provider" "0.5.11"
+    "@lwrjs/markdown-view-provider" "0.5.11"
+    "@lwrjs/module-bundler" "0.5.11"
+    "@lwrjs/module-registry" "0.5.11"
+    "@lwrjs/npm-module-provider" "0.5.11"
+    "@lwrjs/nunjucks-view-provider" "0.5.11"
+    "@lwrjs/resource-registry" "0.5.11"
+    "@lwrjs/router" "0.5.11"
+    "@lwrjs/server" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
+    "@lwrjs/view-registry" "0.5.11"
     dompurify "^2.3.0"
     fs-extra "^10.0.0"
     jsdom "^16.7.0"
@@ -973,26 +889,26 @@
   resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/diagnostics/-/diagnostics-0.4.7.tgz#ea0c2f38b0c9a82e9294ac9283f35a5e6dd2f678"
   integrity sha512-8bZF1D0beyZwDLgO6e4CwfEtOAEAWvSdmoX8pSkLQU1KtbQbfCkWltv94a4kOcgGyrMVuHYHlmUbkaS2P19J8g==
 
-"@lwrjs/diagnostics@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/diagnostics/-/diagnostics-0.5.5.tgz#6c95dec94c893372cb26f80d9adbee47cdee5df1"
-  integrity sha512-LimTxGoc/mkUaBuJbhTSQnN7e2KMo7UZb2FVH7WQ4mqlEwVPNj4jn7GtaJFTV/CU/soRAzNWfMSM1jghUyBKDg==
+"@lwrjs/diagnostics@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/diagnostics/-/diagnostics-0.5.11.tgz#4ab7dcdc6f7255753fec1c49b57f86f01921b8ad"
+  integrity sha512-QLxTmI1ql4nRbMHF8Ou7BvA9uOBkX09BduGbvzlWGiViwE93vx1sVrqO8JHvHqznK8KUCDHPNM1U8bz18DMWdQ==
 
-"@lwrjs/fs-asset-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/fs-asset-provider/-/fs-asset-provider-0.5.5.tgz#c03b482a9a57fe4c6a4f0c91ab491567b1e89bea"
-  integrity sha512-InQGEztll2c4C1ya671iNLT+NE7vNJ4S2x8ColIm9GshJElb7biaLLapeloyOm1ceVEE0X5Dfu7te3Sl/Z6YcQ==
+"@lwrjs/fs-asset-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/fs-asset-provider/-/fs-asset-provider-0.5.11.tgz#ad023e66521e8369ee6bf93a09095bc6768e86c7"
+  integrity sha512-ry3TFcJ/iMPADy/usCSTk7coLn5QKyHXsRQt0rroBzHSxqbip+33SVD742dOnRRIjxTJ3bpPI8swPIYWO4JocQ==
   dependencies:
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
     mime-types "^2.1.27"
 
-"@lwrjs/html-view-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/html-view-provider/-/html-view-provider-0.5.5.tgz#cebaa80abd99be93bfcc06770c45ce7f6a25163e"
-  integrity sha512-cHEUMchjMvfbWz9VAGj3d5vLSFDYtRXPJrhHH45wK2hBxax3hoWFOKckl2KRO/QVOgXy42WDR43qRlTDFVw3Qg==
+"@lwrjs/html-view-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/html-view-provider/-/html-view-provider-0.5.11.tgz#b09dd78dfd8a4f73de42330718e254bccda0fcaa"
+  integrity sha512-umUsqXjtQuDhL1skUXf9Lrub6khyPZEu2Tq0CaJOMpvgCODHfbzoo42sOK16BBg4qVZAEHM2dRA6tcZedxFcNg==
   dependencies:
-    "@lwrjs/base-template-engine" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/base-template-engine" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
     gray-matter "^4.0.2"
     parse5-sax-parser "^6.0.1"
 
@@ -1005,30 +921,30 @@
     "@lwrjs/shared-utils" "0.4.7"
     ajv "6.12.6"
 
-"@lwrjs/loader@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/loader/-/loader-0.5.5.tgz#68ff5e3be2e0b38e4985d68f08438624dcadf389"
-  integrity sha512-8OjNOGDIzD1R7sRzJ2m4gxK03it6vcKgG3rDQC+9abNZx1xJMD6dBKGJci2ZP0vFmRHjez5U6lqN1L8WeI4PiA==
+"@lwrjs/loader@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/loader/-/loader-0.5.11.tgz#094297a066921ce354544af4ff41d57266881d61"
+  integrity sha512-iC95Ot0RWq4wbur0eL+L4H+J1k8J+W1Xz2DkgBpJx/BvapeVYCCGPuv9jjVZ96CF+zEeUuXUK7k+T/RtLADxSw==
   dependencies:
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/lwc-module-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/lwc-module-provider/-/lwc-module-provider-0.5.5.tgz#efb7301b06e9a9a1d72cfc8578e733f0247eaa9c"
-  integrity sha512-bHcEk6aQ4WOq/TMSgVcwTvn/qq2PNSpbSiG9DUAuDMNpUTuA6NLRJq0VdatHgEKtz62LVlIaliq94FOQnJlIdg==
+"@lwrjs/lwc-module-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/lwc-module-provider/-/lwc-module-provider-0.5.11.tgz#50e2da36187f8657317cec53d91dce22536da944"
+  integrity sha512-AdXMscXr+fVmcpP3VwJ0jFUX1fHrNOCQD8/kbzpumESnvgVYzVuYyiDaj1KB+AeIymt9IYjSDOFNKbUW+jgUFg==
   dependencies:
     "@babel/preset-typescript" "^7.9.0"
     "@lwc/module-resolver" "2.3.1"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
     es-module-lexer "^0.3.18"
 
-"@lwrjs/markdown-view-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/markdown-view-provider/-/markdown-view-provider-0.5.5.tgz#307ea0a5c754268fea143acbd6e1002f04702467"
-  integrity sha512-ibocc/T+YHIeRY1sCL2wbQBUopdiRlMalmnULbNiDuiZa0HDQSeGDLdTwitDpLOnKYzdYUk/os/2e0BctBq3EQ==
+"@lwrjs/markdown-view-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/markdown-view-provider/-/markdown-view-provider-0.5.11.tgz#8da51cbc3e0c9b4f3731586449078b8a9872f7cc"
+  integrity sha512-wM9Futj6BXDZvZEgMg33UYf1Uqr4nm3oVz0WjGe/6EFr/nLu/umKeW3x1D7ol673PWLLvx0skNs+/OCTlb3qLw==
   dependencies:
-    "@lwrjs/base-template-engine" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/base-template-engine" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
     gray-matter "^4.0.2"
     hast-util-has-property "^1.0.4"
     hast-util-heading-rank "^1.0.1"
@@ -1046,66 +962,66 @@
     unist-util-modify-children "^2.0.0"
     vfile "^4.2.1"
 
-"@lwrjs/module-bundler@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/module-bundler/-/module-bundler-0.5.5.tgz#64ef9d1f4f258d1d034253ebc0cf9e3d9889e9ee"
-  integrity sha512-N14sql+P4Nck+Qe51nDzu51zEi5+TvGt5X/upJYOYIyFItWKeKMDupkgtAsR9A4iHnp+S3wJEKsn50FgVesMag==
+"@lwrjs/module-bundler@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/module-bundler/-/module-bundler-0.5.11.tgz#4c1221a67b7b8dc833d66f9a783184fc60980d0d"
+  integrity sha512-xOg1zQH5fOFKbMMariBECCFxCg5fGLeboEu7o0pBfPUbNl80tHFY1OyAEUrhwpZA3FunYY3qh9zGp4ZXPmPJ6g==
   dependencies:
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
     rollup "~2.45.2"
 
-"@lwrjs/module-registry@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/module-registry/-/module-registry-0.5.5.tgz#82afc30627d650039857d67548ae765f64d298eb"
-  integrity sha512-RamCeqbJXctTH6gtHdyVWzmzCa7l8roR1w2ZflGhRX6rHonJQpq2hN6fTj91gnrEvEgI+g6n2KQaBqpA/Od9aQ==
+"@lwrjs/module-registry@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/module-registry/-/module-registry-0.5.11.tgz#d36b2524c6c80300b076d730befabd046b1d80c0"
+  integrity sha512-fLaUC6o8aKwceRfT8MzBjRi3F6A77JInBvKRLHeXX6EKc5THdM5+Rtkngjkr3IXGG+AhWzrB3jt/UDxxePzGPw==
   dependencies:
-    "@lwrjs/diagnostics" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/diagnostics" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
     es-module-lexer "^0.3.18"
     magic-string "^0.25.7"
     ws "^7.2.5"
 
-"@lwrjs/npm-module-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/npm-module-provider/-/npm-module-provider-0.5.5.tgz#28601ae29309d22a0c34ffb6d5a684f95e8783a7"
-  integrity sha512-XEzTc12MajRh/iw4cVSeRZOBW7vc5FIAIzsOI5wr/t5Go7GfkWMD4D1qhfbtnoQVEzwyLvZCb69EXysX7CTzhA==
+"@lwrjs/npm-module-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/npm-module-provider/-/npm-module-provider-0.5.11.tgz#ddf7531e965ba3de4ebb9e66d603d397d200eb77"
+  integrity sha512-bl5AoSYbjT0n1e44T1RiW+Bml5hHmFwtfHQFHRXLYxSrdQpE196bvmCQvXSKQZDJlXnlXYnr2C6CtI0xfCeckw==
   dependencies:
     "@esbuild-plugins/node-modules-polyfill" "^0.0.2"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
     esbuild "^0.8.42"
     esinstall "^1.0.5"
     resolve "^1.19.0"
 
-"@lwrjs/nunjucks-view-provider@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/nunjucks-view-provider/-/nunjucks-view-provider-0.5.5.tgz#978c7aff71c59765bfa784b364de85ec11ebafa5"
-  integrity sha512-+p5UoLSmB/Gtb8omkxWwtUSYcgQR2p1BtsfBUjk/8JRFXsjhautVVNgOGzNvGi8s+8nZx2DpIn02frkR+e6DzQ==
+"@lwrjs/nunjucks-view-provider@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/nunjucks-view-provider/-/nunjucks-view-provider-0.5.11.tgz#1e9197b23a4b96d9b50e341409aede350dadd3fb"
+  integrity sha512-Sco7jbzDOAmNaJ5VSGax7rTR0bdS1IT2tpOGXjwfjJU/a83HbLtP6ZS+XA2rxTDOxtGZ1GSmHHPyeHKYVKw2TA==
   dependencies:
-    "@lwrjs/base-template-engine" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/base-template-engine" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
     gray-matter "^4.0.2"
     nunjucks "^3.2.2"
     parse5-sax-parser "^6.0.1"
 
-"@lwrjs/resource-registry@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/resource-registry/-/resource-registry-0.5.5.tgz#4d2992eda8dbd0abe39703a3615bfd39ba5b0e51"
-  integrity sha512-/3O7UglKYaN8QEtaMs5N9HOZ8OphrE+BAVx1KyNnBmp805RWa9ADZe60US2daztlCgZi0jsQmoHNduhrR7/v8A==
+"@lwrjs/resource-registry@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/resource-registry/-/resource-registry-0.5.11.tgz#2f6a5fa83c0a8f3aa9c6c39ce8b8a125c31fcedc"
+  integrity sha512-aMW72TmSQnBalB2ddogwUw+QATVhperCnBEaEWlRStsaLNWgTRBDtlv9dSfmwD2qSbPRcWS4q+4qRegrctpuJA==
   dependencies:
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
 
-"@lwrjs/router@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/router/-/router-0.5.5.tgz#a2817390787e0e5c00194b537443f927dad58906"
-  integrity sha512-ZLVyHm9WH9anM8expsPUBTI/v7ZD6IGBs0O+qyrxDzNB8WXpZnae+ar/brPaIP1dqZIdAulPBp91CI6Zb5fDcQ==
+"@lwrjs/router@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/router/-/router-0.5.11.tgz#2718c17250287d68487c75c93f3cd64e55e34f76"
+  integrity sha512-fwboGs2d6iYrG1hri3UGT+xMt3AXIThp6LsHYRvM6YqLWoepnSphstUz31H1NiSurDBnEurF0TbIVc53RTy6pQ==
 
-"@lwrjs/server@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/server/-/server-0.5.5.tgz#0274a398a272d18d63c7b2ab0afcdcbf7595e4c0"
-  integrity sha512-Q9ttaxBLAuEWxwXwn3Q+x7CFaXjeubcxEs17GtNsWsuFFXayHNM0XZyVOa6DPrcvEJVcCMklXPRx7dCF0hqaFg==
+"@lwrjs/server@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/server/-/server-0.5.11.tgz#1592ed703c6531286fed29eb52880350ad8f59c9"
+  integrity sha512-eNVPVv9SvoRjrfSK/gLtL16Xsdzx0UoFVQw9wamYLYpQBp7HFlWOqhMnuNVjvjgGwyiMAFfTieVZ9bgrzpDdlA==
   dependencies:
     "@koa/router" "^10.0.0"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/shared-utils" "0.5.11"
     "@types/express" "^4.17.11"
     "@types/koa" "^2.11.7"
     express "^4.17.1"
@@ -1127,10 +1043,10 @@
     parse5-sax-parser "^6.0.1"
     slugify "^1.4.5"
 
-"@lwrjs/shared-utils@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/shared-utils/-/shared-utils-0.5.5.tgz#a9b7fb55161e99f87f8c4115ea57a3420ee9683f"
-  integrity sha512-ZkIPiYO2yv/1XnXPUJOxM8VCLT02A7IVMq4ONMd8RQDQBKPSlGkSc9Df6LgmAGiYDBLdJ4BPur4svq9W9rRegg==
+"@lwrjs/shared-utils@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/shared-utils/-/shared-utils-0.5.11.tgz#10b1c205f9079052351addde592b3af5f59df25f"
+  integrity sha512-RELLRfhYYCk3cnJ+Z6CKv74vRzf06v+9mRGxDyk78osU1XWSTUWl7SvNYgBRaJo6JQap4V4R1fOMtQIdYMN8VQ==
   dependencies:
     chokidar "^3.4.0"
     es-module-lexer "^0.3.18"
@@ -1139,19 +1055,19 @@
     parse5-sax-parser "^6.0.1"
     slugify "^1.4.5"
 
-"@lwrjs/types@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/types/-/types-0.5.5.tgz#6dfd944aaa59a7046ead2263d0826a6ea2095194"
-  integrity sha512-PUUYTIFbaVK7r505b2fNQATkwB8zz8gUT4PnLurOaEDge8snSH8cuP/UAY01+gjVgQ9LuFhzToN28OtSX5brVA==
+"@lwrjs/types@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/types/-/types-0.5.11.tgz#05235512cecfa5016569733b33d39e2e3fdc3b65"
+  integrity sha512-sfYnsmJ1Y6eLi6bqCcL2LZUuRNi8AmZ9+HQxzUV0ESm5NzXwy0EQF+MCzAxQkq1QHTvHs1ooxnJY8aNittv8CQ==
 
-"@lwrjs/view-registry@0.5.5":
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/view-registry/-/view-registry-0.5.5.tgz#3780da3c44e47005755a67067bedbcf002027297"
-  integrity sha512-09oHGTUf6hBC80tmIO8A0siWmOy4KIJxsRQDcJ72igwOCIOGEpO3ImgiJZKVGIqWTqkPaBddst0WHl8GHot6UA==
+"@lwrjs/view-registry@0.5.11":
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@lwrjs/view-registry/-/view-registry-0.5.11.tgz#12fcb18f840fa61ea05403aa58b2040749fdca81"
+  integrity sha512-rFnaeRavG9G70V1/O4XqHxfIZpdLNWlW4mugPRXBqH9GTyMR91U3wyU2OjV07oJcMAJotdGAO6vEGBiBT+jlXw==
   dependencies:
-    "@lwrjs/app-service" "0.5.5"
-    "@lwrjs/diagnostics" "0.5.5"
-    "@lwrjs/shared-utils" "0.5.5"
+    "@lwrjs/app-service" "0.5.11"
+    "@lwrjs/diagnostics" "0.5.11"
+    "@lwrjs/shared-utils" "0.5.11"
     magic-string "^0.25.7"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -1233,10 +1149,10 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@salesforce-ux/design-system@^2.16.1":
-  version "2.16.2"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@salesforce-ux/design-system/-/design-system-2.16.2.tgz#778aa4b4eff99367c1886bb74a60b3d099bfeb43"
-  integrity sha512-8qG5wdR3+5s4zcszMZs9Z4HocPV6uWhisHSeUyxl6Idb5m99yER3HwyKtyIUViPB/8ukDwptLBvJWH+qwA6EOg==
+"@salesforce-ux/design-system@^2.17.3":
+  version "2.17.3"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/@salesforce-ux/design-system/-/design-system-2.17.3.tgz#ebb060f5dec10b498f4fb95cb719045f85fcb46b"
+  integrity sha512-RTMP3SBhyqGA20gHGUUpQ+kKTV1B2DRwEw1ph1MGfgc/gT/GWwYnutXqzW0vSMzg1vT60XM0jIidpYOvDnLhHQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -4292,10 +4208,10 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lightning-base-components@^1.13.2-alpha:
-  version "1.13.2-alpha"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lightning-base-components/-/lightning-base-components-1.13.2-alpha.tgz#2bb2972e14d27a668803588544eef05cc04af70e"
-  integrity sha512-gU7AGzB+TF/yvpxM4IRViAYMAUQL72r8wryaYbjkPwg2dkV6D+vgjiO0y2InlzO2OnBl+ffcbvEuFXLE2hqglA==
+lightning-base-components@^1.14.3-alpha:
+  version "1.14.3-alpha"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lightning-base-components/-/lightning-base-components-1.14.3-alpha.tgz#eaf9fd1f780d27532d4c6e6935f0ad4481e8a80f"
+  integrity sha512-cEV/acnsAUOMSCyZlddjf2t/JZ/kdw8B1s000Wy5i1KDR1/ns809OtlzEfcDA8NuwTfP0Li3LhvWLW7NjSZadw==
 
 line-column@~1.0.2:
   version "1.0.2"
@@ -4369,6 +4285,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lwc-components-lightning@^1.14.3-alpha:
+  version "1.14.3-alpha"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lwc-components-lightning/-/lwc-components-lightning-1.14.3-alpha.tgz#90704d4dc302b31b4d10e7d7b01112b1c98a2d0e"
+  integrity sha512-8R9etW0vY1I75CbTxLjMx1Bfikq21t57wDAQpEF8hd6IrFg5bhwhMCQh3qoW33u2kDHgonCPl6Zp20L96+cfhA==
+
 lwc@~2.3.7:
   version "2.3.7"
   resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lwc/-/lwc-2.3.7.tgz#d4002e3ac872105958edbade3f9302b954066aec"
@@ -4381,13 +4302,13 @@ lwc@~2.3.7:
     "@lwc/synthetic-shadow" "2.3.7"
     "@lwc/wire-service" "2.3.7"
 
-lwr@0.5.5:
-  version "0.5.5"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lwr/-/lwr-0.5.5.tgz#78a33580d8b2c81ef0cd76328272031b44df7a90"
-  integrity sha512-dhyFgRlNcL3VjuSXVdtY6rtKiLOGdTMFW0oeAAdkquCmhiolq1m92VcmYvFBdRmR4xYwMmWuQvHaAL+5123F8g==
+lwr@0.5.11:
+  version "0.5.11"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/lwr/-/lwr-0.5.11.tgz#fc383d2727a9c56be47cf8df30316f009fab9ba1"
+  integrity sha512-DFKOMTFuQ6uutmfCrd+ZvVKK6veMaxdAkSNOMieEOaQWi7Ky2xYkUIFQgft5gNbZKaQll51fHWkxnMdrf88JjA==
   dependencies:
-    "@lwrjs/core" "0.5.5"
-    "@lwrjs/types" "0.5.5"
+    "@lwrjs/core" "0.5.11"
+    "@lwrjs/types" "0.5.11"
     cac "^6.7.8"
 
 magic-string@^0.25.3, magic-string@^0.25.5, magic-string@^0.25.7:
@@ -5036,10 +4957,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.4.0:
-  version "2.4.1"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 pretty-format@^27.2.4:
   version "27.2.4"
@@ -5943,10 +5864,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.4.3:
-  version "4.4.3"
-  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/typescript/-/typescript-4.4.3.tgz#bdc5407caa2b109efd4f82fe130656f977a29324"
-  integrity sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==
+typescript@^4.5.5:
+  version "4.5.5"
+  resolved "https://nexus.soma.salesforce.com/nexus/content/groups/npm-all/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
+  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

@@ -3,7 +3,7 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 2020,
         sourceType: 'module',
-        project: '../tsconfig.json'
+        project: './tsconfig.json',
     },
     plugins: ['prettier', '@typescript-eslint'],
     parser: '@typescript-eslint/parser',
@@ -22,6 +22,7 @@ module.exports = {
                 '@typescript-eslint/camelcase': 0,
                 '@typescript-eslint/class-name-casing': 0,
                 '@typescript-eslint/ban-types': 0,
+                '@typescript-eslint/no-explicit-any': 'off',
             },
         },
         {
