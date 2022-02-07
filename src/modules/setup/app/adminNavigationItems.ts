@@ -1,603 +1,603 @@
-import type { NavData } from "setup/navItem";
+import type { NavData } from 'setup/navItem';
 
 export const ADMIN_NAV: NavData[] = [
     {
-        "name": "users",
-        "label": "Users",
-        "disabled": false,
-        "expanded": false,
-        "items": [
+        name: 'users',
+        label: 'Users',
+        disabled: false,
+        expanded: false,
+        items: [
             {
-                "name": "perm-set-groups",
-                "label": "Permission Set Groups",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "permissionSetGroups"
+                name: 'perm-set-groups',
+                label: 'Permission Set Groups',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'permissionSetGroups',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "perm-sets",
-                "label": "Permission Sets",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "permissionSets"
+                name: 'perm-sets',
+                label: 'Permission Sets',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'permissionSets',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "profiles",
-                "label": "Profiles",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "profiles"
+                name: 'profiles',
+                label: 'Profiles',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'profiles',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "public-groups",
-                "label": "Public Groups",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "publicGroups"
+                name: 'public-groups',
+                label: 'Public Groups',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'publicGroups',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "queues",
-                "label": "Queues",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "queues"
+                name: 'queues',
+                label: 'Queues',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'queues',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "roles",
-                "label": "Roles",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "roles"
+                name: 'roles',
+                label: 'Roles',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'roles',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "user-management-settings",
-                "label": "User Management Settings",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "userManagementSettings"
+                name: 'user-management-settings',
+                label: 'User Management Settings',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'userManagementSettings',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "users",
-                "label": "Users",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "users"
+                name: 'users',
+                label: 'Users',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'users',
                     },
-                    "state": {}
-                }
-            }
-        ]
+                    state: {},
+                },
+            },
+        ],
     },
     {
-        "name": "data",
-        "label": "Data",
-        "disabled": false,
-        "expanded": false,
-        "items": [
+        name: 'data',
+        label: 'Data',
+        disabled: false,
+        expanded: false,
+        items: [
             {
-                "name": "big-objects",
-                "label": "Big Objects",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "bigObjects"
+                name: 'big-objects',
+                label: 'Big Objects',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'bigObjects',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "data-export",
-                "label": "Data Export",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "dataExport"
+                name: 'data-export',
+                label: 'Data Export',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'dataExport',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "data-integration-metrics",
-                "label": "Data Integration Metrics",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "dataIntegrationMetrics"
+                name: 'data-integration-metrics',
+                label: 'Data Integration Metrics',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'dataIntegrationMetrics',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "data-integration-rules",
-                "label": "Data Integration Rules",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "dataIntegrationRules"
+                name: 'data-integration-rules',
+                label: 'Data Integration Rules',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'dataIntegrationRules',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "duplicate-management",
-                "label": "Duplicate Management",
-                "disabled": false,
-                "expanded": false,
-                "items": [
+                name: 'duplicate-management',
+                label: 'Duplicate Management',
+                disabled: false,
+                expanded: false,
+                items: [
                     {
-                        "name": "duplicate-error-logs",
-                        "label": "Duplicate Error Logs",
-                        "disabled": false,
-                        "expanded": false,
-                        "pageReference": {
-                            "type": "namedPage",
-                            "attributes": {
-                                "pageName": "duplicateErrorLogs"
+                        name: 'duplicate-error-logs',
+                        label: 'Duplicate Error Logs',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'duplicateErrorLogs',
                             },
-                            "state": {}
-                        }
-                    },
-                    {
-                        "name": "duplicate-rules",
-                        "label": "Duplicate Rules",
-                        "disabled": false,
-                        "expanded": false,
-                        "pageReference": {
-                            "type": "namedPage",
-                            "attributes": {
-                                "pageName": "duplicateRules"
-                            },
-                            "state": {}
-                        }
+                            state: {},
+                        },
                     },
                     {
-                        "name": "matching-rules",
-                        "label": "Matching Rules",
-                        "disabled": false,
-                        "expanded": false,
-                        "pageReference": {
-                            "type": "namedPage",
-                            "attributes": {
-                                "pageName": "matchingRules"
+                        name: 'duplicate-rules',
+                        label: 'Duplicate Rules',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'duplicateRules',
                             },
-                            "state": {}
-                        }
+                            state: {},
+                        },
                     },
-                ]
+                    {
+                        name: 'matching-rules',
+                        label: 'Matching Rules',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'matchingRules',
+                            },
+                            state: {},
+                        },
+                    },
+                ],
             },
             {
-                "name": "mass-delete-records",
-                "label": "Mass Delete Records",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "massDeleteRecords"
+                name: 'mass-delete-records',
+                label: 'Mass Delete Records',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'massDeleteRecords',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "mass-transfer-approval-requests",
-                "label": "Mass Transfer Approval Requests",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "massTransferApprovalRequests"
+                name: 'mass-transfer-approval-requests',
+                label: 'Mass Transfer Approval Requests',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'massTransferApprovalRequests',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "mass-transfer-records",
-                "label": "Mass Transfer Records",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "massTransferRecords"
+                name: 'mass-transfer-records',
+                label: 'Mass Transfer Records',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'massTransferRecords',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "mass-update-addresses",
-                "label": "Mass Update Addresses",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "massUpdateAddresses"
+                name: 'mass-update-addresses',
+                label: 'Mass Update Addresses',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'massUpdateAddresses',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "picklist-settings",
-                "label": "Picklist Settings",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "picklistSettings"
+                name: 'picklist-settings',
+                label: 'Picklist Settings',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'picklistSettings',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "schema-settings",
-                "label": "Schema Settings",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "schemaSettings"
+                name: 'schema-settings',
+                label: 'Schema Settings',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'schemaSettings',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "state-country-picklists",
-                "label": "State and Country/Territory Picklists",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "stateCountryPicklists"
+                name: 'state-country-picklists',
+                label: 'State and Country/Territory Picklists',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'stateCountryPicklists',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "storage-usage",
-                "label": "Storage Usage",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "storageUsage"
+                name: 'storage-usage',
+                label: 'Storage Usage',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'storageUsage',
                     },
-                    "state": {}
-                }
-            }
-        ]
+                    state: {},
+                },
+            },
+        ],
     },
     {
-        "name": "email",
-        "label": "Email",
-        "disabled": false,
-        "expanded": false,
-        "items": [
+        name: 'email',
+        label: 'Email',
+        disabled: false,
+        expanded: false,
+        items: [
             {
-                "name": "apex-exception-email",
-                "label": "Apex Exception Email",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "apexExceptionEmail"
+                name: 'apex-exception-email',
+                label: 'Apex Exception Email',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'apexExceptionEmail',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "classic-email-templates",
-                "label": "Classic Email Templates",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "classicEmailTemplates"
+                name: 'classic-email-templates',
+                label: 'Classic Email Templates',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'classicEmailTemplates',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "classic-letterheads",
-                "label": "Classic Letterheads",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "classicLetterheads"
+                name: 'classic-letterheads',
+                label: 'Classic Letterheads',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'classicLetterheads',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "compliance-bcc-email",
-                "label": "Compliance BCC Email",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "complianceBccEmail"
+                name: 'compliance-bcc-email',
+                label: 'Compliance BCC Email',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'complianceBccEmail',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "dkim-keys",
-                "label": "DKIM Keys",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "dkimKeys"
+                name: 'dkim-keys',
+                label: 'DKIM Keys',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'dkimKeys',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "deliverability",
-                "label": "Deliverability",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "deliverability"
+                name: 'deliverability',
+                label: 'Deliverability',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'deliverability',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "email-address-internationalization",
-                "label": "Email Address Internationalization",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "emailAddressInternationlization"
+                name: 'email-address-internationalization',
+                label: 'Email Address Internationalization',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'emailAddressInternationlization',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "email-attachments",
-                "label": "Email Attachments",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "emailAttachments"
+                name: 'email-attachments',
+                label: 'Email Attachments',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'emailAttachments',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "email-delivery-settings",
-                "label": "Email Delivery Settings",
-                "disabled": false,
-                "expanded": false,
-                "items": [
+                name: 'email-delivery-settings',
+                label: 'Email Delivery Settings',
+                disabled: false,
+                expanded: false,
+                items: [
                     {
-                        "name": "email-domain-filters",
-                        "label": "Email Domain Filters",
-                        "disabled": false,
-                        "expanded": false,
-                        "pageReference": {
-                            "type": "namedPage",
-                            "attributes": {
-                                "pageName": "emailDomainFilters"
+                        name: 'email-domain-filters',
+                        label: 'Email Domain Filters',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'emailDomainFilters',
                             },
-                            "state": {}
-                        }
+                            state: {},
+                        },
                     },
                     {
-                        "name": "email-relays",
-                        "label": "Email Relays",
-                        "disabled": false,
-                        "expanded": false,
-                        "pageReference": {
-                            "type": "namedPage",
-                            "attributes": {
-                                "pageName": "emailRelays"
+                        name: 'email-relays',
+                        label: 'Email Relays',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'emailRelays',
                             },
-                            "state": {}
-                        }
-                    }
-                ]
+                            state: {},
+                        },
+                    },
+                ],
             },
             {
-                "name": "email-footers",
-                "label": "Email Footers",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "emailFooters"
+                name: 'email-footers',
+                label: 'Email Footers',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'emailFooters',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "email-to-saleforce",
-                "label": "Email to Salesforce",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "emailToSalesforce"
+                name: 'email-to-saleforce',
+                label: 'Email to Salesforce',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'emailToSalesforce',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "enhanced-email",
-                "label": "Enhanced Email",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "enhancedEmail"
+                name: 'enhanced-email',
+                label: 'Enhanced Email',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'enhancedEmail',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "filter-email-tracking",
-                "label": "Filter Email Tracking",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "filterEmailTracking"
+                name: 'filter-email-tracking',
+                label: 'Filter Email Tracking',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'filterEmailTracking',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "gmail-integration",
-                "label": "Gmail Integration and Sync",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "gmailIntegrationSync"
+                name: 'gmail-integration',
+                label: 'Gmail Integration and Sync',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'gmailIntegrationSync',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "lightning-email-templates",
-                "label": "Lightning Email Templates",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "lightningEmailTemplates"
+                name: 'lightning-email-templates',
+                label: 'Lightning Email Templates',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'lightningEmailTemplates',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "mail-merge-templates",
-                "label": "Mail Merge Templates",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "mailMergeTemplates"
+                name: 'mail-merge-templates',
+                label: 'Mail Merge Templates',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'mailMergeTemplates',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "org-wide-addresses",
-                "label": "Organization-Wide Addresses",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "organizationWideAddresses"
+                name: 'org-wide-addresses',
+                label: 'Organization-Wide Addresses',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'organizationWideAddresses',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "outlook-integration",
-                "label": "Outlook Integration and Sync",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "outlookIntegrationSync"
+                name: 'outlook-integration',
+                label: 'Outlook Integration and Sync',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'outlookIntegrationSync',
                     },
-                    "state": {}
-                }
+                    state: {},
+                },
             },
             {
-                "name": "send-through-external-mail",
-                "label": "Send through External Email Services",
-                "disabled": false,
-                "expanded": false,
-                "pageReference": {
-                    "type": "namedPage",
-                    "attributes": {
-                        "pageName": "sendThroughExternalEmailServices"
+                name: 'send-through-external-mail',
+                label: 'Send through External Email Services',
+                disabled: false,
+                expanded: false,
+                pageReference: {
+                    type: 'namedPage',
+                    attributes: {
+                        pageName: 'sendThroughExternalEmailServices',
                     },
-                    "state": {}
-                }
-            }
-        ]
-    }
+                    state: {},
+                },
+            },
+        ],
+    },
 ];

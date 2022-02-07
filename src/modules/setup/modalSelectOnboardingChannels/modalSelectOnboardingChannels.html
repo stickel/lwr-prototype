@@ -1,0 +1,42 @@
+<template>
+    <lightning-modal-header label={heading}></lightning-modal-header>
+    <lightning-modal-body>
+        <p class="slds-m-bottom_large">Select up to three channels that you want to activate for your team.</p>
+        <div class="slds-grid slds-m-top_medium slds-grid_align-center">
+            <div class="slds-col slds-size_2-of-4">
+                <lightning-dual-listbox
+                    name="channels"
+                    label="Feed Channels"
+                    source-label="Available Channels"
+                    selected-label="Selected Channels"
+                    options={options}
+                    max="3"
+                    min="1"
+                    onchange={handleSelect}>
+                </lightning-dual-listbox>
+                <!-- <lightning-grouped-combobox
+                    class="slds-border_bottom slds-p-bottom_medium slds-m-bottom_medium"
+                    label="Broadcast Channels"
+                    items={options}
+                    input-text={selected}
+                    value={selected}
+                    ontextchange={handleEvent}
+                    onselect={handleSelect}>
+                </lightning-grouped-combobox> -->
+            </div>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <lightning-button
+            class="slds-m-right_medium"
+            onclick={handleCancel}
+            label="Cancel"
+            variant="neutral">
+        </lightning-button>
+        <lightning-button
+            onclick={handleSave}
+            label="Save"
+            variant="brand">
+        </lightning-button>
+    </lightning-modal-footer>
+</template>

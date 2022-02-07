@@ -1,106 +1,106 @@
-import type { NavData } from "setup/navItem";
+import type { NavData } from 'setup/navItem';
 
 export const NAV_ITEMS: NavData[] = [
     {
-        "name": "setup-home",
-        "label": "Setup Home",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "home",
-            "attributes": {},
-            "state": {}
-        }
+        name: 'setup-home',
+        label: 'Setup Home',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'home',
+            attributes: {},
+            state: {},
+        },
     },
     {
-        "name": "service-setup-assistant",
-        "label": "Service Setup Assistant",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "serviceSetupAssistant"
+        name: 'service-setup-assistant',
+        label: 'Service Setup Assistant',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'serviceSetupAssistant',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "mfa-assistant",
-        "label": "Multi-Factor Authentication Assistant",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "mfaAssistant"
+        name: 'mfa-assistant',
+        label: 'Multi-Factor Authentication Assistant',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'mfaAssistant',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "release-updates",
-        "label": "Release Updates",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "releaseUpdates"
+        name: 'release-updates',
+        label: 'Release Updates',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'releaseUpdates',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "lex-transition-assistant",
-        "label": "Lightning Experience Transition Assistant",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "lexTransitionAssistant"
+        name: 'lex-transition-assistant',
+        label: 'Lightning Experience Transition Assistant',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'lexTransitionAssistant',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "mobile-quickstart",
-        "label": "New Salesforce Mobile App Quickstart",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "mobileQuickstart"
+        name: 'mobile-quickstart',
+        label: 'New Salesforce Mobile App Quickstart',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'mobileQuickstart',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "lightning-usage",
-        "label": "Lightning Usage",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "lightningUsage"
+        name: 'lightning-usage',
+        label: 'Lightning Usage',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'lightningUsage',
             },
-            "state": {}
-        }
+            state: {},
+        },
     },
     {
-        "name": "optimizer",
-        "label": "Optimizer",
-        "disabled": false,
-        "expanded": false,
-        "pageReference": {
-            "type": "namedPage",
-            "attributes": {
-                "pageName": "optimizer"
+        name: 'optimizer',
+        label: 'Optimizer',
+        disabled: false,
+        expanded: false,
+        pageReference: {
+            type: 'namedPage',
+            attributes: {
+                pageName: 'optimizer',
             },
-            "state": {}
-        }
-    }
+            state: {},
+        },
+    },
 ];

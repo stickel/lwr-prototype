@@ -1,0 +1,19 @@
+<template>
+    <lightning-modal-header label={heading}></lightning-modal-header>
+    <lightning-modal-body>
+        <setup-renderer content={content}></setup-renderer>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <div class="modal-footer_directional">
+            <template for:each={options} for:item="option">
+                <lightning-button
+                    onclick={handleOptionClick}
+                    data-id={option.id}
+                    key={option.id}
+                    label={option.label}
+                    variant={option.variant}>
+                </lightning-button>
+            </template>
+        </div>
+    </lightning-modal-footer>
+</template>

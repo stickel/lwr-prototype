@@ -17,7 +17,8 @@
                         key={item.name}
                         label={item.label}
                         page-reference={item.pageReference}
-                        selected={item.selected}>
+                        selected={item.selected}
+                        header={item.hasHeader}>
                     </setup-nav-item>
                 </template>
 
@@ -28,7 +29,6 @@
                         label={item.label}
                         page-reference={item.pageReference}
                         selected={item.selected}
-                        has-children={item.hasChildren}
                         children={item.items}>
                     </setup-nav-item>
                 </template>
@@ -40,7 +40,6 @@
                         label={item.label}
                         page-reference={item.pageReference}
                         selected={item.selected}
-                        has-children={item.hasChildren}
                         children={item.items}>
                     </setup-nav-item>
                 </template>
@@ -52,7 +51,6 @@
                         label={item.label}
                         page-reference={item.pageReference}
                         selected={item.selected}
-                        has-children={item.hasChildren}
                         children={item.items}>
                     </setup-nav-item>
                 </template>

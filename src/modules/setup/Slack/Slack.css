@@ -1,0 +1,28 @@
+.permission-set-block,
+.permission-set-block .slds-card__body_inner {
+    --slds-c-card-header-spacing-block-start: 0;
+    --slds-c-card-header-spacing-inline-start: 0;
+    --slds-c-card-header-spacing-inline-end: 0;
+    --slds-c-card-body-spacing-inline-start: 0;
+    --slds-c-card-body-spacing-inline-end: 0;
+}
+
+.header-toggle {
+    padding-top: var(--slds-spacingXSmall);
+    text-align: center;
+}
+
+.slack-onboarding {
+    display: block;
+    margin-top: var(--slds-spacingMedium);
+}
+
+.channel-name {
+    font-size: var(--slds-fontSize4);
+    font-weight: var(--slds-fontWeightBold);
+}
+
+.channel-name_link {
+    font-size: var(--slds-fontSize3);
+    font-weight: var(--slds-fontWeightRegular);
+}

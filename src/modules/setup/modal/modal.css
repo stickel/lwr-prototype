@@ -1,0 +1,7 @@
+/*  SLDS modal "directional" classes don't work for this component yet
+    so this is a class added to make it look correct until the base
+    is fixed */
+.modal-footer_directional {
+    display: flex;
+    justify-content: space-between;
+}
