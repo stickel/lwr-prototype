@@ -42,6 +42,7 @@
             "setup/modalCreateBroadcastChannel": ["modules/setup/modalCreateBroadcastChannel/modalCreateBroadcastChannel.ts"],
             "setup/modalCreateBroadcastChannelBasics": ["modules/setup/modalCreateBroadcastChannelBasics/modalCreateBroadcastChannelBasics.ts"],
             "setup/modalSelectOnboardingChannels": ["modules/setup/modalSelectOnboardingChannels/modalSelectOnboardingChannels.ts"],
+            "setup/radioGroupWithHint": ["modules/setup/radioGroupWithHint/radioGroupWithHint.ts"],
             "setup/renderer": ["modules/setup/renderer/renderer.ts"],
             // "setup/": ["modules/setup//.ts"],
             // Base LWR modules needed

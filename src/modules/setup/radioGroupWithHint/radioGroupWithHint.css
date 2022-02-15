@@ -1,0 +1,10 @@
+.option-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.slds-form-element__label {
+    margin-bottom: var(--slds-spacingXxSmall);
+    color: var(--slds-colorTextDefault);
+    cursor: pointer;
+}
