@@ -57,6 +57,40 @@
         <template if:true={slackEnabled}>
             <lightning-card class="slack-onboarding">
                 <header slot="title">
+                    <h2 class="slds-text-heading_medium">Set Up Sales Channels</h2>
+                </header>
+                <div class="slds-p-horizontal_medium slds-p-bottom_large">
+                    <p>Users can link a Salesforce opportunity or account to a Slack channel. Channel members can collaborate on the records easily and get notifications about the records in Slack.</p>
+                    <div class="slds-box slds-m-top_medium slds-p-top_small slds-p-left_small slds-p-right_small">
+                        <h3 class="slds-card__header-title slds-text-heading_small slds-m-bottom_small">
+                            Manage Who Can Create Sales Channels
+                            <lightning-helptext 
+                                class="slds-m-left_x-small sales-help"
+                                content="Select the level of record access required to link records to Slack channels.">
+                            </lightning-helptext>
+                        </h3>
+                        <setup-radio-group-with-hint
+                            class="slds-m-bottom_medium"
+                            label="Manage Who Can Create Sales Channels"
+                            options={salesChannelAccessOptions}
+                            value={salesChannelAccessValue}
+                            variant="label-hidden"
+                            onchange={handleSalesChannelAccessChange}>
+                        </setup-radio-group-with-hint>
+                        <!-- <lightning-radio-group
+                            name="access"
+                            class="slds-m-bottom_medium"
+                            label="Manage Who Can Create Sales Channels"
+                            options={salesChannelAccessOptions}
+                            value={salesChannelAccessValue}
+                            variant="label-hidden"
+                            onchange={handleSalesChannelAccessChange}>
+                        </lightning-radio-group> -->
+                    </div>
+                </div>
+            </lightning-card>
+            <lightning-card class="slack-onboarding">
+                <header slot="title">
                     <h2 class="slds-text-heading_medium">Set Up Feed Channels</h2>
                 </header>
                 <div class="slds-p-horizontal_medium slds-p-bottom_large">

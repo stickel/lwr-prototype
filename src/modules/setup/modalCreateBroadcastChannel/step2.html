@@ -9,6 +9,7 @@
                     name="channel-name"
                     label="Channel Name"
                     placeholder="Enter a name..."
+                    value={channelDetails.id}
                     onchange={handleNameChange}>
                 </lightning-input>
                 <lightning-input
@@ -17,6 +18,7 @@
                     name="topic"
                     label="Topic"
                     placeholder="Enter a topic..."
+                    value={channelDetails.topic}
                     onchange={handleTopicChange}>
                 </lightning-input>
                 <lightning-textarea
@@ -25,6 +27,7 @@
                     name="description"
                     max-length="250"
                     field-level-help="Set a channel description in Slack. Anyone in your workspace can see the description, and channel members can edit it."
+                    value={channelDetails.description}
                     onchange={handleDescriptionChange}>
                 </lightning-textarea>
             </div>

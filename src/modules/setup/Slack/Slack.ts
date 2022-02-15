@@ -2,6 +2,8 @@ import { LightningElement, api, track } from 'lwc';
 import ModalCreateBroadcastChannel from 'setup/modalCreateBroadcastChannel';
 import ModalSelectOnboardingChannels from 'setup/modalSelectOnboardingChannels';
 
+import type { RadioOptionWithHint } from 'setup/radioGroupWithHint';
+
 interface BroadcastChannel {
     id: string;
     name: string;
@@ -17,6 +19,7 @@ export default class Slack extends LightningElement {
     @track _inputText = '';
     @track _broadcastChannels: BroadcastChannel[];
     @track _activeChannels: BroadcastChannel[] = [];
+    @track _salesChannelAccessValue = '0';
 
     _activeChannelDetails = {};
 
@@ -27,6 +30,15 @@ export default class Slack extends LightningElement {
 
     set broadcastChannels(value: BroadcastChannel) {
         this._broadcastChannels.push(value);
+    }
+
+    @api
+    get salesChannelAccessValue(): string {
+        return this._salesChannelAccessValue;
+    }
+
+    set salesChannelAccessValue(value: string) {
+        this._salesChannelAccessValue = value;
     }
 
     constructor() {
@@ -88,7 +100,11 @@ export default class Slack extends LightningElement {
     ): Promise<void> {
         event.stopPropagation();
         await ModalCreateBroadcastChannel.open({
+            heading: 'New Feed Channel',
             channelId: `${event.target.dataset.id}`,
+            channelDetails: this.channelPropsFromId(
+                `${event.target.dataset.id}`,
+            ),
             onnextstep(event: CustomEvent): void {
                 this._activeChannelDetails = Object.assign(
                     {},
@@ -127,6 +143,11 @@ export default class Slack extends LightningElement {
         );
     }
 
+    handleSalesChannelAccessChange(event: CustomEvent): void {
+        event.preventDefault();
+        console.log('chose', event.detail.value);
+    }
+
     activateBroadcastChannel(id: string): void {
         const channel: any = this._broadcastChannels.filter((c: any) => {
             return c.id === id;
@@ -142,11 +163,37 @@ export default class Slack extends LightningElement {
         return channelObj.name;
     }
 
+    channelPropsFromId(id: string): {} {
+        return this._broadcastChannels.filter((c: any) => {
+            return c.id === id;
+        })[0];
+    }
+
     get slackEnabled(): boolean {
         return this.enabled;
     }
 
     get hasChannels(): boolean {
         return this._broadcastChannels.length !== 0;
+    }
+
+    get salesChannelAccessOptions(): RadioOptionWithHint[] {
+        return [
+            {
+                label: 'Most Restrictive: Users with full access to a record',
+                hint: 'Only users with full access to a record can create a sales channel for the record. Record owners usually have full access. Other users can also have full access, depending on your sharing settings.',
+                value: '0',
+            },
+            {
+                label: 'Somewhat Restrictive: Users with Read/Write access to a record',
+                hint: 'Any user with at least Read/Write manual sharing access can create a sales channel for the record.',
+                value: '1',
+            },
+            {
+                label: 'Least Restrictive: Users with Read Only access to a record',
+                hint: 'Any user with at least Read Only manual sharing access can create a sales channel for the record.',
+                value: '2',
+            },
+        ];
     }
 }

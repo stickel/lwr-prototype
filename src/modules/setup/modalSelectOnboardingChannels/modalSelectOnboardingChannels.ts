@@ -8,37 +8,37 @@ export default class ModalSelectOnboardingChannels extends LightningModal {
         {
             label: '#deals-lost',
             value: 'deals-lost',
-            description: 'A channel for deals lost',
+            topic: 'A channel for deals lost',
         },
         {
             label: '#high-value-deals',
             value: 'high-value-deals',
-            description: 'Notifications for all high value deals',
+            topic: 'Notifications for all high value deals',
         },
         {
             label: '#news-client-1',
             value: 'news-client-1',
-            description: 'News from around the internet on Client 1',
+            topic: 'News from around the internet on Client 1',
         },
         {
             label: '#all-sales-team',
             value: 'all-sales-team',
-            description: 'All members of the sales team',
+            topic: 'All members of the sales team',
         },
         {
             label: '#sales-managers',
             value: 'sales-managers',
-            description: 'All sales managers',
+            topic: 'All sales managers',
         },
         {
             label: '#sales-ops',
             value: 'sales-ops',
-            description: 'All sales operations',
+            topic: 'All sales operations',
         },
         {
             label: '#accounting',
             value: 'accounting',
-            description: 'All accounting departments',
+            topic: 'All accounting departments',
         },
     ];
 

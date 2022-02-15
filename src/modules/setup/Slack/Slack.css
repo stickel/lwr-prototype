@@ -12,6 +12,10 @@
     text-align: center;
 }
 
+.sales-help {
+    transform: translateY(-4px);
+}
+
 .slack-onboarding {
     display: block;
     margin-top: var(--slds-spacingMedium);

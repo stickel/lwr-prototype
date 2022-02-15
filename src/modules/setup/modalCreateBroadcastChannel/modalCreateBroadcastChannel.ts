@@ -18,6 +18,7 @@ export default class ModalCreateBroadcastChannel extends LightningModal {
     @api channelId = '';
     @api currentStep: number;
 
+    @track _channelDetails: {};
     @track _selectedRole: string;
     @track visibilityValue: string;
     @track addMembersValue: string;
@@ -36,14 +37,39 @@ export default class ModalCreateBroadcastChannel extends LightningModal {
         this._selectedRole = value;
     }
 
+    @api
+    get channelDetails(): any {
+        return this._channelDetails;
+    }
+
+    set channelDetails(value: {}) {
+        this._channelDetails = value;
+    }
+
     constructor() {
         super();
         this.currentStep = 0;
         this._selectedRole = '';
         this.selectedPill = '';
-        this.name = '';
-        this.topic = '';
-        this.description = '';
+        this._channelDetails = {};
+        this.name = Object.prototype.hasOwnProperty.call(
+            this.channelDetails,
+            'name',
+        )
+            ? this.channelDetails.name
+            : '';
+        this.topic = Object.prototype.hasOwnProperty.call(
+            this.channelDetails,
+            'topic',
+        )
+            ? this.channelDetails.topic
+            : '';
+        this.description = Object.prototype.hasOwnProperty.call(
+            this.channelDetails,
+            'description',
+        )
+            ? this.channelDetails.description
+            : '';
         this.addMembersValue = this.addMembersOptions[0].value;
         this.postRestrictionValue = this.postRestrictionOptions[1].value;
         this.visibilityValue = this.visibilityOptions[1].value;
@@ -77,37 +103,13 @@ export default class ModalCreateBroadcastChannel extends LightningModal {
             });
         }
     }
-    handlePillRemove(event: CustomEvent): void {
-        console.log('handle pill remove', event);
+    handlePillRemove(): void {
         this.inputPill = {};
         this.inputText = '';
     }
 
     handleRoleSelect(event: CustomEvent): void {
-        console.log(event);
-        // if (this.inputText === '' ? true : /\S/.test(this.inputText)) {
-        //     const selectedOption: any = this.roleOptions.filter(
-        //         (option: any) => {
-        //             return option.value === event.detail.value;
-        //         },
-        //     )[0];
-        //     this.inputPill = {
-        //         label: selectedOption.text,
-        //         id: selectedOption.value,
-        //     };
-        // }
         this.selectedRole = event.detail.value;
-        // this.selectedPill = event.detail.value;
-        // this.selectedRole = this.roleOptions.filter((o: any) => {
-        //     console.log('roleoptions', o);
-        //     return o.value === event.detail.value;
-        // });
-        // this.template
-        //     .querySelector('lightning-grouped-combobox')
-        //     .checkValidity();
-        // this.template
-        //     .querySelector('lightning-grouped-combobox')
-        //     .reportValidity();
     }
 
     handleNextEvent(): void {
