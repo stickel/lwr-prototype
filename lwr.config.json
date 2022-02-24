@@ -1,19 +1,18 @@
 {
     "port": 3333,
-    "serverMode": "dev",
-    "rootDir": "/Users/mstickel/core-prototype",
+    "rootDir": "/Users/mstickel/easy-prototype",
     "lwc": {
         "modules": [
             {
                 "dir": "$rootDir/src/modules"
             },
             {
-                "npm": "lightning-base-components"
+                "npm": "lwc-components-lightning"
             }
         ]
     },
     "bundleConfig": {
-        "exclude": [ "lwc", "@lwc-synthetic-shadow", "lwr/navigation" ]
+        "exclude": [ "lwc", "@lwc/synthetic-shadow", "lwr/navigation" ]
     },
     "assets": [
         {
@@ -41,15 +40,6 @@
     ],
     "routes": [
         {
-            "id": "start",
-            "path": "/",
-            "rootComponent": "prototype/app",
-            "layoutTemplate": "$layoutsDir/main.njk",
-            "bootstrap": {
-                "syntheticShadow": true
-            }
-        },
-        {
             "id": "cx",
             "path": "/cx",
             "rootComponent": "cx/app",
@@ -71,6 +61,7 @@
             "id": "setup-named-page",
             "path": "/setup/:namedPage",
             "rootComponent": "setup/app",
+            "layoutTemplate": "$layoutsDir/setup.njk",
             "bootstrap": {
                 "syntheticShadow": true
             }

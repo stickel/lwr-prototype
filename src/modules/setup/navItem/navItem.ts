@@ -1,4 +1,4 @@
-import { LightningElement, api, wire, track } from "lwc";
+import { LightningElement, api, wire, track } from 'lwc';
 import { NavigationContext, generateUrl, navigate } from 'lwr/navigation';
 import type { ContextId } from 'lwr/navigation';
 import type { PageReference } from 'lwr/router';
@@ -23,7 +23,7 @@ export default class NavItem extends LightningElement {
 
     @api pageReference?: PageReference;
     @api label?: string;
-    @api hasChildren?: boolean;
+    @api header?: boolean;
 
     @api
     get selected(): boolean {
@@ -70,7 +70,8 @@ export default class NavItem extends LightningElement {
 
     async connectedCallback(): Promise<void> {
         if (this.pageReference && this.navContext) {
-            this.path = generateUrl(this.navContext, this.pageReference) || undefined;
+            this.path =
+                generateUrl(this.navContext, this.pageReference) || undefined;
         }
     }
 
@@ -87,7 +88,11 @@ export default class NavItem extends LightningElement {
         this._expanded = !this._expanded;
     }
 
+    get hasChildren(): boolean {
+        return this._children && this._children.length !== 0;
+    }
+
     get liClassList(): string {
-        return this.hasChildren ? '' : 'headerless';
+        return this.header === false ? 'headerless' : '';
     }
 }

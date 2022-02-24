@@ -1,4 +1,4 @@
-import { LightningElement, api, wire, track } from "lwc";
+import { LightningElement, api, wire, track } from 'lwc';
 import { CurrentPageReference, NavigationContext } from 'lwr/navigation';
 import type { PageReference } from 'lwr/router';
 import type { ContextId } from 'lwr/navigationContext';
@@ -7,11 +7,10 @@ import type { NavData } from 'setup/navItem';
 interface SelectableNavData extends NavData {
     selected: boolean;
     group: any;
+    hasHeader: boolean;
 }
 
 export default class Navigation extends LightningElement {
-    // import /data/site/setup-nav.json to get all the nav elements
-
     @wire(NavigationContext as any)
     navContext?: ContextId;
 
@@ -20,22 +19,38 @@ export default class Navigation extends LightningElement {
         // console.log('navigation#selectNavItem', currentPageReference)
         if (this.items) {
             const currentType = currentPageReference.type;
-            const currentAttributesString = JSON.stringify(currentPageReference.attributes);
+            const currentAttributesString = JSON.stringify(
+                currentPageReference.attributes,
+            );
 
             // Need to flatten `this.items` into a single array of items instead of an array of group objects
             // for the next bit
-            const formattedNavList = this.items.reduce((prevVal: any, currentVal: any, currIndex: number, array: any) => {
-                return prevVal.concat(currentVal.group.items)
-            }, []);
+            const formattedNavList = this.items.reduce(
+                (prevVal: any, currentVal: any) => {
+                    return prevVal.concat(currentVal.group.items);
+                },
+                [],
+            );
 
-            const selectedNavData: NavData | undefined = formattedNavList.find((item: any) => {
-                const equalPageIdentity = currentType === item.pageReference.type &&
-                                            currentAttributesString === JSON.stringify(item.pageReference.attributes);
-                return (equalPageIdentity ||
-                    (currentType === 'home' &&
-                        item.pageReference.type === 'namedPage' &&
-                        item.pageReference.attributes.pageName === 'home'));
-            });
+            const selectedNavData: NavData | undefined = formattedNavList.find(
+                (item: any) => {
+                    // Parent navigation elements don't have page references because
+                    // they are generally only a vehicle for a dropdown menu of clickable options
+                    if (item.pageReference) {
+                        const equalPageIdentity =
+                            currentType === item.pageReference.type &&
+                            currentAttributesString ===
+                                JSON.stringify(item.pageReference.attributes);
+                        return (
+                            equalPageIdentity ||
+                            (currentType === 'home' &&
+                                item.pageReference.type === 'namedPage' &&
+                                item.pageReference.attributes.pageName ===
+                                    'home')
+                        );
+                    }
+                },
+            );
 
             if (selectedNavData) {
                 this.currentItemId = selectedNavData.name;
@@ -76,42 +91,59 @@ export default class Navigation extends LightningElement {
 
     get navItems(): SelectableNavData[] {
         if (this.items) {
+            const hasHeader: boolean = Object.hasOwnProperty.call(
+                this.items[0].group,
+                'name',
+            );
             return (this.items[0].group.items || []).map((item: NavData) => ({
                 ...item,
                 selected: item.name === this.currentItemId,
+                hasHeader: hasHeader,
             }));
         }
         return [];
     }
-    
+
     get adminNavItems(): SelectableNavData[] {
         if (this.items && this.items[1]) {
+            const hasHeader: boolean = Object.hasOwnProperty.call(
+                this.items[1].group,
+                'name',
+            );
             return (this.items[1].group.items || []).map((item: NavData) => ({
                 ...item,
                 selected: item.name === this.currentItemId,
-                hasChildren: item.items && item.items.length !== 0
+                hasHeader: hasHeader,
             }));
         }
         return [];
     }
-    
+
     get platformNavItems(): SelectableNavData[] {
         if (this.items && this.items[2]) {
+            const hasHeader: boolean = Object.hasOwnProperty.call(
+                this.items[2].group,
+                'name',
+            );
             return (this.items[2].group.items || []).map((item: NavData) => ({
                 ...item,
                 selected: item.name === this.currentItemId,
-                hasChildren: item.items && item.items.length !== 0
+                hasHeader: hasHeader,
             }));
         }
         return [];
     }
-    
+
     get settingsNavItems(): SelectableNavData[] {
         if (this.items && this.items[3]) {
+            const hasHeader: boolean = Object.hasOwnProperty.call(
+                this.items[3].group,
+                'name',
+            );
             return (this.items[3].group.items || []).map((item: NavData) => ({
                 ...item,
                 selected: item.name === this.currentItemId,
-                hasChildren: item.items && item.items.length !== 0
+                hasHeader: hasHeader,
             }));
         }
         return [];

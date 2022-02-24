@@ -419,7 +419,7 @@
 /* Some overrides from SLDS to match production */
 .slds-brand-band:before {
 	/* Fix the image used for the faded background in production */
-	background-image: url("assets/lightning_blue_background.png"), linear-gradient(to top, var(--slds-brandBackgroundDarkTransparent,rgba(1, 68, 134, 0)) 0, var(--slds-brandBackgroundDark,rgb(1, 68, 134)));
+	background-image: url("/assets/lightning_blue_background.png"), linear-gradient(to top, var(--slds-brandBackgroundDarkTransparent,rgba(1, 68, 134, 0)) 0, var(--slds-brandBackgroundDark,rgb(1, 68, 134)));
 }
 
 .slds-brand-band:after {
@@ -482,5 +482,4 @@
 	left: 0;
 	right: 0;
 	height: calc(100% - 90px);
-	/* overflow: visible; put this on the main body content, not the entire thing */
 }
