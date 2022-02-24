@@ -19,7 +19,10 @@ export default class NavItem extends LightningElement {
 
     path?: string;
     _selected = false;
+    @track _index = 0;
+    @track _childIndex = this._index + 1;
     @track _expanded = false;
+    @track _children: NavData[];
 
     @api pageReference?: PageReference;
     @api label?: string;
@@ -51,7 +54,23 @@ export default class NavItem extends LightningElement {
         }
     }
 
-    @track _children: NavData[];
+    @api
+    get index(): number {
+        return this._index;
+    }
+
+    set index(value: number) {
+        this._index = value;
+    }
+
+    @api
+    get childIndex(): number {
+        return this._childIndex;
+    }
+
+    set childIndex(value: number) {
+        this._childIndex = value;
+    }
 
     @api
     get children(): NavData[] {
@@ -72,6 +91,12 @@ export default class NavItem extends LightningElement {
         if (this.pageReference && this.navContext) {
             this.path =
                 generateUrl(this.navContext, this.pageReference) || undefined;
+        }
+    }
+
+    renderedCallback(): void {
+        if (this.hasChildren) {
+            this._childIndex = this._index + 1;
         }
     }
 
