@@ -1,24 +1,7 @@
 {
+    "extends": "../../../tsconfig",
     "compilerOptions": {
-        "experimentalDecorators": true,
-        "strict": true,
-        "resolveJsonModule": true,
-        "noUnusedLocals": true,
-        "declaration": true,
-        "sourceMap": true,
-        "declarationMap": true,
-        "esModuleInterop": true,
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "composite": true,
-        "target": "ES2020",
-        "skipLibCheck": true,
-        "baseUrl": "src",
-        "rootDir": "src",
-        "outDir": "build",
         "paths": {
-            "global/header": ["modules/global/header/header.ts"],
-            "global/utils": ["modules/global/utils/utils.ts"],
             // TODO: would be great if this worked. :|
             // "@setup/*": ["modules/setup/*"],
             // In the meantime...
@@ -51,12 +34,5 @@
             "lwr/navigationContext": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationContext/navigationContext.d.ts"],
             "lwr/navigationService": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationService/navigationService.d.ts"],
         }
-    },
-    "include": [
-        "src"
-    ],
-    "exclude": [
-        "node_modules",
-        "build"
-    ]
+    }
 }
