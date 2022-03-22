@@ -1,0 +1,15 @@
+<template>
+    <template if:true={title}>
+        <h3 class="slds-text-heading_medium slds-m-bottom_medium shift-section-header">
+            {title} ({totalAvailableShifts})
+        </h3>
+    </template>
+    <ul class={computedClasses}>
+        <template for:each={shifts} for:item="shift">
+            <serviceconsole-shift-block
+                key={shift.Id}
+                shift={shift}>
+            </serviceconsole-shift-block>
+        </template>
+    </ul>
+</template>

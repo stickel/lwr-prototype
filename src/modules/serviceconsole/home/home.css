@@ -1,0 +1,15 @@
+.card-heading {
+    margin-top: -(var(--slds-spacingSmall));
+}
+
+.shift-sidebar {
+    --slds-c-card-header-spacing-block-start: 0;
+    --slds-c-card-header-spacing-block-end: 0;
+    --slds-c-card-body-spacing-block-start: 0;
+    --slds-c-card-body-spacing-block-end: 0;
+}
+
+.disabled-arrow {
+    --slds-c-icon-color-foreground: var(--slds-paletteNeutral80);
+    --slds-c-icon-color-foreground-default: var(--slds-paletteNeutral80);
+}

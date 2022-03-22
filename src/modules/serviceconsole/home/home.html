@@ -1,0 +1,96 @@
+<template>
+    <div class="console-container">
+        <lightning-card
+            class="slds-m-bottom_large">
+            <div class="slds-p-bottom_small slds-p-horizontal_medium">
+                <div class="slds-media slds-grid slds-grid_vertical-align-center">
+                    <div class="slds-media__figure">
+                        <lightning-avatar
+                            variant="circle"
+                            size="large"
+                            src="/assets/images/avatar2.jpg"
+                            alternative-text="Sumi Lee">
+                        </lightning-avatar>
+                    </div>
+                    <div class="slds-media__body">
+                        <p>Service Agent</p>
+                        <p class="slds-text-heading_large card-heading">
+                            Sumi Lee
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+        <section class="slds-grid slds-gutters">
+            <lightning-card
+                class="slds-m-top_medium slds-col slds-size_2-of-3">
+                <header slot="title">
+                    <h2 class="slds-text-heading_large">
+                        {scheduleTitle}
+                    </h2>
+                </header>
+                <div slot="actions">
+                    <div class="slds-grid slds-grid_vertical slds-grid_align-center agent-schedule-actions">
+                        <template if:true={hasPrevDates}>
+                            <a href="javascript:void(0)"
+                                onclick={handleScheduleDec}>
+                                <lightning-icon
+                                    icon-name="utility:chevronup"
+                                    size="small">
+                                </lightning-icon>
+                            </a>
+                        </template>
+                        <template if:false={hasPrevDates}>
+                            <lightning-icon
+                                class="disabled-arrow"
+                                icon-name="utility:chevronup"
+                                size="small">
+                            </lightning-icon>
+                        </template>
+                        <template if:true={hasNextDates}>
+                            <a href="javascript:void(0)"
+                                onclick={handleScheduleInc}>
+                                <lightning-icon
+                                    icon-name="utility:chevrondown"
+                                    size="small">
+                                </lightning-icon>
+                            </a>
+                        </template>
+                        <template if:false={hasNextDates}>
+                            <lightning-icon
+                                class="disabled-arrow"
+                                icon-name="utility:chevrondown"
+                                size="small">
+                            </lightning-icon>
+                        </template>
+                    </div>
+                </div>
+                <div class="slds-p-horizontal_medium schedule-week">
+
+                    <serviceconsole-schedule-view
+                        workdays={myWorkdays}
+                        offset={workdayOffset}
+                        limit={workdayLimit}>
+                    </serviceconsole-schedule-view>
+
+
+                </div>
+            </lightning-card>
+            <lightning-card
+                class="slds-m-top_medium slds-col slds-size_1-of-3 shift-sidebar">
+                <serviceconsole-shift-list
+                    class="slds-p-around_small"
+                    title="Available Shifts"
+                    size="large"
+                    shifts={availableShifts}>
+                </serviceconsole-shift-list>
+                <serviceconsole-shift-list
+                    class="slds-m-top_large slds-p-around_small"
+                    title="My Requests"
+                    size="medium"
+                    shifts={requests}>
+                </serviceconsole-shift-list>
+            </lightning-card>
+        </section>
+    </div>
+</template>

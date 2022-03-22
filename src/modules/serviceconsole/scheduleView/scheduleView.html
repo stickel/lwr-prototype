@@ -1,0 +1,12 @@
+<template>
+    <div class="shift-list">
+        <template for:each={workdays} for:item="day">
+            <serviceconsole-shift-item
+                key={day.Id}
+                date={day.Date}
+                shifts={day.Shifts}
+                class="slds-m-bottom_small">
+            </serviceconsole-shift-item>
+        </template>
+    </div>
+</template>

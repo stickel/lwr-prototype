@@ -65,6 +65,24 @@
             "bootstrap": {
                 "syntheticShadow": true
             }
+        },
+        {
+            "id": "service-console",
+            "path": "/service-console",
+            "rootComponent": "serviceconsole/app",
+            "layoutTemplate": "$layoutsDir/serviceConsole.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
+        },
+        {
+            "id": "service-console-named-page",
+            "path": "/service-console/:namedPage",
+            "rootComponent": "serviceconsole/app",
+            "layoutTemplate": "$layoutsDir/serviceConsole.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            }
         }
     ]
 }

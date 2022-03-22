@@ -1,0 +1,38 @@
+<template>
+    <div>
+        <!-- shift is today -->
+        <template if:true={isShiftToday}>
+            <div class={shiftItemClasses}>
+                <div class="slds-col slds-size_1-of-12 shift-item-date shift-item-date_today">
+                    <span class="shift-day">{shiftDay}</span>
+                    <span class="shift-date">{shiftDate}</span>
+                </div>
+                <template for:each={shifts} for:item="shift">
+                    <serviceconsole-shift
+                        class="slds-col"
+                        key={shift.Id}
+                        shift={shift}
+                        is-today={isShiftToday}>
+                    </serviceconsole-shift>
+                </template>
+            </div>
+        </template>
+
+        <!-- shift is not today -->
+        <template if:false={isShiftToday}>
+            <div class={shiftItemClasses}>
+                <div class="slds-col slds-size_1-of-12 shift-item-date">
+                    <span class="shift-day">{shiftDay}</span>
+                    <span class="shift-date">{shiftDate}</span>
+                </div>
+                <template for:each={shifts} for:item="shift">
+                    <serviceconsole-shift
+                        class="slds-col"
+                        key={shift.Id}
+                        shift={shift}>
+                    </serviceconsole-shift>
+                </template>
+            </div>
+        </template>
+    </div>
+</template>

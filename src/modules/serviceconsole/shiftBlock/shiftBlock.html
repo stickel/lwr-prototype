@@ -1,0 +1,78 @@
+<template>
+    <!-- COMMENT OUT TO SHOW POPUP ON BUTTON CLICK -->
+    <!-- <li class="slds-p-top_medium slds-p-bottom_medium slds-m-bottom_x-small slds-is-relative slds-grid shift-block">
+        <div class="slds-col">
+            <span if:true={hasSwapReason}
+                class="shift-block-shift">
+                {shift.Swap.reason}
+            </span>
+            <span if:false={hasSwapReason}
+                class="shift-block-shift">
+                {shiftBlockType}
+            </span>
+
+            <span class="shift-block-date">{shiftDate}</span>
+            <span class="shift-block-time">{shiftFormattedTime}</span>
+            <span class={noteBlockClasslist}>
+                {notes}
+            </span>
+        </div>
+
+        <lightning-button
+            if:false={hasSwapStatus}
+            class="slds-m-right_medium"
+            label="View Details"
+            onclick={handleOpenPopup}>
+        </lightning-button> -->
+        <!-- /END POPUP ON BUTTON CLICK -->
+
+
+    <!-- UNCOMMENT BELOW TO SHOW POPUP ON HOVER -->
+    <li class="slds-p-around_medium slds-m-bottom_x-small slds-is-relative shift-block"
+        onmouseenter={handleOpenPopup}
+        onmouseleave={handleMouseLeave}>
+        <span if:true={hasSwapReason}
+            class="shift-block-shift">
+            {shift.Swap.reason}
+        </span>
+        <span if:false={hasSwapReason}
+            class="shift-block-shift">
+            {shiftBlockType}
+        </span>
+
+        <span class="shift-block-date">{shiftDate}</span>
+        <span class="shift-block-time">{shiftFormattedTime}</span>
+        <span class={noteBlockClasslist}>
+            {notes}
+        </span>
+        <!-- /END ON HOVER POPUP TRIGGER -->
+
+        <!-- The popup -->
+        <lightning-popup aria-describedby="popup-body"
+            onalignmentupdate={handleAlignmentUpdate}>
+            <div class={popupClasses}>
+                <div id="popup-body" class="slds-popover__body">
+                    <template if:true={isAssigned}>
+                        <p>This shift has been assigned to you by {shift.Assignee}. Click "Accept" if you would like to take this shift or "decline" if you cannot.</p>
+                    </template>
+                    <template if:true={hasSwapPerson}>
+                        <p>{shift.Swap.with} needs this shift covered. If you can cover for them click "Accept".</p>
+                    </template>
+                    <footer class="slds-m-top_medium">
+                        <lightning-button 
+                            class="slds-m-right_medium"
+                            variant="brand"
+                            label="Accept"
+                            onclick={handleAccept}>
+                        </lightning-button>
+                        <lightning-button 
+                            variant="neutral"
+                            label="Decline"
+                            onclick={handleDecline}>
+                        </lightning-button>
+                    </footer>
+                </div>
+            </div>
+        </lightning-popup>
+    </li>
+</template>
