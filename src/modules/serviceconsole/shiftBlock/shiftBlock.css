@@ -1,4 +1,6 @@
 .shift-block {
+    opacity: 1;
+    visibility: visible;
     border: 1px solid var(--slds-colorBorder);
     border-radius: var(--slds-borderRadiusMedium);
 }
@@ -6,10 +8,10 @@
 /*  Commented out when showing a physical button to view the popup
     Uncomment if showing the popup on hover
      */
-.shift-block:hover {
+/* .shift-block:hover {
     border-color: var(--slds-colorBorderSelectionHover);
     background-color: var(--slds-colorBackgroundSelection);
-}
+} */
 
 .shift-block-shift {
     font-weight: var(--slds-fontWeightBold);
@@ -27,4 +29,9 @@
 
 .shift-block-time {
     display: block;
+}
+
+.shift-block-fade-out {
+    opacity: 0;
+    transition: opacity 0.4s linear;
 }

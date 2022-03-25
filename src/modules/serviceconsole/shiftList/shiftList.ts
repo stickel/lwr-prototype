@@ -30,4 +30,23 @@ export default class ShiftList extends LightningElement {
             'slds-p-right_small': this._shifts.length >= 5,
         });
     }
+
+    handleRemoveShift(event: CustomEvent): void {
+        this._shifts = this._shifts.filter((shift) => {
+            return shift.Id !== event.detail.id;
+        });
+
+        if (event.detail.action === 'accept') {
+            this.dispatchEvent(
+                new CustomEvent('addshifttoschedule', {
+                    bubbles: true,
+                    cancelable: true,
+                    composed: true,
+                    detail: {
+                        id: event.detail.id,
+                    },
+                }),
+            );
+        }
+    }
 }

@@ -44,3 +44,20 @@
     flex-grow: 1;
     flex-shrink: 1;
 }
+
+.shift-empty {
+    width: 100%;
+    height: 2.25rem;
+    color: var(--slds-paletteNeutral60);
+    line-height: 2.25; /* same as the height for vertical centering */
+    align-content: center;
+    justify-content: center;
+    background-color: var(--slds-colorBackground);
+    border-color: var(--slds-colorBorderSeparatorAlt2);
+    border: 1px solid var(--slds-paletteNeutral80);
+    border-radius: var(--slds-borderRadiusLarge);
+}
+
+.shift-empty:hover {
+    border-color: var(--slds-colorBorderSeparatorAlt2);
+}

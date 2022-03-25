@@ -21,21 +21,6 @@
     width: 45.8333%;
 }
 
-.shift-breakdown_empty {
-    width: 100%;
-    height: 2.25rem;
-    color: var(--slds-paletteNeutral60);
-    line-height: 2.25; /* same as the height for vertical centering */
-    align-content: center;
-    justify-content: center;
-    background-color: var(--slds-colorBackground);
-    border-color: var(--slds-colorBorderSeparatorAlt2);
-}
-
-.shift-breakdown_empty:hover {
-    border-color: var(--slds-colorBorderSeparatorAlt2);
-}
-
 .shift-breakdown_today .shift-segment {
     display: flex;
     flex-direction: column;

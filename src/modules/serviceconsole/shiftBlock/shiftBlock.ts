@@ -49,8 +49,12 @@ export default class ShiftBlock extends LightningElement {
         this._popupAlignment = (event.target as any).alignment;
     }
 
-    preventClose(event: Event): void {
-        event.preventDefault();
+    handleAccept(event: Event): void {
+        this.removeShift((event.target as HTMLButtonElement).value, 'accept');
+    }
+
+    handleDecline(event: Event): void {
+        this.removeShift((event.target as HTMLButtonElement).value, 'decline');
     }
 
     get shiftBlockType(): string {
@@ -160,22 +164,37 @@ export default class ShiftBlock extends LightningElement {
         });
     }
 
+    removeShift(id: string, action: string): void {
+        this.template
+            .querySelector('li')
+            ?.classList.add('shift-block-fade-out');
+        setTimeout(() => {
+            this.dispatchEvent(
+                new CustomEvent('removeshift', {
+                    bubbles: true,
+                    cancelable: true,
+                    detail: { id: id, action: action },
+                }),
+            );
+        }, 400);
+    }
+
     openPopup(target: HTMLElement): void {
         const refElement = target;
         // Uncomment for show on button click
-        // this.popup.show(refElement, {
-        //     reference: { horizontal: 'right', vertical: 'top' },
-        //     popup: { horizontal: 'right', vertical: 'bottom' },
-        //     padding: 1,
-        //     offset: 1.25,
-        // });
-        // Uncomment for show on hover
         this.popup.show(refElement, {
             reference: { horizontal: 'right', vertical: 'top' },
             popup: { horizontal: 'right', vertical: 'bottom' },
-            padding: 0,
+            padding: 1,
             offset: 1.25,
         });
+        // Uncomment for show on hover
+        // this.popup.show(refElement, {
+        //     reference: { horizontal: 'right', vertical: 'top' },
+        //     popup: { horizontal: 'right', vertical: 'bottom' },
+        //     padding: 0,
+        //     offset: 1.25,
+        // });
     }
 
     closePopup(): void {

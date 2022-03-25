@@ -1,6 +1,6 @@
 <template>
     <!-- COMMENT OUT TO SHOW POPUP ON BUTTON CLICK -->
-    <!-- <li class="slds-p-top_medium slds-p-bottom_medium slds-m-bottom_x-small slds-is-relative slds-grid shift-block">
+    <li class="slds-p-top_medium slds-p-bottom_medium slds-m-bottom_x-small slds-is-relative slds-grid shift-block">
         <div class="slds-col">
             <span if:true={hasSwapReason}
                 class="shift-block-shift">
@@ -23,12 +23,12 @@
             class="slds-m-right_medium"
             label="View Details"
             onclick={handleOpenPopup}>
-        </lightning-button> -->
+        </lightning-button>
         <!-- /END POPUP ON BUTTON CLICK -->
 
 
     <!-- UNCOMMENT BELOW TO SHOW POPUP ON HOVER -->
-    <li class="slds-p-around_medium slds-m-bottom_x-small slds-is-relative shift-block"
+    <!-- <li class="slds-p-around_medium slds-m-bottom_x-small slds-is-relative shift-block"
         onmouseenter={handleOpenPopup}
         onmouseleave={handleMouseLeave}>
         <span if:true={hasSwapReason}
@@ -44,7 +44,7 @@
         <span class="shift-block-time">{shiftFormattedTime}</span>
         <span class={noteBlockClasslist}>
             {notes}
-        </span>
+        </span> -->
         <!-- /END ON HOVER POPUP TRIGGER -->
 
         <!-- The popup -->
@@ -63,11 +63,13 @@
                             class="slds-m-right_medium"
                             variant="brand"
                             label="Accept"
+                            value={shift.Id}
                             onclick={handleAccept}>
                         </lightning-button>
                         <lightning-button 
                             variant="neutral"
                             label="Decline"
+                            value={shift.Id}
                             onclick={handleDecline}>
                         </lightning-button>
                     </footer>

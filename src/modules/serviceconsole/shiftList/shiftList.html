@@ -4,7 +4,8 @@
             {title} ({totalAvailableShifts})
         </h3>
     </template>
-    <ul class={computedClasses}>
+    <ul class={computedClasses}
+        onremoveshift={handleRemoveShift}>
         <template for:each={shifts} for:item="shift">
             <serviceconsole-shift-block
                 key={shift.Id}

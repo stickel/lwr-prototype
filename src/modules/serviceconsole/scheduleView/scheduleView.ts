@@ -4,7 +4,7 @@ import type { ShiftObject } from '../shiftItem/shiftItem';
 export interface WorkDay {
     Id: number;
     Date: string;
-    Shifts?: ShiftObject[];
+    Shifts: ShiftObject[];
     DayOfWeek?: number;
 }
 

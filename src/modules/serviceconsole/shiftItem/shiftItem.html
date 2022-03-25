@@ -32,6 +32,11 @@
                         shift={shift}>
                     </serviceconsole-shift>
                 </template>
+                <template if:false={hasShift}>
+                    <div class="slds-grid slds-m-left_small slds-m-right_small shift-empty">
+                        <span>empty</span>
+                    </div>
+                </template>
             </div>
         </template>
     </div>

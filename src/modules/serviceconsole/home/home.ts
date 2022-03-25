@@ -5,10 +5,13 @@ import { getRandomId } from 'global/utils';
 import type { SwapShift } from '../shiftItem/shiftItem';
 import type { WorkDay } from '../scheduleView/scheduleView';
 
+const { compare } = Intl.Collator('en-US');
+
 export default class Home extends LightningElement {
     @track _workdayOffset: number;
     @track _workdayLimit: number;
     @track _currentDisplayIndex: number;
+    @track _workdays = workdays;
 
     constructor() {
         super();
@@ -36,21 +39,24 @@ export default class Home extends LightningElement {
     handleScheduleInc(): void {
         if (
             this.showingThisWeek &&
-            workdays[this._currentDisplayIndex].DayOfWeek !== 1
+            this._workdays[this._currentDisplayIndex].DayOfWeek !== 1
         ) {
             const todayDayOfWeek =
-                workdays[this._currentDisplayIndex].DayOfWeek;
+                this._workdays[this._currentDisplayIndex].DayOfWeek;
             this._currentDisplayIndex =
                 this._currentDisplayIndex + (8 - todayDayOfWeek);
             this._workdayOffset = this._currentDisplayIndex;
-        } else if (this._workdayOffset + this._workdayLimit < workdays.length) {
+        } else if (
+            this._workdayOffset + this._workdayLimit <
+            this._workdays.length
+        ) {
             this._workdayOffset = this._currentDisplayIndex;
             this.moveToNextWeekStart();
         }
     }
 
     handleScheduleDec(): void {
-        const pastWorkdays = workdays.slice(0, this._currentDisplayIndex);
+        const pastWorkdays = this._workdays.slice(0, this._currentDisplayIndex);
         const hasMoreThanAWeek = pastWorkdays.find(
             (day) => day.DayOfWeek === 1,
         );
@@ -63,8 +69,19 @@ export default class Home extends LightningElement {
         }
     }
 
+    handleAddShift(event: CustomEvent): void {
+        // Get the new shift
+        const addMe = openShifts.filter(
+            (shift) => shift.Id === event.detail.id,
+        )[0];
+        const addToIndex = this.indexOfDate(
+            this.localeDate(addMe.Date, luxon.DateTime.DATE_SHORT),
+        );
+        this._workdays[addToIndex].Shifts.push(addMe);
+    }
+
     indexOfDate(date: string): number {
-        return workdays.findIndex((d) => {
+        return this._workdays.findIndex((d) => {
             return (
                 luxon.DateTime.fromISO(d.Date).toLocaleString(
                     luxon.DateTime.DATE_SHORT,
@@ -82,7 +99,8 @@ export default class Home extends LightningElement {
     }
 
     moveToPreviousWeekStart(): void {
-        const currentDayOfWeek = workdays[this._currentDisplayIndex].DayOfWeek;
+        const currentDayOfWeek =
+            this._workdays[this._currentDisplayIndex].DayOfWeek;
         let delta = currentDayOfWeek - 1;
         if (delta === 0) {
             // if the delta is 0 it means we're at the beginning of the week,
@@ -100,14 +118,15 @@ export default class Home extends LightningElement {
         this._workdayOffset = this._currentDisplayIndex - delta;
         this._currentDisplayIndex = this.indexOfDate(
             this.localeDate(
-                workdays[this._workdayOffset].Date,
+                this._workdays[this._workdayOffset].Date,
                 luxon.DateTime.DATE_SHORT,
             ),
         );
     }
 
     moveToNextWeekStart(): void {
-        const currentDayOfWeek = workdays[this._currentDisplayIndex].DayOfWeek;
+        const currentDayOfWeek =
+            this._workdays[this._currentDisplayIndex].DayOfWeek;
         let delta = currentDayOfWeek + 1;
         if (
             currentDayOfWeek === 1 &&
@@ -118,7 +137,7 @@ export default class Home extends LightningElement {
         this._workdayOffset = this._currentDisplayIndex + delta;
         this._currentDisplayIndex = this.indexOfDate(
             this.localeDate(
-                workdays[this._workdayOffset].Date,
+                this._workdays[this._workdayOffset].Date,
                 luxon.DateTime.DATE_SHORT,
             ),
         );
@@ -132,7 +151,7 @@ export default class Home extends LightningElement {
     }
 
     get nextSevenDays(): WorkDay[] {
-        return workdays.slice(
+        return this._workdays.slice(
             this.indexOfDate(this.localeToday(luxon.DateTime.DATE_SHORT)),
             this._workdayLimit + 1,
         );
@@ -143,7 +162,10 @@ export default class Home extends LightningElement {
     }
 
     get hasNextDates(): boolean {
-        return this._currentDisplayIndex < workdays.length - this._workdayLimit;
+        return (
+            this._currentDisplayIndex <
+            this._workdays.length - this._workdayLimit
+        );
     }
 
     get showingThisWeek(): boolean {
@@ -161,10 +183,12 @@ export default class Home extends LightningElement {
             return 'My Schedule';
         }
 
-        return `${luxon.DateTime.fromISO(workdays[this._workdayOffset].Date)
+        return `${luxon.DateTime.fromISO(
+            this._workdays[this._workdayOffset].Date,
+        )
             .setLocale('en-US')
             .toFormat('LLL d')} - ${luxon.DateTime.fromISO(
-            workdays[this._workdayOffset].Date,
+            this._workdays[this._workdayOffset].Date,
         )
             .plus({ days: this._workdayLimit - 1 })
             .setLocale('en-US')
@@ -182,113 +206,11 @@ export default class Home extends LightningElement {
     }
 
     get availableShifts(): SwapShift[] {
-        return [
-            {
-                Id: getRandomId(),
-                Date: '2022-03-03T17:00:00.000Z',
-                DurationInMinutes: 540,
-                StartTime: '17:00',
-                Assignee: 'Supervisor',
-                Swap: {
-                    request: true,
-                    with: '',
-                    complete: false,
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-04T15:00:00.000Z',
-                DurationInMinutes: 300,
-                StartTime: '15:00',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: 'Nigel Trager',
-                    complete: false,
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-14T20:00:00.000Z',
-                DurationInMinutes: 540,
-                StartTime: '20:00',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: 'Wendy Yoder',
-                    complete: false,
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-14T16:00:00.000Z',
-                DurationInMinutes: 540,
-                StartTime: '16:00',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: 'Wendy Yoder',
-                    complete: false,
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-15T16:30:00.000Z',
-                DurationInMinutes: 420,
-                StartTime: '16:30',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: 'Simon Baez',
-                    complete: false,
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-16T04:00:00.000Z',
-                DurationInMinutes: 420,
-                StartTime: '21:00',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: 'José Gonsalvez',
-                    complete: false,
-                },
-            },
-        ];
+        return openShifts.sort((a, b) => compare(a.Date, b.Date));
     }
 
     get requests(): SwapShift[] {
-        return [
-            {
-                Id: getRandomId(),
-                Date: '2022-03-13T04:00:00.000Z',
-                DurationInMinutes: 420,
-                StartTime: '21:00',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: '',
-                    complete: false,
-                    status: 'In swap pool',
-                    reason: '',
-                },
-            },
-            {
-                Id: getRandomId(),
-                Date: '2022-03-15T16:30:00.000Z',
-                DurationInMinutes: 420,
-                StartTime: '16:30',
-                Assignee: '',
-                Swap: {
-                    request: true,
-                    with: '',
-                    complete: false,
-                    status: 'Awaiting approval',
-                    reason: 'Sick Leave',
-                },
-            },
-        ];
+        return myRequests.sort((a, b) => compare(a.Date, b.Date));
     }
 
     get workdayOffset(): number {
@@ -300,10 +222,12 @@ export default class Home extends LightningElement {
     }
 
     get myWorkdays(): WorkDay[] {
-        return workdays.slice(
-            this._workdayOffset,
-            this._workdayOffset + this._workdayLimit,
-        );
+        return this._workdays
+            .sort((a, b) => compare(a.Date, b.Date))
+            .slice(
+                this._workdayOffset,
+                this._workdayOffset + this._workdayLimit,
+            );
     }
 }
 
@@ -317,15 +241,7 @@ const workdays = [
                 .setLocale('en-US')
                 .toFormat('c'),
         ),
-        Shifts: [
-            {
-                Id: getRandomId(),
-                Date: luxon.DateTime.now()
-                    .minus({ days: 3 })
-                    .toUTC()
-                    .toString(),
-            },
-        ],
+        Shifts: [],
     },
     {
         Id: getRandomId(),
@@ -336,15 +252,7 @@ const workdays = [
                 .setLocale('en-US')
                 .toFormat('c'),
         ),
-        Shifts: [
-            {
-                Id: getRandomId(),
-                Date: luxon.DateTime.now()
-                    .minus({ days: 2 })
-                    .toUTC()
-                    .toString(),
-            },
-        ],
+        Shifts: [],
     },
     {
         Id: getRandomId(),
@@ -666,12 +574,7 @@ const workdays = [
                 .setLocale('en-US')
                 .toFormat('c'),
         ),
-        Shifts: [
-            {
-                Id: getRandomId(),
-                Date: luxon.DateTime.now().plus({ days: 5 }).toUTC().toString(),
-            },
-        ],
+        Shifts: [],
     },
     {
         Id: getRandomId(),
@@ -996,15 +899,7 @@ const workdays = [
                 .setLocale('en-US')
                 .toFormat('c'),
         ),
-        Shifts: [
-            {
-                Id: getRandomId(),
-                Date: luxon.DateTime.now()
-                    .plus({ days: 12 })
-                    .toUTC()
-                    .toString(),
-            },
-        ],
+        Shifts: [],
     },
     {
         Id: getRandomId(),
@@ -1077,3 +972,472 @@ const workdays = [
         ],
     },
 ];
+
+const openShifts = [
+    {
+        Id: getRandomId(),
+        Date: setTime('17:00', 0, 3).toString(),
+        Assignee: 'Supervisor',
+        StartTime: '17:00',
+        DurationInMinutes: 180,
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('17:00', 0, 3).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('17:00', 0, 3).toString(),
+                    90,
+                ),
+                DurationInMinutes: 15,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('17:00', 0, 3).toString(),
+                    105,
+                ),
+                DurationInMinutes: 75,
+                Type: 'Call',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: '',
+            complete: false,
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: setTime('15:00', 0, 3).toString(),
+        Assignee: '',
+        DurationInMinutes: 300,
+        StartTime: '15:00',
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('15:00', 0, 3).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('15:00', 0, 3).toString(),
+                    90,
+                ),
+                DurationInMinutes: 15,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('15:00', 0, 3).toString(),
+                    105,
+                ),
+                DurationInMinutes: 75,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('15:00', 0, 3).toString(),
+                    180,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('15:00', 0, 3).toString(),
+                    210,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: 'Nigel Trager',
+            complete: false,
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: setTime('20:00', 0, 4).toString(),
+        Assignee: '',
+        DurationInMinutes: 480,
+        StartTime: '20:00',
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    90,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    120,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    210,
+                ),
+                DurationInMinutes: 60,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    270,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    360,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('20:00', 0, 4).toString(),
+                    390,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: 'Wendy Yoder',
+            complete: false,
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: setTime('16:00', 0, 5).toString(),
+        Assignee: '',
+        DurationInMinutes: 480,
+        StartTime: '16:00',
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    90,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    120,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    210,
+                ),
+                DurationInMinutes: 60,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    270,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    360,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:00', 0, 5).toString(),
+                    390,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: 'Wendy Yoder',
+            complete: false,
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: setTime('16:30', 0, 6).toString(),
+        Assignee: '',
+        DurationInMinutes: 480,
+        StartTime: '16:30',
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    90,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    120,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    210,
+                ),
+                DurationInMinutes: 60,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    270,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    360,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('16:30', 0, 6).toString(),
+                    390,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: 'Simon Baez',
+            complete: false,
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: setTime('21:00', 0, 8).toString(),
+        Assignee: '',
+        DurationInMinutes: 480,
+        StartTime: '21:00',
+        ShiftSegments: [
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    0,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    90,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    120,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Call',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    210,
+                ),
+                DurationInMinutes: 60,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    270,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    300,
+                ),
+                DurationInMinutes: 30,
+                Type: 'Break',
+            },
+            {
+                Id: getRandomId(),
+                Start: setSegmentStartTime(
+                    setTime('21:00', 0, 8).toString(),
+                    330,
+                ),
+                DurationInMinutes: 90,
+                Type: 'Chat',
+            },
+        ],
+        Swap: {
+            request: true,
+            with: 'José Gonsalvez',
+            complete: false,
+        },
+    },
+];
+
+const myRequests = [
+    {
+        Id: getRandomId(),
+        Date: luxon.DateTime.now().plus({ days: 4 }).toUTC().toString(),
+        DurationInMinutes: 420,
+        StartTime: '21:00',
+        Assignee: '',
+        Swap: {
+            request: true,
+            with: '',
+            complete: false,
+            status: 'In swap pool',
+            reason: '',
+        },
+    },
+    {
+        Id: getRandomId(),
+        Date: luxon.DateTime.now().plus({ days: 5 }).toUTC().toString(),
+        DurationInMinutes: 420,
+        StartTime: '16:30',
+        Assignee: '',
+        Swap: {
+            request: true,
+            with: '',
+            complete: false,
+            status: 'Awaiting approval',
+            reason: 'PTO',
+        },
+    },
+];
+
+function setSegmentStartTime(date: string, addtion: number): string {
+    const begin = luxon.DateTime.fromISO(date).setLocale('en-US');
+    const segmentBegin = begin.plus({ minutes: addtion });
+    return `${segmentBegin.toFormat('hh')}:${segmentBegin.toFormat('mm')}`;
+}
+
+function setTime(
+    start: string,
+    additionalMinutes?: number,
+    additionalDays?: number,
+): luxon.DateTime {
+    let now = luxon.DateTime.now()
+        .set({
+            hour: parseInt(start.split(':')[0]),
+            minute: parseInt(start.split(':')[1]),
+        })
+        .toUTC();
+    if (additionalDays) {
+        now = now.plus({ days: additionalDays });
+    }
+    if (additionalMinutes) {
+        now = now.plus({ minutes: additionalMinutes });
+    }
+
+    return now;
+}
