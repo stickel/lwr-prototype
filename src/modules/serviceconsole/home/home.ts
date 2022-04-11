@@ -13,6 +13,10 @@ export default class Home extends LightningElement {
     @track _currentDisplayIndex: number;
     @track _workdays = workdays;
 
+    todayRoughHeight = 120;
+    workdayRoughHeight = 60;
+    scrollBuffer = 0;
+
     constructor() {
         super();
         this._workdayOffset = 0;
@@ -28,6 +32,29 @@ export default class Home extends LightningElement {
         this._workdayOffset = this._currentDisplayIndex;
     }
 
+    renderedCallback(): void {
+        const header = this.template
+            .querySelector('.schedule-container lightning-card')
+            ?.shadowRoot?.querySelector('.slds-card__header');
+        this.scrollBuffer = (header as HTMLElement).clientHeight + 12;
+        const container = this.template.querySelector('.schedule-week');
+        const listElement = this.template.querySelector(
+            'serviceconsole-schedule-view',
+        );
+        (container as HTMLElement).style.height = `648px`;
+        let scrollTo = 0;
+        const todaysShiftIndex = this.indexOfDate(
+            this.localeToday(luxon.DateTime.DATE_SHORT),
+        );
+        const todaysShift = listElement?.shadowRoot?.querySelectorAll(
+            'serviceconsole-shift-item',
+        )[todaysShiftIndex];
+        scrollTo = (todaysShift as HTMLElement).offsetTop;
+        container?.scroll({
+            top: scrollTo - this.scrollBuffer,
+        });
+    }
+
     handleUpdateWorkdayOffset(event: CustomEvent): void {
         this._workdayOffset = event.detail.offset;
     }
@@ -37,36 +64,77 @@ export default class Home extends LightningElement {
     }
 
     handleScheduleInc(): void {
+        const container = this.template.querySelector('.schedule-week');
+        const listElement = this.template.querySelector(
+            'serviceconsole-schedule-view',
+        );
+        const nextWeekIndex = this.startOfNextWeekIndex;
+        const newTopShift = listElement?.shadowRoot?.querySelectorAll(
+            'serviceconsole-shift-item',
+        )[nextWeekIndex]; //[delta - 1];
+        const scrollTo = (newTopShift as HTMLElement).offsetTop;
+        const incomingList = this._workdays.slice(
+            nextWeekIndex,
+            this._workdayLimit,
+        );
+
         if (
-            this.showingThisWeek &&
-            this._workdays[this._currentDisplayIndex].DayOfWeek !== 1
+            incomingList.includes(
+                this._workdays[
+                    this.indexOfDate(
+                        this.localeToday(luxon.DateTime.DATE_SHORT),
+                    )
+                ],
+            )
         ) {
-            const todayDayOfWeek =
-                this._workdays[this._currentDisplayIndex].DayOfWeek;
-            this._currentDisplayIndex =
-                this._currentDisplayIndex + (8 - todayDayOfWeek);
-            this._workdayOffset = this._currentDisplayIndex;
-        } else if (
-            this._workdayOffset + this._workdayLimit <
-            this._workdays.length
-        ) {
-            this._workdayOffset = this._currentDisplayIndex;
-            this.moveToNextWeekStart();
+            (container as HTMLElement).style.height = `648px`;
+        } else {
+            (container as HTMLElement).style.height = `570px`;
         }
+
+        delay(100).then(() => {
+            container?.scroll({
+                top: scrollTo - this.scrollBuffer,
+                behavior: 'smooth',
+            });
+        });
     }
 
     handleScheduleDec(): void {
-        const pastWorkdays = this._workdays.slice(0, this._currentDisplayIndex);
-        const hasMoreThanAWeek = pastWorkdays.find(
-            (day) => day.DayOfWeek === 1,
+        const container = this.template.querySelector('.schedule-week');
+        const listElement = this.template.querySelector(
+            'serviceconsole-schedule-view',
+        );
+        const previousWeekIndex = this.startOfPreviousWeekIndex;
+        const newTopShift = listElement?.shadowRoot?.querySelectorAll(
+            'serviceconsole-shift-item',
+        )[previousWeekIndex];
+        const scrollTo = (newTopShift as HTMLElement).offsetTop;
+        const incomingList = this._workdays.slice(
+            previousWeekIndex,
+            this._workdayLimit,
         );
 
-        if (hasMoreThanAWeek === undefined) {
-            this._currentDisplayIndex = 0;
-            this._workdayOffset = 0;
+        if (
+            incomingList.includes(
+                this._workdays[
+                    this.indexOfDate(
+                        this.localeToday(luxon.DateTime.DATE_SHORT),
+                    )
+                ],
+            )
+        ) {
+            (container as HTMLElement).style.height = `648px`;
         } else {
-            this.moveToPreviousWeekStart();
+            (container as HTMLElement).style.height = `570px`;
         }
+
+        delay(100).then(() => {
+            container?.scroll({
+                top: scrollTo - this.scrollBuffer,
+                behavior: 'smooth',
+            });
+        });
     }
 
     handleAddShift(event: CustomEvent): void {
@@ -95,7 +163,7 @@ export default class Home extends LightningElement {
     }
 
     localeToday(locale: DateTimeFormatOptions): string {
-        return luxon.DateTime.now().toUTC().toLocaleString(locale);
+        return luxon.DateTime.now().setLocale('en-US').toLocaleString(locale);
     }
 
     moveToPreviousWeekStart(): void {
@@ -125,15 +193,7 @@ export default class Home extends LightningElement {
     }
 
     moveToNextWeekStart(): void {
-        const currentDayOfWeek =
-            this._workdays[this._currentDisplayIndex].DayOfWeek;
-        let delta = currentDayOfWeek + 1;
-        if (
-            currentDayOfWeek === 1 &&
-            this._currentDisplayIndex < this._workdayLimit
-        ) {
-            delta = this._workdayLimit;
-        }
+        const delta = this.deltaToNextWeekStart;
         this._workdayOffset = this._currentDisplayIndex + delta;
         this._currentDisplayIndex = this.indexOfDate(
             this.localeDate(
@@ -141,6 +201,70 @@ export default class Home extends LightningElement {
                 luxon.DateTime.DATE_SHORT,
             ),
         );
+    }
+
+    get deltaToNextWeekStart(): number {
+        const currentDayOfWeek =
+            this._workdays[this._currentDisplayIndex].DayOfWeek;
+        let delta = 1; // add 2: 1 for 0 index array, 1 for us wanting the next day
+        if (currentDayOfWeek !== 1) {
+            delta = 8 - currentDayOfWeek; // because we want day one, not the last day of the week
+        }
+        if (
+            currentDayOfWeek === 1 &&
+            this._currentDisplayIndex < this._workdayLimit
+        ) {
+            delta = this._workdayLimit;
+        }
+        return delta;
+    }
+
+    get deltaToLastWeekStart(): number {
+        const currentDayOfWeek =
+            this._workdays[this._currentDisplayIndex].DayOfWeek;
+        let delta = 1;
+        if (currentDayOfWeek !== 1) {
+            delta = 8 - currentDayOfWeek;
+        }
+        if (currentDayOfWeek === 1 && this._currentDisplayIndex > 0) {
+            delta = this._workdayLimit;
+        }
+        return delta;
+    }
+
+    get startOfNextWeekIndex(): number {
+        if (
+            this.showingThisWeek &&
+            this._workdays[this._currentDisplayIndex].DayOfWeek !== 1
+        ) {
+            const todayDayOfWeek =
+                this._workdays[this._currentDisplayIndex].DayOfWeek;
+            return this._currentDisplayIndex + (8 - todayDayOfWeek);
+        } else if (
+            this._workdayOffset + this._workdayLimit <
+            this._workdays.length
+        ) {
+            return this._currentDisplayIndex + this.deltaToNextWeekStart;
+        }
+        console.error(
+            'Problem: Should not be going to zero when moving forward',
+        );
+        return 0;
+    }
+
+    get startOfPreviousWeekIndex(): number {
+        if (
+            this.showingThisWeek &&
+            this._workdays[this._currentDisplayIndex].DayOfWeek !== 1
+        ) {
+            const todayDayOfWeek =
+                this._workdays[this._currentDisplayIndex].DayOfWeek;
+            return this._currentDisplayIndex - (7 - todayDayOfWeek);
+        } else if (this._workdayOffset - this._workdayLimit > 0) {
+            return this._currentDisplayIndex - this.deltaToLastWeekStart;
+        }
+        console.error('Problem: Should not get to zero looking for last week');
+        return 0;
     }
 
     get showingNextSevenDays(): boolean {
@@ -222,13 +346,26 @@ export default class Home extends LightningElement {
     }
 
     get myWorkdays(): WorkDay[] {
-        return this._workdays
-            .sort((a, b) => compare(a.Date, b.Date))
-            .slice(
-                this._workdayOffset,
-                this._workdayOffset + this._workdayLimit,
-            );
+        return this.sortedWorkdays;
+        // return this.sortedWorkdays.slice(
+        //     this._workdayOffset,
+        //     this._workdayOffset + this._workdayLimit,
+        // );
+        // return this._workdays
+        //     .sort((a, b) => compare(a.Date, b.Date))
+        //     .slice(
+        //         this._workdayOffset,
+        //         this._workdayOffset + this._workdayLimit,
+        //     );
     }
+
+    get sortedWorkdays(): WorkDay[] {
+        return this._workdays.sort((a, b) => compare(a.Date, b.Date));
+    }
+}
+
+function delay(time: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, time));
 }
 
 const workdays = [

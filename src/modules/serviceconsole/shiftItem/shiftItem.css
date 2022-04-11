@@ -14,6 +14,10 @@
     font-size: var(--slds-fontSize2);
 }
 
+.shift-item_empty {
+    padding-top: 20px;
+}
+
 .shift-item_empty .shift-item-date {
     margin-top: 0;
 }

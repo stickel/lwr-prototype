@@ -13,3 +13,7 @@
     --slds-c-icon-color-foreground: var(--slds-paletteNeutral80);
     --slds-c-icon-color-foreground-default: var(--slds-paletteNeutral80);
 }
+
+.schedule-week {
+    overflow: hidden;
+}
