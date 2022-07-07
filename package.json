@@ -17,7 +17,8 @@
         "build": "tsc -b && node ./scripts/copy-resources.mjs",
         "rebuild": "rimraf build/ __lwr_cache__ tsconfig.tsbuildinfo && yarn build",
         "dev": "lwr serve --port 3333",
-        "start": "lwr serve --port 3000 --mode prod"
+        "start": "lwr serve --port 3000 --mode prod",
+        "start:prod": "lwr serve --mode prod-compat"
     },
     "devDependencies": {
         "@babel/core": "^7.15.5",
