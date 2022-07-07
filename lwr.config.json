@@ -1,6 +1,5 @@
 {
     "port": 3333,
-    "rootDir": "/Users/mstickel/easy-prototype",
     "lwc": {
         "modules": [
             {
@@ -39,15 +38,6 @@
         "@lwrjs/npm-module-provider"
     ],
     "routes": [
-        {
-            "id": "cx",
-            "path": "/cx",
-            "rootComponent": "cx/app",
-            "layoutTemplate": "$layoutsDir/cx.njk",
-            "bootstrap": {
-                "syntheticShadow": true
-            }
-        },
         {
             "id": "setup",
             "path": "/setup",
