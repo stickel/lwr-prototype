@@ -37,11 +37,6 @@ export default class SetupApp extends LightningElement {
         ];
     }
 
-    // onViewChange(viewChangeEvent: CustomEvent): void {
-    // onViewChange(): void {
-    //     console.log(`new view comp.`);
-    // }
-
     onViewError(viewErrorEvent: CustomEvent): void {
         const { error, stack } = viewErrorEvent.detail;
         console.error(

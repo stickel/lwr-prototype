@@ -66,7 +66,10 @@
 
                                             <lwr-outlet
                                                 onviewerror={onViewError}>
-                                                <div slot="error">If the component experiences a runtime error, the contents of this slot will replace the component template for the current route</div>
+                                                <div slot="error">
+                                                    <h1>Error</h1>
+                                                    <p>The following error occurred: {viewErrorMessage}</p>
+                                                </div>
                                             </lwr-outlet>
 
                                         </div>
