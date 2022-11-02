@@ -6,7 +6,7 @@
                 "dir": "$rootDir/src/modules"
             },
             {
-                "npm": "lwc-components-lightning"
+                "npm": "lightning-base-components"
             }
         ]
     },
