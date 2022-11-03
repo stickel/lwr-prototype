@@ -14,10 +14,26 @@ interface BroadcastChannel {
 }
 
 export default class Slack extends LightningElement {
-    @track enabled: boolean;
+    @track enabled = false;
     @track _modalOpen = false;
     @track _inputText = '';
-    @track _broadcastChannels: BroadcastChannel[];
+    @track _broadcastChannels: BroadcastChannel[] = [
+        {
+            id: 'deals-won',
+            name: '#deals-won',
+            description: `A feed of won deals.`,
+            topic: `See your team's successes with a feed of won deals.`,
+            active: false,
+        },
+        {
+            id: 'deals-to-watch',
+            name: '#deals-to-watch',
+            description:
+                'Get notified about deals that have an amount above a specified value and are likely to close',
+            topic: 'See deals that have an amount above a specified value and are likely to close.',
+            active: false,
+        },
+    ];
     @track _activeChannels: BroadcastChannel[] = [];
     @track _salesChannelAccessValue = '0';
 
@@ -41,27 +57,27 @@ export default class Slack extends LightningElement {
         this._salesChannelAccessValue = value;
     }
 
-    constructor() {
-        super();
-        this.enabled = false;
-        this._broadcastChannels = [
-            {
-                id: 'deals-won',
-                name: '#deals-won',
-                description: `A feed of won deals.`,
-                topic: `See your team's successes with a feed of won deals.`,
-                active: false,
-            },
-            {
-                id: 'deals-to-watch',
-                name: '#deals-to-watch',
-                description:
-                    'Get notified about deals that have an amount above a specified value and are likely to close',
-                topic: 'See deals that have an amount above a specified value and are likely to close.',
-                active: false,
-            },
-        ];
-    }
+    // constructor() {
+    //     super();
+    //     this.enabled = false;
+    //     this._broadcastChannels = [
+    //         {
+    //             id: 'deals-won',
+    //             name: '#deals-won',
+    //             description: `A feed of won deals.`,
+    //             topic: `See your team's successes with a feed of won deals.`,
+    //             active: false,
+    //         },
+    //         {
+    //             id: 'deals-to-watch',
+    //             name: '#deals-to-watch',
+    //             description:
+    //                 'Get notified about deals that have an amount above a specified value and are likely to close',
+    //             topic: 'See deals that have an amount above a specified value and are likely to close.',
+    //             active: false,
+    //         },
+    //     ];
+    // }
 
     handleEnableSlack(event: CustomEvent): void {
         this.enabled = event.detail.checked;
