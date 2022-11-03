@@ -1,4 +1,4 @@
-import { LightningElement, api } from "lwc";
+import { LightningElement, api } from 'lwc';
 
 export default class PageHeader extends LightningElement {
     @api headerIcon: string;
@@ -17,12 +17,15 @@ export default class PageHeader extends LightningElement {
     async renderedCallback(): Promise<void> {
         // let's remove the `slds-icon-text-default` class from the header icon
         // because it's not allowing proper fill overrides
-        const iconElement = this.template.querySelector('.setup-header-icon')!
-            .shadowRoot!.querySelector('lightning-primitive-icon')!
-            .shadowRoot!.querySelector('.slds-icon');
-        if (iconElement && iconElement.classList.contains('slds-icon-text-default')) {
-            iconElement.classList.remove('slds-icon-text-default');
-        }
+        // const iconElement = this.template.querySelector('.setup-header-icon')!
+        //     .shadowRoot!.querySelector('lightning-primitive-icon')!
+        //     .shadowRoot!.querySelector('.slds-icon');
+        // if (
+        //     iconElement &&
+        //     iconElement.classList.contains('slds-icon-text-default')
+        // ) {
+        //     iconElement.classList.remove('slds-icon-text-default');
+        // }
     }
 
     get hasDescription(): boolean {

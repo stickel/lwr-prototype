@@ -1,4 +1,4 @@
-@import '../../../assets/styles/slds-vars.css';
+@import './slds-vars.css';
 
 /* Some overrides from SLDS to match production */
 .slds-brand-band:before {

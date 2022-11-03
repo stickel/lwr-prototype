@@ -1,4 +1,4 @@
-/*! Lightning Design System 2.18.1 */
+/*! Lightning Design System 2.19.0 */
 @charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html{
@@ -2251,6 +2251,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #699be1));
 }
 
+.slds-icon-action-scan-enabled{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #1b96ff));
+}
+
 .slds-icon-action-following{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #7dcf64));
 }
@@ -2517,6 +2521,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-action-new-custom95{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #8bcf6a));
+}
+
+.slds-icon-action-scan-disabled{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #939393));
 }
 
 .slds-icon-action-share{
@@ -3613,6 +3621,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #a094ed));
 }
 
+.slds-icon-standard-crypto-transaction{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #c0532e));
+}
+
 .slds-icon-standard-multi-select-checkbox{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #969492));
 }
@@ -3805,6 +3817,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #6ec06e));
 }
 
+.slds-icon-standard-crypto-transaction-envelope-item{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #107cad));
+}
+
 .slds-icon-standard-product-item{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #769ed9));
 }
@@ -3857,6 +3873,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
 
+.slds-icon-standard-tax-treatment{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
+}
+
 .slds-icon-standard-entitlement-policy{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
@@ -3867,6 +3887,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-products{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
+}
+
+.slds-icon-standard-prompt{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #06a59a));
 }
 
 .slds-icon-standard-order-item{
@@ -4013,6 +4037,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2a739e));
 }
 
+.slds-icon-standard-tax-policy{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
+}
+
 .slds-icon-standard-trailhead{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #032e61));
 }
@@ -4061,6 +4089,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
 
+.slds-icon-standard-nft-settings{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #c5486d));
+}
+
 .slds-icon-standard-email-chatter{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #f2cf5b));
 }
@@ -4095,6 +4127,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-steps{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #54698d));
+}
+
+.slds-icon-standard-snippet-alt{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0079bc));
 }
 
 .slds-icon-standard-asset-relationship{
@@ -4201,6 +4237,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #fcb95b));
 }
 
+.slds-icon-standard-crypto-product-category-wallet-role{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0b827c));
+}
+
 .slds-icon-standard-holiday-operating-hours{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #6b9ee2));
 }
@@ -4291,6 +4331,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-resource-capacity{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #45c173));
+}
+
+.slds-icon-standard-setup-modal{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0079bc));
 }
 
 .slds-icon-standard-channel-programs{
@@ -4465,6 +4509,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
 
+.slds-icon-standard-connect-wallet{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #ba0517));
+}
+
 .slds-icon-standard-flow{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0079bc));
 }
@@ -4495,6 +4543,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-product{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #b781d3));
+}
+
+.slds-icon-standard-crypto-transaction-envelope{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0b827c));
 }
 
 .slds-icon-standard-topic{
@@ -4649,6 +4701,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #6b9ee2));
 }
 
+.slds-icon-standard-crypto-product{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #8c5ec6));
+}
+
 .slds-icon-standard-custom{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #8199af));
 }
@@ -4785,8 +4841,16 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #1589ee));
 }
 
+.slds-icon-standard-tax-rate{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
+}
+
 .slds-icon-standard-report{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2ecbbe));
+}
+
+.slds-icon-standard-customer-workspace{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
 
 .slds-icon-standard-groups{
@@ -4825,6 +4889,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #f49756));
 }
 
+.slds-icon-standard-contract-line-outcome{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2e844a));
+}
+
 .slds-icon-standard-wealth-management{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #00d2be));
 }
@@ -4843,6 +4911,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-maintenance-plan{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2a739e));
+}
+
+.slds-icon-standard-contract-line-outcome-data{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2e844a));
 }
 
 .slds-icon-standard-data-integration-hub{
@@ -4897,6 +4969,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #f2cf5b));
 }
 
+.slds-icon-standard-learner-program{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #ca8501));
+}
+
 .slds-icon-standard-invocable-action{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #54698d));
 }
@@ -4929,8 +5005,20 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #eb7092));
 }
 
+.slds-icon-standard-water{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #1b96ff));
+}
+
 .slds-icon-standard-log-a-call{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #48c3cc));
+}
+
+.slds-icon-standard-crypto-wallet{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #2e844a));
+}
+
+.slds-icon-standard-crypto-wallet-group{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0176d3));
 }
 
 .slds-icon-standard-quotes{
@@ -5033,6 +5121,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #8fc972));
 }
 
+.slds-icon-standard-nft-studio{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #5867e8));
+}
+
 .slds-icon-standard-agent-home{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #00396b));
 }
@@ -5133,6 +5225,10 @@ a.slds-button--inverse:focus{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #61bbca));
 }
 
+.slds-icon-standard-crypto-wallet-group-item{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #8c5ec6));
+}
+
 .slds-icon-standard-recycle-bin{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #1589e4));
 }
@@ -5167,6 +5263,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-branch-merge{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #e9696e));
+}
+
+.slds-icon-standard-ai-accelerator-card{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #0176d3));
 }
 
 .slds-icon-standard-insights{
@@ -5215,6 +5315,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-guidance-center{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #7f8de1));
+}
+
+.slds-icon-standard-crypto-category-wallet-group{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #ba0517));
 }
 
 .slds-icon-standard-group-loading{
@@ -5375,6 +5479,10 @@ a.slds-button--inverse:focus{
 
 .slds-icon-standard-chart{
   background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #1fcaa0));
+}
+
+.slds-icon-standard-customer{
+  background-color:var(--slds-c-icon-color-background, var(--sds-c-icon-color-background, #04844b));
 }
 
 .slds-icon-standard-quick-text{
@@ -8696,12 +8804,22 @@ a.slds-button--inverse:focus{
 .slds-form--compound{
   width:100%;
 }
+.slds-form_compound > .slds-form-element,
+.slds-form--compound > .slds-form-element{
+  margin-top:var(--slds-c-form-compound-spacing-block-start, var(--slds-c-form-compound-spacing-block, 0));
+  margin-bottom:var(--slds-c-form-compound-spacing-block-end, var(--slds-c-form-compound-spacing-block, 0));
+  margin-left:var(--slds-c-form-compound-spacing-inline-start, var(--slds-c-form-compound-spacing-inline, 0));
+  margin-right:var(--slds-c-form-compound-spacing-inline-end, var(--slds-c-form-compound-spacing-inline, 0));
+}
 .slds-form_compound .slds-form-element__row,
 .slds-form--compound .slds-form-element__row{
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
-  margin-bottom:0.25rem;
+  margin-top:var(--slds-c-form-row-spacing-block-start, var(--slds-c-form-row-spacing-block, 0));
+  margin-bottom:var(--slds-c-form-row-spacing-block-end, var(--slds-c-form-row-spacing-block, 0.25rem));
+  margin-left:var(--slds-c-form-row-spacing-inline-start, var(--slds-c-form-row-spacing-inline, 0));
+  margin-right:var(--slds-c-form-row-spacing-inline-end, var(--slds-c-form-row-spacing-inline, 0));
 }
 .slds-form_compound .slds-form-element__row + .slds-form-element__row,
 .slds-form--compound .slds-form-element__row + .slds-form-element__row{
@@ -9510,8 +9628,8 @@ a.slds-button--inverse:focus{
   right:0;
   bottom:0;
   left:0;
-  background-image:url("/assets/images/themes/oneSalesforce/banner-brand-default.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(1, 68, 134, 0)), to(#014486));
-  background-image:url("/assets/images/themes/oneSalesforce/banner-brand-default.png"), linear-gradient(to top, rgba(1, 68, 134, 0) 0, #014486);
+  background-image:url("../images/themes/oneSalesforce/banner-brand-default.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(1, 68, 134, 0)), to(#014486));
+  background-image:url("../images/themes/oneSalesforce/banner-brand-default.png"), linear-gradient(to top, rgba(1, 68, 134, 0) 0, #014486);
   background-repeat:repeat-x;
   background-position:top left;
 }
@@ -9564,10 +9682,10 @@ a.slds-button--inverse:focus{
   height:0;
 }
 .slds-brand-band.slds-brand-band_group:before{
-  background-image:url("/assets/images/themes/oneSalesforce/banner-group-public-default.png");
+  background-image:url("../images/themes/oneSalesforce/banner-group-public-default.png");
 }
 .slds-brand-band.slds-brand-band_user:before{
-  background-image:url("/assets/images/themes/oneSalesforce/banner-user-default.png");
+  background-image:url("../images/themes/oneSalesforce/banner-user-default.png");
 }
 .slds-brand-band .slds-brand-band_blank{
   background:white;
@@ -10576,7 +10694,7 @@ a.slds-button--inverse:focus{
 .slds-popover_walkthrough .slds-popover__header,
 .slds-popover--walkthrough .slds-popover__header{
   background-color:#032d60;
-  background-image:url("/assets/images/popovers/popover-header.png");
+  background-image:url("../images/popovers/popover-header.png");
   background-repeat:no-repeat;
   background-position:bottom;
   background-size:contain;
@@ -10624,7 +10742,7 @@ a.slds-button--inverse:focus{
 .slds-popover_feature{
   border-color:#0176d3;
   background-color:#0176d3;
-  background-image:url("/assets/images/popovers/popover-action.png");
+  background-image:url("../images/popovers/popover-action.png");
   background-repeat:no-repeat;
   background-size:100% 2.25rem;
   background-position:bottom;
@@ -12665,7 +12783,7 @@ input[readonly][role=combobox][disabled]{
 .slds-global-header__logo{
   width:12.5rem;
   height:2.5rem;
-  background-image:url("/assets/images/logo-noname.svg");
+  background-image:url("../images/logo-noname.svg");
   background-size:contain;
   background-repeat:no-repeat;
   background-position:left center;
@@ -19384,22 +19502,22 @@ input[readonly][role=combobox][disabled]{
   color:var(--slds-c-avatar-text-color-hover, currentColor);
 }
 .slds-avatar.slds-avatar_group-image-small{
-  background:url("/assets/images/group_avatar_96.png") top left/cover no-repeat;
+  background:url("../images/group_avatar_96.png") top left/cover no-repeat;
 }
 .slds-avatar.slds-avatar_group-image-medium{
-  background:url("/assets/images/group_avatar_160.png") top left/cover no-repeat;
+  background:url("../images/group_avatar_160.png") top left/cover no-repeat;
 }
 .slds-avatar.slds-avatar_group-image-large{
-  background:url("/assets/images/group_avatar_200.png") top left/cover no-repeat;
+  background:url("../images/group_avatar_200.png") top left/cover no-repeat;
 }
 .slds-avatar.slds-avatar_profile-image-small{
-  background:url("/assets/images/profile_avatar_96.png") top left/cover no-repeat;
+  background:url("../images/profile_avatar_96.png") top left/cover no-repeat;
 }
 .slds-avatar.slds-avatar_profile-image-medium{
-  background:url("/assets/images/profile_avatar_160.png") top left/cover no-repeat;
+  background:url("../images/profile_avatar_160.png") top left/cover no-repeat;
 }
 .slds-avatar.slds-avatar_profile-image-large{
-  background:url("/assets/images/profile_avatar_200.png") top left/cover no-repeat;
+  background:url("../images/profile_avatar_200.png") top left/cover no-repeat;
 }
 .slds-avatar_x-small,
 .slds-avatar--x-small{
@@ -21123,7 +21241,7 @@ input[readonly][role=combobox][disabled]{
 .slds-einstein-header{
   position:relative;
   background-color:#90d0fe;
-  background-image:url("/assets/images/einstein-headers/einstein-header-background.svg");
+  background-image:url("../images/einstein-headers/einstein-header-background.svg");
   background-repeat:no-repeat;
   background-position:left top;
   background-size:cover;
@@ -21140,7 +21258,7 @@ input[readonly][role=combobox][disabled]{
 .slds-einstein-header .slds-einstein-header__figure:last-child{
   margin-bottom:calc((0.75rem + 5px) * -1);
   height:4.75rem;
-  background-image:url("/assets/images/einstein-headers/einstein-figure.svg");
+  background-image:url("../images/einstein-headers/einstein-figure.svg");
   background-position:right bottom;
   background-repeat:no-repeat;
 }
@@ -21413,7 +21531,7 @@ input[readonly][role=combobox][disabled]{
   overflow:auto;
   padding:1rem 3rem 7.75rem;
   color:#032d60;
-  background-image:url("/assets/images/welcome-mat/bg-info@2x.png");
+  background-image:url("../images/welcome-mat/bg-info@2x.png");
   background-position:bottom center;
   background-repeat:no-repeat;
   background-size:contain;
