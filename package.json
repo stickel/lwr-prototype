@@ -44,7 +44,7 @@
         "jest": "^27.1.1",
         "lightning-base-components": "^1.16.7-alpha",
         "luxon": "2.3.1",
-        "lwc": "~2.3.7",
+        "lwc": "~2.29.0",
         "lwr": "0.8.2",
         "postcss": "^8.3.6",
         "prettier": "^2.5.1",

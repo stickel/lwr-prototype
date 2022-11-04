@@ -25,7 +25,6 @@
 /* Global actions */
 .slds-global-actions__item .slds-icon_container {
     --slds-c-icon-color-foreground-default: var(--slds-brandHeaderIcon);
-    color: var(--slds-c-icon-color-foreground-default);
 }
 
 .slds-global-actions__item .globalCreateButton .slds-icon {
@@ -56,5 +55,4 @@
 .ga-icon {
     width: var(--slds-squareIconSmallBoundary,1.5rem);
     height: var(--slds-squareIconSmallBoundary,1.5rem);
-    /* --slds-c-icon-color-foreground-default: var(--slds-colorGray7); */
 }

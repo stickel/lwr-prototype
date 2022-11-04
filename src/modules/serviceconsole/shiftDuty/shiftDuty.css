@@ -30,11 +30,8 @@
 
 .segment-icon {
     text-align: center;
-    --slds-c-icon-color-foreground-default: var(--slds-brandHeaderIcon);
-    fill: var(--slds-c-icon-color-foreground-default);
 }
 
 .shift-segment.highlight .segment-icon {
     --slds-c-icon-color-foreground-default: var(--slds-paletteBlue30);
-    fill: var(--slds-c-icon-color-foreground-default);
 }

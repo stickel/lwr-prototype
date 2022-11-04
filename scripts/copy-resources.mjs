@@ -13,11 +13,7 @@ cpx.copy(
 
 // now convert @salesforce-ux/design-system/design-tokens/dist/primitive.common.js into
 // valid CSS maintaining the same names.
-// const destinationFile = 'src/assets/styles/slds-vars.css';
-const destinationFiles = [
-    'src/modules/setup/app/slds-vars.css',
-    'src/modules/serviceconsole/app/slds-vars.css',
-];
+const destinationFiles = ['src/modules/global/slds/slds.css'];
 const output = [];
 for (let style in primitives.default) {
     output.push(`--slds-${style}: ${primitives.default[style]};`);
