@@ -20,7 +20,7 @@
         "rebuild": "rimraf build/ __lwr_cache__ tsconfig.tsbuildinfo && yarn build",
         "restart": "yarn rebuild && yarn start",
         "dev": "lwr serve --port 3333",
-        "start": "WARMUP=true lwr serve --port 80 --mode prod",
+        "start": "WARMUP=true lwr serve --mode prod",
         "start:prod": "WARMUP=true lwr serve --mode prod-compat"
     },
     "dependencies": {
