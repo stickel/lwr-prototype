@@ -1,0 +1,302 @@
+/*  Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
+    Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license */
+
+:host {
+    /* COOL GRAYS */
+    --palette_cool_gray_1: "#FFFFFF";
+    --palette_cool_gray_2: "#F9F9FA";
+    --palette_cool_gray_3: "#F2F2F3";
+    --palette_cool_gray_4: "#E9EAEC";
+    --palette_cool_gray_5: "#D9DBDD";
+    --palette_cool_gray_6: "#C4C6CA";
+    --palette_cool_gray_7: "#ABADB0";
+    --palette_cool_gray_8: "#919297";
+    --palette_cool_gray_9: "#6B6D70";
+    --palette_cool_gray_10: "#4E5356";
+    --palette_cool_gray_11: "#3E4041";
+    --palette_cool_gray_12: "#292C2E";
+    --palette_cool_gray_13: "#070808";
+
+    /* WARM GRAYS */
+    --palette_warm_gray_1: "#FFFFFF";
+    --palette_warm_gray_2: "#fafaf9";
+    --palette_warm_gray_3: "#f3f2f2";
+    --palette_warm_gray_4: "#ecebea";
+    --palette_warm_gray_5: "#dddbda";
+    --palette_warm_gray_6: "#c9c7c5";
+    --palette_warm_gray_7: "#b0adab";
+    --palette_warm_gray_8: "#969492";
+    --palette_warm_gray_9: "#706e6b";
+    --palette_warm_gray_10: "#514f4d";
+    --palette_warm_gray_11: "#3e3e3c";
+    --palette_warm_gray_12: "#2B2826";
+    --palette_warm_gray_13: "#080707";
+
+    /* GRAYS (APPLIED) */
+    --palette_gray_1: var(--palette_warm_gray_1);
+    --palette_gray_2: var(--palette_warm_gray_2);
+    --palette_gray_3: var(--palette_warm_gray_3);
+    --palette_gray_4: var(--palette_warm_gray_4);
+    --palette_gray_5: var(--palette_warm_gray_5);
+    --palette_gray_6: var(--palette_warm_gray_6);
+    --palette_gray_7: var(--palette_warm_gray_7);
+    --palette_gray_8: var(--palette_warm_gray_8);
+    --palette_gray_9: var(--palette_warm_gray_9);
+    --palette_gray_10: var(--palette_warm_gray_10);
+    --palette_gray_11: var(--palette_warm_gray_11);
+    --palette_gray_12: var(--palette_warm_gray_12);
+    --palette_gray_13: var(--palette_warm_gray_13);
+
+    /* TRANSPARENT GRAYS BASED ON DARKEST GRAY (PALETTE_GRAY_12) */
+    --palette_dark_gray_transparent_10: rgba(8, 7, 7, 0.1);
+    --palette_dark_gray_transparent_20: rgba(8, 7, 7, 0.2);
+    --palette_dark_gray_transparent_30: rgba(8, 7, 7, 0.3);
+    --palette_dark_gray_transparent_40: rgba(8, 7, 7, 0.4);
+    --palette_dark_gray_transparent_50: rgba(8, 7, 7, 0.5);
+    --palette_dark_gray_transparent_60: rgba(8, 7, 7, 0.6);
+    --palette_dark_gray_transparent_70: rgba(8, 7, 7, 0.7);
+    --palette_dark_gray_transparent_80: rgba(8, 7, 7, 0.8);
+    --palette_dark_gray_transparent_90: rgba(8, 7, 7, 0.9);
+
+    /* TRANSPARENT GRAYS BASED ON LIGHTEST GRAY (PALETTE_GRAY_1) */
+    --palette_light_gray_transparent_10: rgba(255, 255, 255, 0.1);
+    --palette_light_gray_transparent_20: rgba(255, 255, 255, 0.2);
+    --palette_light_gray_transparent_30: rgba(255, 255, 255, 0.3);
+    --palette_light_gray_transparent_40: rgba(255, 255, 255, 0.4);
+    --palette_light_gray_transparent_50: rgba(255, 255, 255, 0.5);
+    --palette_light_gray_transparent_60: rgba(255, 255, 255, 0.6);
+    --palette_light_gray_transparent_70: rgba(255, 255, 255, 0.7);
+    --palette_light_gray_transparent_80: rgba(255, 255, 255, 0.8);
+    --palette_light_gray_transparent_90: rgba(255, 255, 255, 0.9);
+
+    /* WHITES (APPLIED) */
+    --white: "#FFFFFF";
+    --white_transparent_10: rgba(255, 255, 255, 0.10);
+    --white_transparent_15: rgba(255, 255, 255, 0.15);
+    --white_transparent_20: rgba(255, 255, 255, 0.20);
+    --white_transparent_30: rgba(255, 255, 255, 0.30);
+    --white_transparent_40: rgba(255, 255, 255, 0.40);
+    --white_transparent_50: rgba(255, 255, 255, 0.50);
+    --white_transparent_60: rgba(255, 255, 255, 0.60);
+    --white_transparent_75: rgba(255, 255, 255, 0.75);
+    --white_transparent_80: rgba(255, 255, 255, 0.80);
+    --white_transparent_90: rgba(255, 255, 255, 0.90);
+    --white_transparent_97: rgba(255, 255, 255, 0.97);
+
+    /* BLACKS (APPLIED) */
+    --black: "#000000";
+    --black_transparent_05: rgba(0, 0, 0, 0.05);
+    --black_transparent_07: rgba(0, 0, 0, 0.07);
+    --black_transparent_10: rgba(0, 0, 0, 0.10);
+    --black_transparent_16: rgba(0, 0, 0, 0.16);
+    --black_transparent_20: rgba(0, 0, 0, 0.20);
+    --black_transparent_24: rgba(0, 0, 0, 0.24);
+    --black_transparent_30: rgba(0, 0, 0, 0.30);
+    --black_transparent_40: rgba(0, 0, 0, 0.40);
+    --black_transparent_50: rgba(0, 0, 0, 0.50);
+    --black_transparent_60: rgba(0, 0, 0, 0.60);
+    --black_transparent_70: rgba(0, 0, 0, 0.70);
+    --black_transparent_80: rgba(0, 0, 0, 0.80);
+    --black_transparent_90: rgba(0, 0, 0, 0.90);
+
+    /* Brand */
+    --brand_primary: var(--palette_blue_60);
+    --brand_primary_active: var(--palette_blue_50);
+    --brand_light: "#f4f6fe";
+    --brand_light_active: "#e3e5ed";
+    --brand_dark: var(--palette_blue_50);
+    --brand_dark_active: "#253045";
+    --brand_accessible: var(--palette_blue_50);
+    --brand_accessible_active: var(--palette_blue_30);
+    --brand_disabled: "#c9c7c5";
+    --brand_contrast: "#1a1b1e";
+    --brand_contrast_active: "#0d0e12";
+    --brand_background_primary: var(--palette_blue_95);
+    --brand_background_dark: var(--palette_blue_30);
+    --brand_text_link: var(--palette_blue_50);
+    --brand_text_link_active: var(--palette_blue_30);
+
+    /* Blue */
+    --palette_blue_10: "#001639";
+    --palette_blue_15: "#03234d";
+    --palette_blue_20: "#032d60";
+    --palette_blue_30: "#014486";
+    --palette_blue_40: "#0b5cab";
+    --palette_blue_50: "#0176d3";
+    --palette_blue_60: "#1b96ff";
+    --palette_blue_65: "#57a3fd";
+    --palette_blue_70: "#78b0fd";
+    --palette_blue_80: "#aacbff";
+    --palette_blue_90: "#d8e6fe";
+    --palette_blue_95: "#eef4ff";
+
+    /* Cloud Blue */
+    --palette_cloud_blue_10: "#001a28";
+    --palette_cloud_blue_15: "#0a2636";
+    --palette_cloud_blue_20: "#023248";
+    --palette_cloud_blue_30: "#084968";
+    --palette_cloud_blue_40: "#05628a";
+    --palette_cloud_blue_50: "#107cad";
+    --palette_cloud_blue_60: "#0d9dda";
+    --palette_cloud_blue_65: "#08abed";
+    --palette_cloud_blue_70: "#1ab9ff";
+    --palette_cloud_blue_80: "#90d0fe";
+    --palette_cloud_blue_90: "#cfe9fe";
+    --palette_cloud_blue_95: "#eaf5fe";
+
+    /* Green */
+    --palette_green_10: "#071b12";
+    --palette_green_15: "#0c2912";
+    --palette_green_20: "#0e3522";
+    --palette_green_30: "#194e31";
+    --palette_green_40: "#22683e";
+    --palette_green_50: "#2e844a";
+    --palette_green_60: "#3ba755";
+    --palette_green_65: "#41b658";
+    --palette_green_70: "#45c65a";
+    --palette_green_80: "#91db8b";
+    --palette_green_90: "#cdefc4";
+    --palette_green_95: "#ebf7e6";
+
+    /* Hot Orange */
+    --palette_hot_orange_10: "#281202";
+    --palette_hot_orange_15: "#421604";
+    --palette_hot_orange_20: "#541d01";
+    --palette_hot_orange_30: "#7e2600";
+    --palette_hot_orange_40: "#aa3001";
+    --palette_hot_orange_50: "#d83a00";
+    --palette_hot_orange_60: "#ff5d2d";
+    --palette_hot_orange_65: "#ff784f";
+    --palette_hot_orange_70: "#ff906e";
+    --palette_hot_orange_80: "#feb9a5";
+    --palette_hot_orange_90: "#ffded5";
+    --palette_hot_orange_95: "#fef1ed";
+
+    /* Indigo */
+    --palette_indigo_10: "#200647";
+    --palette_indigo_15: "#1f0974";
+    --palette_indigo_20: "#260f8f";
+    --palette_indigo_30: "#2f2cb7";
+    --palette_indigo_40: "#3a49da";
+    --palette_indigo_50: "#5867e8";
+    --palette_indigo_60: "#7f8ced";
+    --palette_indigo_65: "#8e9bef";
+    --palette_indigo_70: "#9ea9f1";
+    --palette_indigo_80: "#bec7f6";
+    --palette_indigo_90: "#e0e5f8";
+    --palette_indigo_95: "#f1f3fb";
+
+    /* Orange */
+    --palette_orange_10: "#201600";
+    --palette_orange_15: "#371e03";
+    --palette_orange_20: "#3e2b02";
+    --palette_orange_30: "#5f3e02";
+    --palette_orange_40: "#825101";
+    --palette_orange_50: "#a96404";
+    --palette_orange_60: "#dd7a01";
+    --palette_orange_65: "#f38303";
+    --palette_orange_70: "#fe9339";
+    --palette_orange_80: "#ffba90";
+    --palette_orange_90: "#fedfd0";
+    --palette_orange_95: "#fff1ea";
+
+    /* Pink */
+    --palette_pink_10: "#370114";
+    --palette_pink_15: "#4b0620";
+    --palette_pink_20: "#61022a";
+    --palette_pink_30: "#8a033e";
+    --palette_pink_40: "#b60554";
+    --palette_pink_50: "#e3066a";
+    --palette_pink_60: "#ff538a";
+    --palette_pink_65: "#fe7298";
+    --palette_pink_70: "#fe8aa7";
+    --palette_pink_80: "#fdb6c5";
+    --palette_pink_90: "#fddde3";
+    --palette_pink_95: "#fef0f3";
+
+    /* Purple */
+    --palette_purple_10: "#240643";
+    --palette_purple_15: "#300b60";
+    --palette_purple_20: "#401075";
+    --palette_purple_30: "#5a1ba9";
+    --palette_purple_40: "#7526e3";
+    --palette_purple_50: "#9050e9";
+    --palette_purple_60: "#ad7bee";
+    --palette_purple_65: "#b78def";
+    --palette_purple_70: "#c29ef1";
+    --palette_purple_80: "#d78ff5";
+    --palette_purple_90: "#ece1f9";
+    --palette_purple_95: "#f6f2fb";
+
+    /* Red */
+    --palette_red_10: "#300c01";
+    --palette_red_15: "#4a0c04";
+    --palette_red_20: "#640103";
+    --palette_red_30: "#8e030f";
+    --palette_red_40: "#ba0517";
+    --palette_red_50: "#ea001e";
+    --palette_red_60: "#fe5c4c";
+    --palette_red_65: "#fe7765";
+    --palette_red_70: "#fe8f7d";
+    --palette_red_80: "#feb8ab";
+    --palette_red_90: "#feded8";
+    --palette_red_95: "#fef1ee";
+
+    /* Teal */
+    --palette_teal_10: "#071b12";
+    --palette_teal_15: "#072825";
+    --palette_teal_20: "#023434";
+    --palette_teal_30: "#024d4c";
+    --palette_teal_40: "#056764";
+    --palette_teal_50: "#0b827c";
+    --palette_teal_60: "#06a59a";
+    --palette_teal_65: "#03b4a7";
+    --palette_teal_70: "#01c3b3";
+    --palette_teal_80: "#04e1cb";
+    --palette_teal_90: "#acf3e4";
+    --palette_teal_95: "#def9f3";
+
+    /* Violet */
+    --palette_violet_10: "#2e0039";
+    --palette_violet_15: "#3d0157";
+    --palette_violet_20: "#520066";
+    --palette_violet_30: "#730394";
+    --palette_violet_40: "#9602c7";
+    --palette_violet_50: "#ba01ff";
+    --palette_violet_60: "#cb65ff";
+    --palette_violet_65: "#d17dfe";
+    --palette_violet_70: "#d892fe";
+    --palette_violet_80: "#e5b9fe";
+    --palette_violet_90: "#f2defe";
+    --palette_violet_95: "#f9f0ff";
+
+    /* Yellow */
+    --palette_yellow_10: "#281202";
+    --palette_yellow_15: "#2e2204";
+    --palette_yellow_20: "#4f2100";
+    --palette_yellow_30: "#6f3400";
+    --palette_yellow_40: "#8c4b02";
+    --palette_yellow_50: "#a86403";
+    --palette_yellow_60: "#ca8501";
+    --palette_yellow_65: "#d79304";
+    --palette_yellow_70: "#e4a201";
+    --palette_yellow_80: "#fcc003";
+    --palette_yellow_90: "#f9e3b6";
+    --palette_yellow_95: "#fbf3e0";
+
+    /* Neutral */
+    --palette_neutral_00: "#000000";
+    --palette_neutral_10: "#181818";
+    --palette_neutral_15: "#242424";
+    --palette_neutral_20: "#2e2e2e";
+    --palette_neutral_30: "#444444";
+    --palette_neutral_40: "#5c5c5c";
+    --palette_neutral_50: "#747474";
+    --palette_neutral_60: "#939393";
+    --palette_neutral_65: "#a0a0a0";
+    --palette_neutral_70: "#aeaeae";
+    --palette_neutral_80: "#c9c9c9";
+    --palette_neutral_90: "#e5e5e5";
+    --palette_neutral_95: "#f3f3f3";
+    --palette_neutral_100: "#ffffff";
+}

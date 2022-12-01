@@ -18,7 +18,7 @@
         "prettier": "prettier --check '{modules,config,doc}/**/*.{js,ts,json,md}' --config ./.prettierrc --ignore-path ./.prettierignore",
         "build": "tsc -b && yarn assets",
         "build:static": "lwr static-build --outputDir __generated_site__",
-        "heroku-postbuild": "npm run build:static",
+        "heroku-postbuild": "",
         "rebuild": "rimraf build/ __lwr_cache__ tsconfig.tsbuildinfo && yarn build",
         "restart": "yarn rebuild && yarn start",
         "dev": "lwr serve --port 3333",
