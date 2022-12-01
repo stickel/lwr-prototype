@@ -78,6 +78,7 @@
     "staticSiteGenerator": {
         "outputDir": "__generated_site__",
         "locales": ["en-US"],
-        "_additionalRoutePaths": ["/setup/Slack"]
+        "_additionalRoutePaths": ["/setup/Slack"],
+        "_additionalModules": ["setup/Slack"]
     }
 }
