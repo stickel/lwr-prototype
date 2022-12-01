@@ -74,5 +74,10 @@
                 "syntheticShadow": true
             }
         }
-    ]
+    ],
+    "staticSiteGenerator": {
+        "outputDir": "__generated_site__",
+        "locales": ["en-US"],
+        "_additionalRoutePaths": ["/setup/Slack"]
+    }
 }

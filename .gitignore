@@ -1,6 +1,7 @@
 .DS_Store
 */**/.DS_Store
 __lwr_cache__
+__generated_site__
 node_modules/
 build/
 src/assets/icons/
