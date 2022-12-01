@@ -17,14 +17,14 @@
         "format": "prettier --write '{modules,config,doc}/**/*.{js,ts,json,md}' --config ./.prettierrc --ignore-path ./.prettierignore",
         "prettier": "prettier --check '{modules,config,doc}/**/*.{js,ts,json,md}' --config ./.prettierrc --ignore-path ./.prettierignore",
         "build": "tsc -b && yarn assets",
-        "build:static": "lwr static-build --outputDir __generated_site__",
+        "build:static": "lwr static-build",
         "heroku-postbuild": "",
         "rebuild": "rimraf build/ __lwr_cache__ tsconfig.tsbuildinfo && yarn build",
         "restart": "yarn rebuild && yarn start",
         "dev": "lwr serve --port 3333",
         "start": "WARMUP=true lwr serve --port 3000 --mode prod",
         "start:prod": "WARMUP=true lwr serve --mode prod-compat",
-        "start:static": "WARMUP=true lwr serve __generated_site__"
+        "start:static": "WARMUP=true lwr serve __generated_site__ --mode prod"
     },
     "dependencies": {
         "@babel/core": "^7.15.5",
