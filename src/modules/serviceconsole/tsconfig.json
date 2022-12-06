@@ -6,21 +6,9 @@
             // "@serviceconsole/*": ["modules/serviceconsole/*"],
             // In the meantime...
             // 
-            // Modules for Service Console routes
-            "serviceconsole/shiftItem": ["modules/serviceconsole/shiftItem/shiftItem.ts"],
-            "serviceconsole/router": ["modules/serviceconsole/router/router.ts"],
-            "serviceconsole/home": ["modules/serviceconsole/home/home.ts"],
-            "serviceconsole/homePageHandler": ["modules/serviceconsole/homePageHandler/homePageHandler.ts"],
-            "serviceconsole/namedPageHandler": ["modules/serviceconsole/namedPageHandler/namedPageHandler.ts"],
-            "serviceconsole/pageHeader": ["modules/serviceconsole/pageHeader/pageHeader.ts"],
-            "serviceconsole/workforceEngagement": ["modules/serviceconsole/workforceEngagement/workforceEngagement.ts"],
-            "serviceconsole/shiftBlock": ["modules/serviceconsole/shiftBlock/shiftBlock.ts"],
-            "serviceconsole/shiftList": ["modules/serviceconsole/shiftList/shiftList.ts"],
-            "serviceconsole/shiftDuty": ["modules/serviceconsole/shiftDuty/shiftDuty.ts"],
-            "serviceconsole/scheduleView": ["modules/serviceconsole/scheduleView/scheduleView.ts"],
-            "serviceconsole/shift": ["modules/serviceconsole/shift/shift.ts"],
+            // Modules for Service Console routes (add your new modules here)
             // "serviceconsole/": ["modules/serviceconsole//.ts"],
-            // Base LWR modules needed
+            // Base LWR modules needed (Do not remove)
             "lwr/router": ["../node_modules/@lwrjs/router/build/modules/lwr/router/router.d.ts"],
             "lwr/routerUtils": ["../node_modules/@lwrjs/router/build/modules/lwr/routerUtils/routerUtils.d.ts"],
             "lwr/navigation": ["../node_modules/@lwrjs/router/build/modules/lwr/navigation/navigation.d.ts"],

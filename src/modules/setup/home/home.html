@@ -2,7 +2,7 @@
     <setup-page-header
         breadcrumb-is-link="false"
         header-icon="standard:home"
-        page-title="Home">
+        page-title={i18n.pageTitle}>
         <div class="slds-media__figure slds-media__figure_reverse slds-m-right_none">
                 <lightning-button-menu
                     class="fix-me fix__slds-button_icon-border-filled"
@@ -34,11 +34,66 @@
     <!-- page content -->
     <div class="setupcontent">
         <div class="container">
-            <lightning-card>
+            <lightning-card class="card-spacer slds-m-bottom_large">
                 <header slot="title">
                     <h2 class="slds-m-bottom_small">Most Recently Used</h2>
                     <p class="slds-text-title_bold">0 items</p>
                 </header>
+            </lightning-card>
+            <lightning-card class="card-spacer slds-m-bottom_large">
+                <header slot="title">
+                    <h2 class="slds-m-bottom_small slds-text-title_bold">{i18n.aboutTitle}</h2>
+                </header>
+                <p class="slds-m-bottom_medium">This is a stub for the setup home page. The navigation list on the left is functional and there are stub pages for the first few items at the top of the list.</p>
+                <p class="slds-m-bottom_medium">You can also have a look at a couple of interactions called out below to give you some ideas of what can be done.</p>
+            </lightning-card>
+            <lightning-card class="card-spacer slds-m-bottom_large">
+                <header slot="title">
+                    <h2 class="slds-m-bottom_small slds-text-title_bold">Modal Examples</h2>
+                </header>
+
+                <p class="slds-m-bottom_small">Click either of the buttons to open the respective modals.</p>
+                <div>
+                    <lightning-button
+                        class="slds-m-right_large"
+                        label={i18n.openSimpleModal}
+                        variant="neutral"
+                        onclick={handleOpenSimpleModal}>
+                    </lightning-button>
+                    <lightning-button
+                        label="Open Multi-step Modal"
+                        data-id="deals-won"
+                        variant="neutral"
+                        onclick={handleOpenMultiStepModal}>
+                    </lightning-button>
+                </div>
+            </lightning-card>
+            <lightning-card class="card-spacer slds-m-bottom_large">
+                <header slot="title">
+                    <h2 class="slds-text-title_bold">Adding navigation</h2>
+                </header>
+                <p>You can add new navigation items to the main menu on the left by modifying the appropriate file in <code>/src/modules/setup/app</code>. An Example for the Slack item in "Platform Tools":</p>
+                <!-- <pre>
+                    <code>if (flag === true) {
+                        // comment!
+                        return false;
+                    }</code>
+                </pre>
+                <pre>
+                    {
+                        name: 'slack',
+                        label: 'Sales Cloud for Slack',
+                        disabled: false,
+                        expanded: false,
+                        pageReference: {
+                            type: 'namedPage',
+                            attributes: {
+                                pageName: 'Slack',
+                            },
+                            state: {},
+                        },
+                    }
+                </pre> -->
             </lightning-card>
         </div>
     </div>

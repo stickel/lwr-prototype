@@ -1,0 +1,74 @@
+<template>
+    <lightning-modal-header label="Multi-Step Modal Example: Step 2"></lightning-modal-header>
+    <lightning-modal-body>
+        <div class="slds-grid slds-m-around_medium">
+            <div class="slds-col slds-m-right_large">
+                <lightning-input
+                    class="slds-m-bottom_small"
+                    type="text"
+                    name="channel-name"
+                    label="Channel Name"
+                    placeholder="Enter a name..."
+                    value={channelDetails.id}
+                    onchange={handleNameChange}>
+                </lightning-input>
+                <lightning-input
+                    class="slds-m-bottom_small"
+                    type="text"
+                    name="topic"
+                    label="Topic"
+                    placeholder="Enter a topic..."
+                    value={channelDetails.topic}
+                    onchange={handleTopicChange}>
+                </lightning-input>
+                <lightning-textarea
+                    label="Channel Description"
+                    placeholder="Describe your channel..."
+                    name="description"
+                    max-length="250"
+                    field-level-help="Set a channel description in Slack. Anyone in your workspace can see the description, and channel members can edit it."
+                    value={channelDetails.description}
+                    onchange={handleDescriptionChange}>
+                </lightning-textarea>
+            </div>
+            <div class="slds-col slds-size_1-of-4 slds-n">
+                <lightning-combobox
+                    class="slds-m-bottom_medium"
+                    name="channel-visibility"
+                    label="Channel Visibility"
+                    options={visibilityOptions}
+                    value={visibilityValue}
+                    onchange={handleVisibilityChange}>
+                </lightning-combobox>
+                <lightning-radio-group
+                    name="membership"
+                    class="slds-m-bottom_medium join-options"
+                    label="Membership"
+                    options={addMembersOptions}
+                    value={addMembersValue}
+                    disabled={joinOptionsDisabled}
+                    onchange={handleJoinOptionsChange}>
+                </lightning-radio-group>
+                <lightning-radio-group
+                    label="Posting Permission"
+                    options={postRestrictionOptions}
+                    value={postRestrictionValue}>
+                </lightning-radio-group>
+            </div>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <div class="modal-footer_directional slds-grid slds-grid_align-spread">
+            <lightning-button
+                onclick={handleBack}
+                label="Back"
+                variant="neutral">
+            </lightning-button>
+            <lightning-button
+                onclick={handleNextEvent}
+                label="Next"
+                variant="brand">
+            </lightning-button>
+        </div>
+    </lightning-modal-footer>
+</template>

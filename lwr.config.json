@@ -13,6 +13,7 @@
     "bundleConfig": {
         "exclude": [ "lwc", "@lwc/synthetic-shadow", "lwr/navigation" ]
     },
+    "globalDataDir": "$rootDir/src/data",
     "assets": [
         {
             "alias": "assetsDir",
@@ -28,7 +29,15 @@
                 "labelDirs": [
                     {
                         "dir": "$rootDir/src/labels",
-                        "package": "@my/label"
+                        "package": "@my/label/global"
+                    },
+                    {
+                        "dir": "$rootDir/src/labels/setup",
+                        "package": "@my/label/setup"
+                    },
+                    {
+                        "dir": "$rootDir/src/labels/serviceconsole",
+                        "package": "@my/label/serviceconsole"
                     }
                 ]
             }
@@ -42,18 +51,24 @@
             "id": "setup",
             "path": "/setup",
             "rootComponent": "setup/app",
-            "layoutTemplate": "$layoutsDir/setup.njk",
+            "layoutTemplate": "$layoutsDir/setup.html",
             "bootstrap": {
                 "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Setup"
             }
         },
         {
             "id": "setup-named-page",
             "path": "/setup/:namedPage",
             "rootComponent": "setup/app",
-            "layoutTemplate": "$layoutsDir/setup.njk",
+            "layoutTemplate": "$layoutsDir/setup.html",
             "bootstrap": {
                 "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Setup"
             }
         },
         {
@@ -63,6 +78,9 @@
             "layoutTemplate": "$layoutsDir/serviceConsole.njk",
             "bootstrap": {
                 "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Service Console"
             }
         },
         {
@@ -72,13 +90,16 @@
             "layoutTemplate": "$layoutsDir/serviceConsole.njk",
             "bootstrap": {
                 "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Service Console"
             }
         }
     ],
     "staticSiteGenerator": {
         "outputDir": "__generated_site__",
         "locales": ["en-US"],
-        "_additionalRoutePaths": ["/setup/Slack"],
-        "_additionalModules": ["setup/Slack"]
+        "_additionalRoutePaths": [],
+        "_additionalModules": []
     }
 }

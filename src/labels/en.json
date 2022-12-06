@@ -1,7 +1,9 @@
 {
-    "start": {},
-    "cx": {
-        "title": "This is a foo title."
-    },
-    "setup": {}
+    "header.searchPlaceholder": "Search Setup",
+    "error.viewError": "If the component experiences a runtime error, the contents of this slot will replace the component template for the current route",
+    "button.cancel": "Cancel",
+    "button.save": "Save",
+    "button.saveAndNew": "Save & New",
+    "button.ok": "OK",
+    "button.delete": "Delete"
 }

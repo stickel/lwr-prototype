@@ -1,0 +1,32 @@
+<template>
+    <lightning-modal-header label="Multi-Step Modal Example"></lightning-modal-header>
+    <lightning-modal-body>
+        <div class="slds-m-around_medium">
+            <p>Select the Slack workspace where you're adding your new feed channel.</p>
+            <div class="slds-grid slds-grid_align-center slds-m-top_medium slds-p-bottom_xx-large">
+                <div class="slds-col slds-size_2-of-4">
+                    <lightning-combobox
+                        name="workspace"
+                        label="Slack Workspace"
+                        placeholder="Your workspace..."
+                        options={workspaceOptions}>
+                    </lightning-combobox>
+                </div>
+            </div>
+        </div>
+    </lightning-modal-body>
+    <lightning-modal-footer>
+        <div class="modal-footer_directional slds-grid slds-grid_align-spread">
+            <lightning-button
+                onclick={handleClose}
+                label="Cancel"
+                variant="neutral">
+            </lightning-button>
+            <lightning-button
+                onclick={handleNextEvent}
+                label="Next"
+                variant="brand">
+            </lightning-button>
+        </div>
+    </lightning-modal-footer>
+</template>

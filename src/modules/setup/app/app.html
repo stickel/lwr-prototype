@@ -3,7 +3,7 @@
         router={router}>
         <div class="viewport">
             <section class="layoutContent stage panelSlide">
-                <global-header></global-header>
+                <global-header search-placeholder={i18n.searchPlacholder}></global-header>
                 <span class="main-content-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
                 <span class="navigation-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
                 <div class="workspace-manager">
@@ -33,7 +33,7 @@
                                             </button>
                                         </div>
                                         <div class="slds-context-bar__label-action slds-context-bar__app-name">
-                                            <span class="slds-truncate" title="Setup">Setup</span>
+                                            <span class="slds-truncate" title="Setup">{i18n.appName}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@
                                             <a href="/"
                                                 class="slds-context-bar__label-action tab-header"
                                                 title="Home">
-                                                <span class="slds-truncate">Home</span>
+                                                <span class="slds-truncate">{i18n.tabDefault}</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -72,7 +72,7 @@
 
                                             <lwr-outlet
                                                 onviewerror={onViewError}>
-                                                <div slot="error">If the component experiences a runtime error, the contents of this slot will replace the component template for the current route</div>
+                                                <div slot="error">{i18n.errors.viewError}</div>
                                             </lwr-outlet>
 
                                         </div>

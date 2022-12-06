@@ -7,6 +7,7 @@
             // In the meantime...
             // Modules for Setup routes
             "setup/router": ["modules/setup/router/router.ts"],
+            "setup/renderer": ["modules/setup/renderer/renderer.ts"],
             "setup/home": ["modules/setup/home/home.ts"],
             "setup/homePageHandler": ["modules/setup/homePageHandler/homePageHandler.ts"],
             "setup/namedPageHandler": ["modules/setup/namedPageHandler/namedPageHandler.ts"],
@@ -19,13 +20,10 @@
             "setup/mobileQuickstart": ["modules/setup/mobileQuickstart/mobileQuickstart.ts"],
             "setup/lightningUsage": ["modules/setup/lightningUsage/lightningUsage.ts"],
             "setup/optimizer": ["modules/setup/optimizer/optimizer.ts"],
-            "setup/Slack": ["modules/setup/Slack/Slack.ts"],
             "setup/modal": ["modules/setup/modal/modal.ts"],
-            "setup/modalCreateBroadcastChannel": ["modules/setup/modalCreateBroadcastChannel/modalCreateBroadcastChannel.ts"],
-            "setup/modalCreateBroadcastChannelBasics": ["modules/setup/modalCreateBroadcastChannelBasics/modalCreateBroadcastChannelBasics.ts"],
-            "setup/modalSelectOnboardingChannels": ["modules/setup/modalSelectOnboardingChannels/modalSelectOnboardingChannels.ts"],
+            "setup/multiStepModalExample": ["modules/setup/multiStepModalExample/multiStepModalExample.ts"],
+            "setup/simpleModalExample": ["modules/setup/simpleModalExample/simpleModalExample.ts"],
             "setup/radioGroupWithHint": ["modules/setup/radioGroupWithHint/radioGroupWithHint.ts"],
-            "setup/renderer": ["modules/setup/renderer/renderer.ts"],
             // "setup/": ["modules/setup//.ts"],
             // Base LWR modules needed
             "lwr/router": ["../node_modules/@lwrjs/router/build/modules/lwr/router/router.d.ts"],

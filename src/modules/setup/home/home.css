@@ -1,6 +1,7 @@
 :host {
-	--sds-c-card-heading-font-weight: var(--slds-fontWeightBold);
-	--slds-c-card-heading-font-size: var(--slds-fontSize5);
+    --slds-c-card-heading-font-weight: var(--slds-fontWeightBold);
+    --slds-c-card-heading-font-size: var(--slds-fontSize5);
+    --slds-c-card-body-spacing-inline-start: 1rem;
 }
 
 .fix-me.fix__slds-button_icon-border-filled {
@@ -10,4 +11,15 @@
     border: 1px solid var(--slds-colorBorder);
     border-radius: var(--slds-borderRadiusMedium);
     vertical-align: middle;
+}
+
+/* This class is here to give lightning-card a display value so the spacing utility classes work */
+.card-spacer {
+    display: block;
+}
+
+pre {
+    display: block;
+    white-space: pre-wrap;
+    text-align: left;
 }

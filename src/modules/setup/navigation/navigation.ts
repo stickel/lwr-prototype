@@ -4,6 +4,11 @@ import type { PageReference } from 'lwr/router';
 import type { ContextId } from 'lwr/navigationContext';
 import type { NavData } from 'setup/navItem';
 
+// Labels
+import NAV_ADMIN from '@my/label/setup/navigation.admin';
+import NAV_PLATFORM_TOOLS from '@my/label/setup/navigation.platformTools';
+import NAV_SETTINGS from '@my/label/setup/navigation.settings';
+
 interface SelectableNavData extends NavData {
     selected: boolean;
     group: any;
@@ -147,5 +152,15 @@ export default class Navigation extends LightningElement {
             }));
         }
         return [];
+    }
+
+    get i18n(): object {
+        return {
+            nav: {
+                admin: NAV_ADMIN,
+                platformTools: NAV_PLATFORM_TOOLS,
+                settings: NAV_SETTINGS,
+            },
+        };
     }
 }

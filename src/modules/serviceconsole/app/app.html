@@ -2,7 +2,7 @@
     <lwr-router-container router={router}>
         <div class="viewport">
             <section class="layoutContent stage panelSlide">
-                <global-header></global-header>
+                <global-header search-placeholder={i18n.searchPlaceholder}></global-header>
                 <span class="main-content-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
                 <span class="navigation-skip focuser accessibility-span" tabindex="-1" role="presentation"></span>
                 <div class="workspace-manager">
@@ -32,7 +32,7 @@
                                             </button>
                                         </div>
                                         <div class="slds-context-bar__label-action slds-context-bar__app-name">
-                                            <span class="slds-truncate" title="Setup">Service Console</span>
+                                            <span class="slds-truncate" title="Setup">{i18n.appName}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@
                                             <a href="/"
                                                 class="slds-context-bar__label-action tab-header"
                                                 title="Home">
-                                                <span class="slds-truncate">Home</span>
+                                                <span class="slds-truncate">{i18n.tabDefault}</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -68,7 +68,7 @@
                                                 onviewerror={onViewError}>
                                                 <div slot="error">
                                                     <h1>Error</h1>
-                                                    <p>The following error occurred: {viewErrorMessage}</p>
+                                                    <p>{i18n.errors.viewError}</p>
                                                 </div>
                                             </lwr-outlet>
 

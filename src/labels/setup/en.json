@@ -1,0 +1,11 @@
+{
+    "navbar.appName": "Setup",
+    "navbar.tabDefault": "Home",
+    "header.searchPlaceholder": "Search Setup",
+    "navigation.admin": "Administration",
+    "navigation.platformTools": "Platform Tools",
+    "navigation.settings": "Settings",
+    "home.pageTitle": "Home",
+    "home.aboutTitle": "About this Page",
+    "home.openSimpleModal": "Open Simple Modal"
+}
