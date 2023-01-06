@@ -1,46 +1,4 @@
 import luxon, { DateTime } from 'luxon';
-import type { ShiftObject } from 'modules/serviceconsole/shiftItem/shiftItem';
-
-export function isMorningShift(shift: ShiftObject, locale = 'en-US'): boolean {
-    const date = luxon.DateTime.fromISO(shift.Date);
-    const start = startTime(shift, locale);
-    const endTime = start.plus({
-        minutes: shift.DurationInMinutes,
-    });
-    return start > dayStart(date) && endTime < dayMid(date);
-}
-
-export function isDayShift(shift: ShiftObject, locale = 'en-US'): boolean {
-    const date = luxon.DateTime.fromISO(shift.Date);
-    const start = startTime(shift, locale);
-    const endTime = start.plus({
-        minutes: shift.DurationInMinutes,
-    });
-    return (
-        start > dayStart(date) &&
-        start < dayMid(date) &&
-        endTime > dayMid(date) &&
-        endTime < dayEnd(date)
-    );
-}
-
-export function isNightShift(shift: ShiftObject, locale = 'en-US'): boolean {
-    const date = luxon.DateTime.fromISO(shift.Date);
-    const start = startTime(shift, locale);
-    // const endTime = start.plus({
-    //     minutes: shift.DurationInMinutes,
-    // });
-    return start > dayMid(date);
-}
-
-export function startTime(shift: ShiftObject, locale = 'en-US'): DateTime {
-    const hour = Number(shift.StartTime?.split(':')[0]);
-    const minute = Number(shift.StartTime?.split(':')[1]);
-    return luxon.DateTime.fromISO(shift.Date).setLocale(locale).set({
-        hour: hour,
-        minute: minute,
-    });
-}
 
 function dayStart(date: DateTime): DateTime {
     return date.set({
@@ -72,4 +30,25 @@ function dayEnd(date: DateTime): DateTime {
 export function getRandomId(): any {
     const array = new Uint32Array(1);
     return self.crypto.getRandomValues(array)[0];
+}
+
+/**
+ * Takes label strings with placeholder params (`{0}`) and updates the label with given `args`
+ * @param {string} str - any label string requiring injections of other strings/params (e.g., 'foo {0}')
+ * @param  {...string|array} args - string(s) to be injected into the `string` param
+ * @returns {string} fully replaced string, e.g., '{0} is a {1}' -> 'Hal Jordan is a Green Lantern'
+ */
+export function formatLabel(str: string, ...args: Array<any>): string {
+    let replacements = args;
+    if (Array.isArray(args[0])) {
+        [replacements] = args;
+    }
+
+    return str.replace(/{(\d+)}/g, (match, i) => {
+        return replacements[i];
+    });
+}
+
+export function randomNumber(min: number, max: number): number {
+    return Math.random() * (max - min) + min;
 }

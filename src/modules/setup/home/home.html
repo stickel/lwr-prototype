@@ -70,30 +70,12 @@
             </lightning-card>
             <lightning-card class="card-spacer slds-m-bottom_large">
                 <header slot="title">
-                    <h2 class="slds-text-title_bold">Adding navigation</h2>
+                    <h2 class="slds-text-title_bold">{i18n.addNavTitle}</h2>
                 </header>
                 <p>You can add new navigation items to the main menu on the left by modifying the appropriate file in <code>/src/modules/setup/app</code>. An Example for the Slack item in "Platform Tools":</p>
-                <!-- <pre>
-                    <code>if (flag === true) {
-                        // comment!
-                        return false;
-                    }</code>
-                </pre>
                 <pre>
-                    {
-                        name: 'slack',
-                        label: 'Sales Cloud for Slack',
-                        disabled: false,
-                        expanded: false,
-                        pageReference: {
-                            type: 'namedPage',
-                            attributes: {
-                                pageName: 'Slack',
-                            },
-                            state: {},
-                        },
-                    }
-                </pre> -->
+                    {navigationSnippet}
+                </pre>
             </lightning-card>
         </div>
     </div>

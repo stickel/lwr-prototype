@@ -1,0 +1,24 @@
+{
+    "extends": "../../../tsconfig",
+    "compilerOptions": {
+        "paths": {
+            "lightningservice/router": ["modules/lightningservice/router/router.ts"],
+            "lightningservice/home": ["modules/lightningservice/home/home.ts"],
+            "lightningservice/homePageHandler": ["modules/lightningservice/homePageHandler/homePageHandler.ts"],
+            "lightningservice/namedPageHandler": ["modules/lightningservice/namedPageHandler/namedPageHandler.ts"],
+            "lightningservice/sidebarFormValues": ["modules/lightningservice/sidebarFormValues/sidebarFormValues.ts"],
+            "lightningservice/caseWrapUp": ["modules/lightningservice/caseWrapUp/caseWrapUp.ts"],
+            "lightningservice/chatTranscriptDetails": ["modules/lightningservice/chatTranscriptDetails/chatTranscriptDetails.ts"],
+            "lightningservice/chat": ["modules/lightningservice/chat/chat.ts"],
+            "lightningservice/knowledge": ["modules/lightningservice/knowledge/knowledge.ts"],
+            "lightningservice/recommendationItem": ["modules/lightningservice/recommendationItem/recommendationItem.ts"],
+            // "lightningservice/": ["modules/lightningservice/"],
+            // Base LWR modules needed
+            "lwr/router": ["../node_modules/@lwrjs/router/build/modules/lwr/router/router.d.ts"],
+            "lwr/routerUtils": ["../node_modules/@lwrjs/router/build/modules/lwr/routerUtils/routerUtils.d.ts"],
+            "lwr/navigation": ["../node_modules/@lwrjs/router/build/modules/lwr/navigation/navigation.d.ts"],
+            "lwr/navigationContext": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationContext/navigationContext.d.ts"],
+            "lwr/navigationService": ["../node_modules/@lwrjs/router/build/modules/lwr/navigationService/navigationService.d.ts"],
+        }
+    }
+}

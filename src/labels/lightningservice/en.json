@@ -1,0 +1,12 @@
+{
+    "navbar.appName": "Lightning Service",
+    "navbar.tabDefault": "Home",
+    "header.searchPlaceholder": "Search Salesforce",
+    "kb.liveRecommendations": "Einstein Live Recommendations",
+    "kb.button.latest": "Latest",
+    "kb.button.all": "All",
+    "kb.pinArticle": "Pin Article",
+    "kb.attachArticle": "Attach Article",
+    "kb.relevance": "{0}% relevant",
+    "kb.markNotHelpful": "Mark as not helpful"
+}

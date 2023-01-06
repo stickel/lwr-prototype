@@ -38,6 +38,10 @@
                     {
                         "dir": "$rootDir/src/labels/serviceconsole",
                         "package": "@my/label/serviceconsole"
+                    },
+                    {
+                        "dir": "$rootDir/src/labels/lightningservice",
+                        "package": "@my/label/lightningservice"
                     }
                 ]
             }
@@ -93,6 +97,30 @@
             },
             "properties": {
                 "title": "Salesforce Service Console"
+            }
+        },
+        {
+            "id": "lightning-service",
+            "path": "/lightning-service",
+            "rootComponent": "lightningservice/app",
+            "layoutTemplate": "$layoutsDir/lightningService.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Lightning Service"
+            }
+        },
+        {
+            "id": "lightning-service-named-page",
+            "path": "/lightning-service/:namedPage",
+            "rootComponent": "lightningService/app",
+            "layoutTemplate": "$layoutsDir/lightningService.njk",
+            "bootstrap": {
+                "syntheticShadow": true
+            },
+            "properties": {
+                "title": "Salesforce Lightning Service"
             }
         }
     ],

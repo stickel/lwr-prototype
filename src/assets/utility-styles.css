@@ -1,0 +1,15 @@
+.util-display-block {
+    display: block;
+}
+
+.util-display-inline-block {
+    display: inline-block;
+}
+
+.util-text-color_weak {
+    color: var(--slds-paletteNeutral50);
+}
+
+.debug-red {
+    border: 1px solid red;
+}

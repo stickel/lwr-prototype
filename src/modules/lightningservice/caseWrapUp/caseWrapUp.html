@@ -1,0 +1,130 @@
+<template>
+    <lightning-card
+        class="util-display-block slds-m-bottom_small">
+        <h3
+            slot="title"
+            class="slds-text-heading_small slds-text-title_bold">
+            <lightning-icon
+                icon-name="standard:live_chat"
+                size="small"
+                class="slds-m-right--medium"></lightning-icon>
+            Case Wrap Up
+        </h3>
+        <lightning-button-menu
+            slot="actions"
+            alternative-text="Show menu"
+            icon-size="small">
+            <lightning-menu-item value="1" label="1"></lightning-menu-item>
+        </lightning-button-menu>
+        <lightning-layout
+            multiple-rows>
+            <lightning-layout-item
+                class="slds-p-bottom_x-small einstein-block">
+                <lightning-layout>
+                    <lightning-layout-item
+                        class="slds-grid slds-grid_vertical">
+                        <a href="javascript:void(0)" class="slds-p-bottom_xx-small">
+                            <lightning-icon
+                                icon-name="utility:einstein"
+                                size="x-small"
+                                class="slds-m-right_x-small"></lightning-icon>
+                            Get Einstein Recommendations
+                        </a>
+                        <span class="slds-text-body_small util-text-color_weak">Last Updated [NOW] • 3 Fields</span>
+                    </lightning-layout-item>
+                    <lightning-layout-item alignment-bump="left">
+                        <lightning-helptext content="This would have some content"></lightning-helptext>
+                    </lightning-layout-item>
+                </lightning-layout>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small">
+                <lightningservice-sidebar-form-values
+                    label="Case Number"
+                    value="15388172">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small">
+                <lightningservice-sidebar-form-values
+                    label="Case Owner"
+                    value="GTS - New WileyPLUS">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Product / Service"
+                    value="New WileyPLUS">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Sub-Product"
+                    value="-">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Category"
+                    value="-">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Sub-Category"
+                    value="-">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Status"
+                    value="New">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Description"
+                    value="student was unable to ac...">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Subject"
+                    value="etext">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                padding="around-small"
+                class="detail-item">
+                <lightningservice-sidebar-form-values
+                    label="Browser"
+                    value="Chrome 105.0.0.0.0">
+                </lightningservice-sidebar-form-values>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

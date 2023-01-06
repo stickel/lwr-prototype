@@ -1,0 +1,7 @@
+.util-display-block {
+    display: block;
+}
+
+.util-text-color_weak {
+    color: var(--slds-paletteNeutral50);
+}

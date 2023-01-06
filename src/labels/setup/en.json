@@ -7,5 +7,7 @@
     "navigation.settings": "Settings",
     "home.pageTitle": "Home",
     "home.aboutTitle": "About this Page",
-    "home.openSimpleModal": "Open Simple Modal"
+    "home.openSimpleModal": "Open Simple Modal",
+    "home.addNav.title": "Adding Navigation",
+    "home.addNav.body": "<p>You can add new navigation items to the main menu on the left by modifying the appropriate file in <code>/src/modules/setup/app</code>. An Example for the Slack item in \"Platform Tools\":</p>\n<pre>\n{\n\tname: 'slack',\n\tlabel: 'Sales Cloud for Slack',\n\tdisabled: false,\n\texpanded: false,\n\tpageReference: {\n\t\ttype: 'namedPage',\n\t\tattributes: {\n\t\t\tpageName: 'Slack',\n\t\t},\n\t\tstate: {},\n\t},\n}\n</pre>"
 }

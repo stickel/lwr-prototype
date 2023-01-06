@@ -1,0 +1,60 @@
+<template>
+    <lightning-layout class="slds-border_top slds-p-top_x-small slds-p-bottom_xx-small">
+        <!-- Block for text and links -->
+        <lightning-layout-item
+            size="9">
+            <a 
+                class="slds-text-body_regular util-display-block article-link"
+                href="javascript:void(0)">
+                {recommendation.Title}
+            </a>
+            <span class="util-display-block">
+                {recommendation.Description}
+            </span>
+            <template if={searchEnabled}>
+                [details accordion]
+            </template>
+            <span class="slds-m-top_small relevance-meta">
+                {relevanceScore}
+                <a class="util-display-inline-block slds-m-left_small"
+                    href="javascript:void(0)"
+                    onclick={handleNotHelpful}>
+                    {i18n.markNotHelpful}
+                </a>
+            </span>
+        </lightning-layout-item>
+
+        <!-- block for action buttons -->
+        <lightning-layout-item
+            alignment-bump="left">
+            <lightning-button-group>
+                <lightning-button-icon-stateful
+                    icon-name="utility:pin"
+                    variant="neutral"
+                    size="x-small"
+                    name="pin-article"
+                    alternative-text={i18n.pinArticle}
+                    selected={isPinned}
+                    onclick={handlePin}>
+                </lightning-button-icon-stateful>
+                <lightning-button-icon-stateful
+                    icon-name="utility:attach"
+                    variant="neutral"
+                    size="x-small"
+                    name="attach"
+                    alternative-text={i18n.attachArticle}
+                    selected={isAttaching}
+                    onclick={handleAttach}>
+                </lightning-button-icon-stateful>
+                <lightning-button-menu
+                    alternative-text="Show action menu"
+                    icon-size="x-small"
+                    menu-alignment="right">
+                    <lightning-menu-item value="one" label="One"></lightning-menu-item>
+                    <lightning-menu-item value="two" label="Two"></lightning-menu-item>
+                    <lightning-menu-item value="three" label="Three"></lightning-menu-item>
+                </lightning-button-menu>
+            </lightning-button-group>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

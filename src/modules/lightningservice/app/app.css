@@ -1,0 +1,83 @@
+@import 'global/slds';
+
+/* Some overrides from SLDS to match production */
+.slds-brand-band:before {
+	/* Fix the image used for the faded background in production */
+	background-image: url("/assets/lightning_blue_background.png"), linear-gradient(to top, var(--slds-brandBackgroundDarkTransparent,rgba(1, 68, 134, 0)) 0, var(--slds-brandBackgroundDark,rgb(1, 68, 134)));
+}
+
+.slds-brand-band:after {
+	/* Change the fade to color to match production */
+	background-image: linear-gradient(to bottom, rgba(176, 196, 223, 0) 60%, rgb(176, 196, 223));
+}
+
+.tab-content:before {
+	/* Fixing the background color after fading out image */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	display: block;
+	background-color: rgb(176, 196, 223);
+	z-index: -1;
+}
+/* End overrides */
+
+.workspace-manager {
+	height: 100%;
+}
+
+.tabset-header {
+	position: fixed;
+	top: 50px;
+	width: 100%;
+	display: flex;
+	background: white;
+	z-index: 99;
+}
+
+.tab-content {
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+}
+
+.setup-launcher,
+.tab-container .tab-item {
+	border-right: var(--slds-borderWidthThin) solid var(--slds-colorBorder);
+}
+
+.split-left {
+	width: 250px;
+}
+
+.split-right {
+	position: relative;
+	left: 250px;
+	right: 0;
+	height: 100%;
+	width: calc(100% - 250px);
+}
+
+.main-content {
+	top: 90px;
+	left: 0;
+	right: 0;
+	height: calc(100% - 90px);
+}
+
+.main-content > [role="main"] {
+	height: 100%;
+}
+/* trying to get it all into the view vertically
+.slds-template_default {
+	height: 100%;
+} */
+
+/* Isn't going to work. Selector can't seem to do anything */
+div[role='region'][lwr-outlet_outlet] {
+	height: 100%;
+	border: 1px solid pink;
+}

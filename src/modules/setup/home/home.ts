@@ -7,6 +7,7 @@ import SimpleModalExample from 'setup/simpleModalExample';
 import PAGE_TITLE from '@my/label/setup/home.pageTitle';
 import ABOUT_TITLE from '@my/label/setup/home.aboutTitle';
 import OPEN_SIMPLE_MODAL from '@my/label/setup/home.openSimpleModal';
+import ADD_NAV_TITLE from '@my/label/setup/home.addNav.title';
 
 interface BroadcastChannel {
     id: string;
@@ -59,6 +60,20 @@ export default class Home extends LightningElement {
     set salesChannelAccessValue(value: string) {
         this._salesChannelAccessValue = value;
     }
+
+    navigationSnippet = `{
+    name: 'slack',
+    label: 'Sales Cloud for Slack',
+    disabled: false,
+    expanded: false,
+    pageReference: {
+        type: 'namedPage',
+        attributes: {
+            pageName: 'Slack',
+        },
+        state: {},
+    },
+}`;
 
     async handleOpenSimpleModal(event: CustomEvent): Promise<void> {
         event.stopPropagation();
@@ -139,6 +154,7 @@ export default class Home extends LightningElement {
             pageTitle: PAGE_TITLE,
             aboutTitle: ABOUT_TITLE,
             openSimpleModal: OPEN_SIMPLE_MODAL,
+            addNavTitle: ADD_NAV_TITLE,
         };
     }
 }

@@ -1,0 +1,4 @@
+.no-header-fix {
+    transform: translateY(-24px);
+    width: 100%;
+}

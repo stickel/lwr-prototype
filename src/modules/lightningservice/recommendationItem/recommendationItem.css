@@ -1,0 +1,13 @@
+.relevance-meta {
+    display: inline-block;
+    /* There will likely be different tokens for this.
+        Worth noting though, the color `text_weak` isn't
+        the correct color for the designs
+    */
+    color: var(--slds-paletteNeutral50);
+    font-size: var(--slds-fontSize1);
+}
+
+.article-link {
+    text-decoration: underline;
+}

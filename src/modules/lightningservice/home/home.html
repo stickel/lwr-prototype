@@ -1,0 +1,65 @@
+<template>
+    <div class="console-container">
+        <lightning-layout horizontal-align="space">
+            <lightning-layout-item
+                size="3"
+                padding="horizontal-small"
+                class="slds-scrollable_y content_case-details">
+                <lightningservice-chat-transcript-details></lightningservice-chat-transcript-details>
+                <lightningservice-case-wrap-up></lightningservice-case-wrap-up>
+                <lightning-card
+                    class="util-display-block slds-m-bottom_small">
+                    <h3
+                        slot="title"
+                        class="slds-text-heading_small slds-text-title_bold">
+                        <lightning-icon
+                            icon-name="standard:contact"
+                            size="small"
+                            class="slds-m-right--medium"></lightning-icon>
+                        Contact Details
+                    </h3>
+                    <lightning-button-menu
+                        slot="actions"
+                        alternative-text="Show menu"
+                        icon-size="small">
+                        <lightning-menu-item value="1" label="1"></lightning-menu-item>
+                    </lightning-button-menu>
+                </lightning-card>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="6"
+                class="content_chat">
+                <lightning-card>
+                    <lightningservice-chat></lightningservice-chat>
+                </lightning-card>
+            </lightning-layout-item>
+            <lightning-layout-item
+                size="3"
+                padding="horizontal-small"
+                class="content_kb">
+                <lightning-card>
+                    <h3
+                        slot="title"
+                        class="slds-text-heading_small slds-text-title_bold">
+                        Knowledge
+                    </h3>
+                    <lightning-button
+                        slot="actions"
+                        variant="bare"
+                        label="New Article">
+                    </lightning-button>
+
+                    <!-- This is the important bit, everything else is template for the look -->
+                    <!-- The module is src/modules/lightningservice/knowledge -->
+
+                    <lightningservice-knowledge
+                        max-height={maxHeight}>
+                    </lightningservice-knowledge>
+
+                    <!-- /end recommendation module -->
+
+                </lightning-card>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>

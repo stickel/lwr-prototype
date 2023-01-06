@@ -1,0 +1,57 @@
+<template>
+    <section class="slds-p-around_small slds-border_bottom slds-grid kb-search">
+        <lightning-button
+            class="slds-col slds-size_1-of-5"
+            variant="neutral"
+            label="Filter">
+        </lightning-button>
+        <lightning-input
+            class="slds-col slds-size_4-of-5"
+            type="search"
+            placeholder="Search Knowledge"
+            label="Search knowledge"
+            variant="label-hidden">
+        </lightning-input>
+    </section>
+    <section class="slds-grid slds-grid_vertical slds-scrollable_y slds-p-around_small rt-recommendations">
+        <!-- Tab switcher for latest and all -->
+        <div class="slds-col rt-recommendation-tabs slds-p-bottom_small">
+            <lightning-layout vertical-align="center">
+                <lightning-layout-item>
+                    <lightning-icon
+                        class="slds-m-right_x-small"
+                        icon-name="utility:einstein"
+                        size="x-small">
+                    </lightning-icon>
+                    <span class="slds-text-color_weak">
+                        {i18n.liveRecommendations}
+                    </span>
+                </lightning-layout-item>
+                <lightning-layout-item alignment-bump="left">
+                    <lightning-radio-group
+                        name="recsLists"
+                        options={recommendationListOptions}
+                        value={activeTab}
+                        type="button"
+                        label="Show list"
+                        variant="label-hidden"
+                        onchange={handleListToggle}>
+                    </lightning-radio-group>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+
+        <!-- List of items returned from recommendation engine -->
+        <template for:each={recommendations} for:item="rec">
+            <div
+                class="slds-p-around_xxx-small"
+                key={rec.Id}
+                onpinunpinarticle={pinUnpin}>
+                <lightningservice-recommendationItem
+                    recommendation={rec}
+                    is-pinned={rec.Pinned}>
+                </lightningservice-recommendationItem>
+            </div>
+        </template>
+    </section>
+</template>

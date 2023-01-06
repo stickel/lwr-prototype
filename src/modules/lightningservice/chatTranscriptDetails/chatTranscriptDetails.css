@@ -1,0 +1,11 @@
+.util-display-block {
+    display: block;
+}
+
+.util-text-color_weak {
+    color: var(--slds-paletteNeutral50);
+}
+
+.detail-item {
+    margin-top: -16px;
+}

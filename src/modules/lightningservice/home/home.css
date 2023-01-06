@@ -1,0 +1,6 @@
+.content_case-details,
+.content_chat,
+.content_kb {
+    /* Trying to set a default max height */
+    max-height: calc(100vh - 90px - 1.5rem);
+}

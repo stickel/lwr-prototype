@@ -1284,130 +1284,130 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lwrjs/app-service@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/app-service@npm:0.8.7"
+"@lwrjs/app-service@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/app-service@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: d8285e012cb20db4781547092e7b239282c43fa4fd882128050ca84625ce970bef6d5606df7d88b3cbe6a29f87b23f20ca6969b5bb398428f234fb6681e292db
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: e9902ac698e03d57d47fbf66f209e91809f4ffce4f395b7712181a04e6dd2d915e76b3c996d8e3d4f14312234e5363b40f6edf15bba60149393363702131830a
   languageName: node
   linkType: hard
 
-"@lwrjs/asset-registry@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/asset-registry@npm:0.8.7"
+"@lwrjs/asset-registry@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/asset-registry@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: 6519c6feffb09b7e72e474a22795a08ec31b7dc75f8ffb00672c3a9f6c171fe4e104cad7833e1fc2b4f65aa93e7095b1b14b8bcbfb571a3bd67271d440df676f
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 3d97de64fd7d6610de0c61e8a0387e7c98e888569edf44c282b81b9fbd6efec22fdc3e3f91b7b071e6ec3f4a65ec64e2728ca994df6b358195e502ec2351cb64
   languageName: node
   linkType: hard
 
-"@lwrjs/asset-transformer@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/asset-transformer@npm:0.8.7"
+"@lwrjs/asset-transformer@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/asset-transformer@npm:0.8.8"
   dependencies:
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     postcss: ^8.3.6
-  checksum: 477e10a195b9afba3a6af11528cba2df61bb12e41ce4ec3b034e1a4891b52dfa6dcb17edce3ee5ea1b9170da04cbae208626f093e484eb85a1e396b8d86a18b7
+  checksum: 2345345a8303a8444c814a2dc17a9c9c6510615e18119acdfdf3328ed2941f31ae8e96c75b70e875d486ff3eb6bcdb3732ae01b8953153992fa56a4abfd479e8
   languageName: node
   linkType: hard
 
-"@lwrjs/base-template-engine@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/base-template-engine@npm:0.8.7"
+"@lwrjs/base-template-engine@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/base-template-engine@npm:0.8.8"
   dependencies:
     escape-goat: ^3.0.0
-  checksum: 549d0ca88ffd9a2fcb4c7f865656720ae6b3fd211eb8e6221fafbebbb5869d1da994184d50721b89788f875a5724f89ac5b7d1de34248375c7ed620f87a7f3cb
+  checksum: 2469cdc4b176e44422486e8d5f47b3278019b8e3ffa02350134208c1929d219807f9f73beefe68926dbf243f0116a336a32f337c150834db80c894320c3b801c
   languageName: node
   linkType: hard
 
-"@lwrjs/base-view-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/base-view-provider@npm:0.8.7"
+"@lwrjs/base-view-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/base-view-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/base-template-engine": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: a1a0ae577f64d70e4e05ad723db998be1e135ec4e86490f87b698210e751ab5b40f643fa36c26db6b8b38dfbc8a260e35f9c01227915ff6e64b85749bdd6984a
+    "@lwrjs/base-template-engine": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 8dd7d494faaedcd35245951568eeff7a69389f10419fef1f66f3f27c534cb715e2ee150195987c9d0b18487dedc3256e6f672d210619c2b2595cd874ac7036ad
   languageName: node
   linkType: hard
 
-"@lwrjs/base-view-transformer@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/base-view-transformer@npm:0.8.7"
+"@lwrjs/base-view-transformer@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/base-view-transformer@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: 97a0013fe65393b7ce5c8f806eff09349195adea4b2591a55281354bc85da9b5726694f3be2624ab72edc1a417ad08771320e74aafa9c7ac7af2ab439a43f57a
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 6189f1b3d2d963b6f7537d183fa2e39e54ca800a659f5086459a0aaf96a685b02eac1b48f38a236c2f565b012fd645ef5ca9d34f04a681960df2d6785d28d859
   languageName: node
   linkType: hard
 
-"@lwrjs/client-modules@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/client-modules@npm:0.8.7"
+"@lwrjs/client-modules@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/client-modules@npm:0.8.8"
   dependencies:
     "@locker/sandbox": 0.17.18
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: 4b33632301daab2307eaa63bf46489284ae9b522214c25caa833f322cc7ba2e0e1f2cb1e752018412d2e0dbe6df5c08ce2605e787ffd2c4d34c6cd2562a9a869
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 14712d714b87335a70a8f732f917b902e17308991842b50afd8319c2bb922226884aa364baf3816a2637faadc38722d83c09893a46b7b01fc5ddae44ed9cf8cd
   languageName: node
   linkType: hard
 
-"@lwrjs/compiler@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/compiler@npm:0.8.7"
+"@lwrjs/compiler@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/compiler@npm:0.8.8"
   dependencies:
     "@locker/compiler": 0.17.18
     "@locker/sandbox": 0.17.18
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     esbuild: ^0.9.7
     rollup: ~2.45.2
-  checksum: 2ee1fc10bf617e63e63a865160abd8011df7754de11c0caee89e3e63cdad85db969fc7338fa4a5266dfaee057de016e210d58cf29c6616f05137bdbddedfacdd
+  checksum: 08cea8ee01522cb9b5648c59d150f4158aec6bb0ae4acf7f404000fc292b85e83322a86adc2b73f6fc67cc3b78fcfd52905e891c5f283b98cbe179707d24d981
   languageName: node
   linkType: hard
 
-"@lwrjs/config@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/config@npm:0.8.7"
+"@lwrjs/config@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/config@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     fs-extra: ^10.1.0
     jsonc-parser: ^3.0.0
-  checksum: 4deb2a429aa8b7a74a3b383549ca76cd87d694c12f33a12a61cca806e897f7881d8070731e0a023b0a6e0377a2d1725ca2db4e330f7f2169535f3f2eda666e3a
+  checksum: 628b46ab800aa5bddaae55ad880b847d7ec1ffcbb12cc88187967f3ed0076a7a506b1c09bf9b26bcc4abc2685f840dc90676cff0a96fde18d58a25cd5268e7f6
   languageName: node
   linkType: hard
 
-"@lwrjs/core@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/core@npm:0.8.7"
+"@lwrjs/core@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/core@npm:0.8.8"
   dependencies:
-    "@lwrjs/app-service": 0.8.7
-    "@lwrjs/asset-registry": 0.8.7
-    "@lwrjs/asset-transformer": 0.8.7
-    "@lwrjs/base-template-engine": 0.8.7
-    "@lwrjs/base-view-provider": 0.8.7
-    "@lwrjs/base-view-transformer": 0.8.7
-    "@lwrjs/client-modules": 0.8.7
-    "@lwrjs/compiler": 0.8.7
-    "@lwrjs/config": 0.8.7
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/fs-asset-provider": 0.8.7
-    "@lwrjs/html-view-provider": 0.8.7
-    "@lwrjs/loader": 0.8.7
-    "@lwrjs/lwc-module-provider": 0.8.7
-    "@lwrjs/lwc-ssr": 0.8.7
-    "@lwrjs/markdown-view-provider": 0.8.7
-    "@lwrjs/module-bundler": 0.8.7
-    "@lwrjs/module-registry": 0.8.7
-    "@lwrjs/npm-module-provider": 0.8.7
-    "@lwrjs/nunjucks-view-provider": 0.8.7
-    "@lwrjs/o11y": 0.8.7
-    "@lwrjs/resource-registry": 0.8.7
-    "@lwrjs/router": 0.8.7
-    "@lwrjs/server": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-    "@lwrjs/view-registry": 0.8.7
+    "@lwrjs/app-service": 0.8.8
+    "@lwrjs/asset-registry": 0.8.8
+    "@lwrjs/asset-transformer": 0.8.8
+    "@lwrjs/base-template-engine": 0.8.8
+    "@lwrjs/base-view-provider": 0.8.8
+    "@lwrjs/base-view-transformer": 0.8.8
+    "@lwrjs/client-modules": 0.8.8
+    "@lwrjs/compiler": 0.8.8
+    "@lwrjs/config": 0.8.8
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/fs-asset-provider": 0.8.8
+    "@lwrjs/html-view-provider": 0.8.8
+    "@lwrjs/loader": 0.8.8
+    "@lwrjs/lwc-module-provider": 0.8.8
+    "@lwrjs/lwc-ssr": 0.8.8
+    "@lwrjs/markdown-view-provider": 0.8.8
+    "@lwrjs/module-bundler": 0.8.8
+    "@lwrjs/module-registry": 0.8.8
+    "@lwrjs/npm-module-provider": 0.8.8
+    "@lwrjs/nunjucks-view-provider": 0.8.8
+    "@lwrjs/o11y": 0.8.8
+    "@lwrjs/resource-registry": 0.8.8
+    "@lwrjs/router": 0.8.8
+    "@lwrjs/server": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+    "@lwrjs/view-registry": 0.8.8
     fs-extra: ^10.1.0
     ms: ^2.1.3
     path-to-regexp: ^6.2.0
@@ -1415,88 +1415,88 @@ __metadata:
     ws: ^8.8.1
   peerDependencies:
     lwc: 2.x
-  checksum: ccaeee8607233f2bf36206c388297617a1fbc913729a5751864857938d57008d15511fdbe35785f57f1fee332a342458ed5558d4774bafa4dbd3f30fc30c822e
+  checksum: 5904f1630828bbd696cc1ea140af2c8c1799142a400fb038f23843d205672082f94e4ea6b9c2c8435337d11eae9a5137ed889bd69c0d7c3096fa6b813a0ed9a5
   languageName: node
   linkType: hard
 
-"@lwrjs/diagnostics@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/diagnostics@npm:0.8.7"
-  checksum: ce50951f1c1af7af83f74a1400e14d0c3a58bd4557f6964d04d0e735740fb909b1fccfe6de63dd7c11ba90b72ac508e84f2dab8a4a02af34c232340a7c2226f6
+"@lwrjs/diagnostics@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/diagnostics@npm:0.8.8"
+  checksum: 9c435f154b7ed55f3e4ca335bb0b8a083a02c0f9e92cf890804ade2f455da0b3da73e429656bc2bff7e4b293a1cab1bc4ad7f2d27bea77945dc61520f0143987
   languageName: node
   linkType: hard
 
-"@lwrjs/fs-asset-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/fs-asset-provider@npm:0.8.7"
+"@lwrjs/fs-asset-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/fs-asset-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: e8ff764382d08f15f04ced31b4d3a74d0c3f1de512f204b93f5f7647ff533ede2c98b2e7530c8dce1a7d7c7ee3e313c6948dafd84a874d361d592c0a811eb8ec
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: d876bfa51b052849d1d5375d748a0078504d4c61a55d357aa2c0e2042e851e2c71e79b4b704a1f7ed8524cc700bff2435c04429aacaa539cc8d81e8c36be6d7f
   languageName: node
   linkType: hard
 
-"@lwrjs/html-view-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/html-view-provider@npm:0.8.7"
+"@lwrjs/html-view-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/html-view-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/base-template-engine": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/base-template-engine": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     gray-matter: ^4.0.2
     parse5-sax-parser: ^6.0.1
-  checksum: c312d8817714ca31ffc228ebe1c84eb42687d9faf86ad14e22c9277d986eb79175a82c7a776db3e693e5bcaf07ee72b1012caf87750f4417b438c7ee5b10dc08
+  checksum: 47711e665ae9a7ab4cac7e0f1c6ace74f625deefa9241499cdcbdb4b6b4d6a655f08e4bd9ad858c294b6d25d48a22785a3e0da05c1e05ed7e43303abb40a5c47
   languageName: node
   linkType: hard
 
-"@lwrjs/label-module-provider@npm:^0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/label-module-provider@npm:0.8.7"
+"@lwrjs/label-module-provider@npm:^0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/label-module-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     ajv: 6.12.6
-  checksum: 6457b3b97680e1dcd4503d00127f099f78364cfb5c054b07960a97efa0821cc5d320dc61d6cd5eb765f761f1ff00d63efc749f63811fef1f9ef5752adfb9a7ad
+  checksum: ebd26f63414ba4a4b701f041f0781eae11f6e1daeed6472048010e53b287999938a49fbd8f251220ee5f8d5f42a32b260447e298b582bddcc58e461117122659
   languageName: node
   linkType: hard
 
-"@lwrjs/loader@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/loader@npm:0.8.7"
+"@lwrjs/loader@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/loader@npm:0.8.8"
   dependencies:
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: f554bb30857e32a00d918179ea865ba37779ae6e37cc71354ac87cc9104ed7bc258a8fc501665c7bde14039cbd46efe4d42f1dc2889c3e8b979b32802e3dc6a7
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 7680c9156be73b5ba0e7e6ba7e2919a4eda431ff3c94cf02092da72afbddba92ba4564e2453ee5f4a3bf6e1e0a2bfe533f0b48e3fb57d3a76063a7ccec1d206c
   languageName: node
   linkType: hard
 
-"@lwrjs/lwc-module-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/lwc-module-provider@npm:0.8.7"
+"@lwrjs/lwc-module-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/lwc-module-provider@npm:0.8.8"
   dependencies:
     "@babel/preset-typescript": ^7.9.0
     "@lwc/module-resolver": 2.17.0
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     es-module-lexer: ^0.3.18
-  checksum: f7618ed99f62dc7d0756be0552a31294aee6292613a8eb6883d3c92c0026a1288fea7eea2141a321aa6b376c4617d9448d7b7f3921d48be4a23b8f12207aa931
+  checksum: 182e0c7ec5ece88520db21457079a2e8592c58303b56741a025e7cb6d8a7c25693d76d81f732048b527571c22eb07726ecd0a4acd1a016c13c42578cf5ce32d3
   languageName: node
   linkType: hard
 
-"@lwrjs/lwc-ssr@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/lwc-ssr@npm:0.8.7"
+"@lwrjs/lwc-ssr@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/lwc-ssr@npm:0.8.8"
   dependencies:
     "@locker/near-membrane-node": ^0.11.13
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     node-fetch: ^2.6.1
-  checksum: 5b06fa947bd4fb8e65f88accd9ebf12e0bdd749a2835686b77e49dcf2be020eb77495b0aa696ea1b3f9afd4d93189019a473a1c35ba31ce2f70b6091ed963396
+  checksum: 20eccd8bfb8becc7f29e53a162e19e8317e3efceb2f495541f19203670ce5318b049894febc805fce4c1bb4d72c3db0baae7c775031202b4343480ae3a60b4fc
   languageName: node
   linkType: hard
 
-"@lwrjs/markdown-view-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/markdown-view-provider@npm:0.8.7"
+"@lwrjs/markdown-view-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/markdown-view-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/base-template-engine": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/base-template-engine": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     gray-matter: ^4.0.2
     hast-util-has-property: ^1.0.4
     hast-util-heading-rank: ^1.0.1
@@ -1510,95 +1510,95 @@ __metadata:
     shiki: ^0.9.15
     unified: ^9.2.0
     vfile: ^4.2.1
-  checksum: 8227b341b251160224cebf97f24e84b42e110c80e432ab97c099c195bf04388af1a6042a513687ec9a36eb783d35f9f66e054c1aa1b35b1bce19da562660d0a1
+  checksum: 223c0b1e964a6f92a38df43ef87ce77833b2734e658f313c982475f75dc0b372234b1b39aa2a1a5c29d43f8f0227e97aa599a5a587a0fc2ef7a5a25bbb9fafa5
   languageName: node
   linkType: hard
 
-"@lwrjs/module-bundler@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/module-bundler@npm:0.8.7"
+"@lwrjs/module-bundler@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/module-bundler@npm:0.8.8"
   dependencies:
-    "@lwrjs/compiler": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/compiler": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     rollup: ~2.45.2
-  checksum: ce5286740cd5b6e2bc38f5c7c21f9551198f6356bfa0539e5418605ab868e855ad6faf6fdfef07524626c81dc59648f34937184c9d069551993abb1e4632c99e
+  checksum: c72d09e75a4d20efa67f8526ef28d888181d74a7516a66af9ae73ebd439bfc3c5e7a9c843856783186524e629910853d4482b28912f0ce0c2fb19bf436f4e1ea
   languageName: node
   linkType: hard
 
-"@lwrjs/module-registry@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/module-registry@npm:0.8.7"
+"@lwrjs/module-registry@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/module-registry@npm:0.8.8"
   dependencies:
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     es-module-lexer: ^0.3.18
-  checksum: 4cfdd50a3a3ca21a1e8cc6746723d3e2578004e092a958c61cbf6343cbe26e73fa83a6d8b3fffd5984dd913ad64cf0a26527fb4554781ba6e493fbb92ca85d74
+  checksum: 2533bcdf15b81b23929c3bb4502cddfa49f9df08e285f7f346503c7824334f858a989eaf6bca97dd92fa3d9f9b83bddc35d4c807a662d1bc87eca3c4242ff57d
   languageName: node
   linkType: hard
 
-"@lwrjs/npm-module-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/npm-module-provider@npm:0.8.7"
+"@lwrjs/npm-module-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/npm-module-provider@npm:0.8.8"
   dependencies:
     "@esbuild-plugins/node-modules-polyfill": ^0.0.2
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     esbuild: ^0.9.7
     esinstall: ^1.1.7
     resolve: ^1.19.0
-  checksum: dca4b781008e60c1f45181dd87b79ad1ca240b6e577a79671051b66d9a089111295f7dd6f073ce4bdc577be80ffb72a2caba86461a1635e7297cbfeac0d4a399
+  checksum: 9776addabae121c36f1eabe66691dcca8dd589a9bf942a2e0bdf55b2eb237f89dc75b00a524259388e7e577d9142c58c5665652681e525a23ca8affb1b42d16b
   languageName: node
   linkType: hard
 
-"@lwrjs/nunjucks-view-provider@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/nunjucks-view-provider@npm:0.8.7"
+"@lwrjs/nunjucks-view-provider@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/nunjucks-view-provider@npm:0.8.8"
   dependencies:
-    "@lwrjs/base-template-engine": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/base-template-engine": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     gray-matter: ^4.0.2
     nunjucks: ^3.2.2
     parse5-sax-parser: ^6.0.1
-  checksum: 6a65203ad4fffe87c4d337dc7de3dda80bfbb2984db755c95a3239c368ff742ee6941365e384a135f4e62f4ff2fbd310599d77125f2b51064b28c84e11c3b361
+  checksum: 9e2434d981ad66281c55df1476cdcb44cdbabe62d93ca2f6a09af5545b48103c89470c216bc4b19cf44873042ac63ea412230f2a77bb0ac931a9567fb8e05c8a
   languageName: node
   linkType: hard
 
-"@lwrjs/o11y@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/o11y@npm:0.8.7"
+"@lwrjs/o11y@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/o11y@npm:0.8.8"
   dependencies:
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     o11y: 242.3.3
-  checksum: b736877f2fd95c015aeb4a035bdc400b5e937afab621bd12809550ab2a1edc115456b5906d90fd4e4cdbd2b1f8899f718f42f77157cf10714d831c2cbec4ec79
+  checksum: 61c1e5b70369d4ce8151164ea32c4c461aa3dc8ddb0ffdcf1f86813c96ac93224a1ee6e65744e703180ec971deee8a0551020c9c83d166e8ce7bea2e0944f27d
   languageName: node
   linkType: hard
 
-"@lwrjs/resource-registry@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/resource-registry@npm:0.8.7"
+"@lwrjs/resource-registry@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/resource-registry@npm:0.8.8"
   dependencies:
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: 76715589d7d4045d474c617db2a60309209e1920384ee23c6eb5539e8295c7d3b636d137f1243f9623e3915a930d5b04957f12f32fe0659be54eadcc18bea05f
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: a9318f5e78404c26ffa985e3c09773e9be640478b475b9b19ba782d14052585620914467dbf9d8a9175c522eae61054d87ff37973df86688e2fd1828b8cd2d3a
   languageName: node
   linkType: hard
 
-"@lwrjs/router@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/router@npm:0.8.7"
+"@lwrjs/router@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/router@npm:0.8.8"
   dependencies:
-    "@lwrjs/client-modules": 0.8.7
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/client-modules": 0.8.8
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
     ajv: 6.12.6
-  checksum: a930473547e174abf3a61479f3e5079700d1d88d94d6eeb6f21a31ac93692c410b9f5bbb7345162901b85aefdd08855ce8b5ddacf1d22f613b30edb74009bfff
+  checksum: 8c37e2e95bf803312e12c09faeebd42228731cadc6fc11decf7889e71c8860b0b3213baefbf7af6e12020591902be5e95f01d94fc2cf801d5ebec966546f198f
   languageName: node
   linkType: hard
 
-"@lwrjs/server@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/server@npm:0.8.7"
+"@lwrjs/server@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/server@npm:0.8.8"
   dependencies:
     "@koa/router": ^10.0.0
-    "@lwrjs/shared-utils": 0.8.7
+    "@lwrjs/shared-utils": 0.8.8
     "@types/compression": ^1.7.2
     "@types/express": ^4.17.13
     "@types/koa": ^2.11.7
@@ -1611,13 +1611,13 @@ __metadata:
   dependenciesMeta:
     shrink-ray-current:
       optional: true
-  checksum: e839ef252b954704ac0c6d56ad2f2d4f119a9a12b9406b9e1f3f1c2695cec747eb6f7a4fb646e36198da224e26ec0b85ed7aaa3f1deb924d7d75bb8bab5995af
+  checksum: 839fd8ac5e113d794ddbaf155fa32de2facd055c1e064d2cc36e12d2a5b0ae90e680be0e8f72c0317be4fdd6ee52f777d75b4ce5ef0dcc9d6cb20d0d44a719af
   languageName: node
   linkType: hard
 
-"@lwrjs/shared-utils@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/shared-utils@npm:0.8.7"
+"@lwrjs/shared-utils@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/shared-utils@npm:0.8.8"
   dependencies:
     chokidar: ^3.4.0
     es-module-lexer: ^0.3.18
@@ -1629,25 +1629,25 @@ __metadata:
     path-to-regexp: ^6.2.0
     slugify: ^1.4.5
     winston: ^3.7.2
-  checksum: 2fd1d9a9565bb068b644b04a44a38e54c9d28c3b0862ed9533ed153c7ac9bca0f4664aad47a5c870a939dd44b474f53196a5cfeeef60531806d1ad69d8c350f4
+  checksum: 2c4f3cc0c2433c29178399c5c424d1c8effdf3ad8410c0c013bfef6a52cc862f77ed326de90c955be555fd77093906b60f940daf682256a6a1ceb74bc173e624
   languageName: node
   linkType: hard
 
-"@lwrjs/types@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/types@npm:0.8.7"
-  checksum: 4d1b8fc0232af6e056e83a30a085c63fe9ad35d31711be2ada20237a153e5b57a8df097af2f3d7d92e78b9d221416f229c04bfd80cda81b94a75600abe16acbc
+"@lwrjs/types@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/types@npm:0.8.8"
+  checksum: 7f98e31c7fe255412c8648976b9d4266097af08d740435bef317892cef7c585d8e3a35c3f42e50fc1dc321c1593ab397b8d208ee3bf7a1c3c315c2a2a1a72477
   languageName: node
   linkType: hard
 
-"@lwrjs/view-registry@npm:0.8.7":
-  version: 0.8.7
-  resolution: "@lwrjs/view-registry@npm:0.8.7"
+"@lwrjs/view-registry@npm:0.8.8":
+  version: 0.8.8
+  resolution: "@lwrjs/view-registry@npm:0.8.8"
   dependencies:
-    "@lwrjs/app-service": 0.8.7
-    "@lwrjs/diagnostics": 0.8.7
-    "@lwrjs/shared-utils": 0.8.7
-  checksum: c3f34dc030383dd8efd76656998444e117d3873f4a7b23e4d07ac09968bd91916d1b8a856284b11d7739151fa4c7cd212cf16e48536761947ebddd5b06a1d800
+    "@lwrjs/app-service": 0.8.8
+    "@lwrjs/diagnostics": 0.8.8
+    "@lwrjs/shared-utils": 0.8.8
+  checksum: 817beea1c7db0dab639af2224d03540daa2a8902739aff42a5193eadafac54dd41870db285feb09c36cfe2bd3aaafa47ad0b6d83eb15f3e433fe3c99e468f036
   languageName: node
   linkType: hard
 
@@ -2174,13 +2174,6 @@ __metadata:
   version: 4.0.2
   resolution: "@types/long@npm:4.0.2"
   checksum: d16cde7240d834cf44ba1eaec49e78ae3180e724cd667052b194a372f350d024cba8dd3f37b0864931683dab09ca935d52f0c4c1687178af5ada9fc85b0635f4
-  languageName: node
-  linkType: hard
-
-"@types/luxon@npm:2.0.9":
-  version: 2.0.9
-  resolution: "@types/luxon@npm:2.0.9"
-  checksum: 6c99741e1735aca5b784981ecec3a6ad9497b8e46cc3dd0ba625901bb5b34af4c7b1bf33e32b3e8468312ce2850b31f553f712283a8301a0ee1aacb633276738
   languageName: node
   linkType: hard
 
@@ -3441,9 +3434,8 @@ __metadata:
     "@babel/preset-typescript": ^7.9.0
     "@babel/register": ^7.9.0
     "@lwc/synthetic-shadow": 2.32.1
-    "@lwrjs/label-module-provider": ^0.8.7
+    "@lwrjs/label-module-provider": ^0.8.8
     "@salesforce-ux/design-system": ^2.19.0
-    "@types/luxon": 2.0.9
     "@typescript-eslint/eslint-plugin": ^4.31.1
     "@typescript-eslint/parser": ^4.31.1
     classnames: 2.3.1
@@ -3455,9 +3447,8 @@ __metadata:
     fs: ^0.0.1-security
     jest: ^27.1.1
     lightning-base-components: ^1.16.7-alpha
-    luxon: 2.3.1
     lwc: ~2.32.1
-    lwr: 0.8.7
+    lwr: 0.8.8
     postcss: ^8.3.6
     prettier: ^2.5.1
     rimraf: ^3.0.2
@@ -6701,13 +6692,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"luxon@npm:2.3.1":
-  version: 2.3.1
-  resolution: "luxon@npm:2.3.1"
-  checksum: ce5eec873a0172a0956618531e28010e8d8319a8b3a836b893d0f92239413a1fc5f77841ca24988e27bd61e8b2748e160e9dfcb13e92d7f031c1e31ad1c8ae91
-  languageName: node
-  linkType: hard
-
 "lwc@npm:~2.32.1":
   version: 2.32.1
   resolution: "lwc@npm:2.32.1"
@@ -6722,18 +6706,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lwr@npm:0.8.7":
-  version: 0.8.7
-  resolution: "lwr@npm:0.8.7"
+"lwr@npm:0.8.8":
+  version: 0.8.8
+  resolution: "lwr@npm:0.8.8"
   dependencies:
-    "@lwrjs/core": 0.8.7
-    "@lwrjs/types": 0.8.7
+    "@lwrjs/core": 0.8.8
+    "@lwrjs/types": 0.8.8
     cac: ^6.7.8
     esbuild: ^0.14.38
     vm2: ^3.9.11
   bin:
     lwr: bin/lwr.js
-  checksum: fe2071fb007fefca4032ff62ee088f6a8f9a8eb10f4b9b8c689354f5957c0e763e65d0abaa23a6ddd67d131a2202b06a50b250f9bcab5a99b1a9a62cb5a0ad73
+  checksum: 644cce98909c1022b0e166f86db30198f86a039668827efd81180f806456aa91c53c7883e3d8d8997fbc6aba0cbead132386d65bcffc9f469c8eb7e4243bdef3
   languageName: node
   linkType: hard
 
