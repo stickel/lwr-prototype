@@ -4,7 +4,13 @@
 
 ## Run on Dev
 
-In order to get this running on a dev environment change into this directory (`cd lwr-prototype`), install the dependencies (`yarn install`), then run `yarn dev`. This should build the files and start on `localhost:3000` with hotswapping turned on.
+In order to get this running on a dev environment change into this directory (`cd lwr-prototype`) and install the dependencies (`yarn install`).
+
+Once you've got the node modules installed, run `yarn assets` to copy the SLDS assets from the node module to `src/assets`. This is a required step for the styles, icons, and tokens to be available.
+
+Now you can run `yarn dev`. This should build the files and start on `localhost:3000` with hotswapping turned on.
+
+With that, you're ready to go. Load up the path you're working on and get to prototyping.
 
 ## Run on Heroku
 
